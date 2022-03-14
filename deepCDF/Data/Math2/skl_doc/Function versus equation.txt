@@ -1,0 +1,837 @@
+
+Function (mathematics)
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+Function
+x ↦ f (x)
+Examples by domain and codomain
+X	→	B,	B	→	X,	Bn	→	B
+X	→	Z,	Z	→	X
+X	→	R,	R	→	X,	Rn	→	X
+X	→	C,	C	→	X,	Cn	→	X
+ Classes/properties 
+Constant · Identity · Linear · Polynomial · Rational · Algebraic · Analytic · Smooth · Continuous · Measurable · Injective · Surjective · Bijective
+  Constructions  
+Restriction · Composition · λ · Inverse
+  Generalizations  
+Partial · Multivalued · Implicit
+vte
+In mathematics, a function[note 1] is a relation between sets that associates to every element of a first set exactly one element of the second set. Typical examples are functions from integers to integers or from the real numbers to real numbers.
+
+Functions were originally the idealization of how a varying quantity depends on another quantity. For example, the position of a planet is a function of time. Historically, the concept was elaborated with the infinitesimal calculus at the end of the 17th century, and, until the 19th century, the functions that were considered were differentiable (that is, they had a high degree of regularity). The concept of function was formalized at the end of the 19th century in terms of set theory, and this greatly enlarged the domains of application of the concept.
+
+A function is a process or a relation that associates each element x of a set X, the domain of the function, to a single element y of another set Y (possibly the same set), the codomain of the function. If the function is called f, this relation is denoted y = f (x) (which is spoken aloud as f of x), the element x is the argument or input of the function, and y is the value of the function, the output, or the image of x by f.[1] The symbol that is used for representing the input is the variable of the function (one often says that f is a function of the variable x).
+
+A function is uniquely represented by the set of all pairs (x, f (x)), called the graph of the function.[note 2] When the domain and the codomain are sets of real numbers, each such pair may be considered as the Cartesian coordinates of a point in the plane. The set of these points is called the graph of the function; it is a popular means to illustrate the function.
+
+Functions are widely used in science, and in most fields of mathematics. It has been said that functions are "the central objects of investigation" in most fields of mathematics.[2]
+
+
+Schematic depiction of a function described metaphorically as a "machine" or "black box" that for each input yields a corresponding output
+
+The red curve is the graph of a function, because any vertical line has exactly one crossing point with the curve.
+
+A function that associates any of the four colored shapes to its color.
+
+Contents
+1	Definition
+1.1	Relational approach
+1.2	As an element of a Cartesian product over a domain
+2	Notation
+2.1	Functional notation
+2.2	Arrow notation
+2.3	Index notation
+2.4	Dot notation
+2.5	Specialized notations
+3	Other terms
+3.1	Map
+4	Specifying a function
+4.1	By listing function values
+4.2	By a formula
+4.3	Inverse and implicit functions
+4.4	Using differential calculus
+4.5	By recurrence
+5	Representing a function
+5.1	Graphs and plots
+5.2	Tables
+5.3	Bar chart
+6	General properties
+6.1	Standard functions
+6.2	Function composition
+6.3	Image and preimage
+6.4	Injective, surjective and bijective functions
+6.5	Restriction and extension
+7	Multivariate function
+8	In calculus
+8.1	Real function
+8.2	Vector-valued function
+9	Function space
+10	Multi-valued functions
+11	In the foundations of mathematics and set theory
+12	In computer science
+13	See also
+13.1	Subpages
+13.2	Generalizations
+13.3	Related topics
+14	Notes
+15	References
+16	Sources
+17	Further reading
+18	External links
+Definition
+
+Diagram of a function, with domain X={1, 2, 3} and codomain Y={A, B, C, D}, which is defined by the set of ordered pairs {(1,D), (2,C), (3,C)}. The image/range is the set {C,D}.
+
+This diagram, representing the set of pairs {(1,D), (2,B), (2,C)}, does not define a function. One reason is that 2 is the first element in more than one ordered pair, (2, B) and (2, C), of this set. Two other reasons, also sufficient by themselves, is that neither 3 nor 4 are first elements (input) of any ordered pair therein.
+Intuitively, a function is a process that associates to each element of a set X a single element of a set Y.
+
+Formally, a function f from a set X to a set Y is defined by a set G of ordered pairs (x, y) such that x ∈ X, y ∈ Y, and every element of X is the first component of exactly one ordered pair in G.[3][note 3] In other words, for every x in X, there is exactly one element y such that the ordered pair (x, y) belongs to the set of pairs defining the function f. The set G is called the graph of the function. Formally speaking, it may be identified with the function, but this hides the usual interpretation of a function as a process. Therefore, in common usage, the function is generally distinguished from its graph. Functions are also called maps or mappings, though some authors make some distinction between "maps" and "functions" (see section #Map).
+
+In the definition of function, X and Y are respectively called the domain and the codomain of the function f. If (x, y) belongs to the set defining f, then y is the image of x under f, or the value of f applied to the argument x. Especially in the context of numbers, one says also that y is the value of f for the value x of its variable, or, still shorter, y is the value of f of x, denoted as y = f(x).
+
+Two functions f and g are equal if their domain and codomain sets are the same and their output values agree on the whole domain. Formally, f = g if f(x) = g(x) for all x ∈ X, where f:X → Y and g:X → Y.[4][5][note 4]
+
+The domain and codomain are not always explicitly given when a function is defined, and, without some (possibly difficult) computation, one knows only that the domain is contained in a larger set. Typically, this occurs in mathematical analysis, where "a function from X to Y " often refers to a function that may have a proper subset of X as domain. For example, a "function from the reals to the reals" may refer to a real-valued function of a real variable, and this phrase does not mean that the domain of the function is the whole set of the real numbers, but only that the domain is a set of real numbers that contains a non-empty open interval; such a function is then called a partial function. For example, if f is a function that has the real numbers as domain and codomain, then a function mapping the value x to the value {\displaystyle g(x)={\tfrac {1}{f(x)}}}{\displaystyle g(x)={\tfrac {1}{f(x)}}} is a function g from the reals to the reals, whose domain is the set of the reals x, such that f(x) ≠ 0.
+
+The range of a function is the set of the images of all elements in the domain. However, range is sometimes used as a synonym of codomain, generally in old textbooks.[citation needed]
+
+Relational approach
+Any subset of the Cartesian product of two sets {\displaystyle X}X and {\displaystyle Y}Y defines a binary relation {\displaystyle R\subseteq X\times Y}{\displaystyle R\subseteq X\times Y} between these two sets. It is immediate that an arbitrary relation may contain pairs that violate the necessary conditions for a function, given above.
+
+A univalent or functional relation is a relation such that
+
+{\displaystyle (x,y)\in R\;\land \;(x,z)\in R\implies y=z}{\displaystyle (x,y)\in R\;\land \;(x,z)\in R\implies y=z}
+for all {\displaystyle x}x in {\displaystyle X}X and {\displaystyle y,z}y,z in {\displaystyle Y}Y. Univalent relations may be identified with functions with codomain {\displaystyle Y,}Y, whose domain is a subset of X.
+
+A total relation is a relation such that
+
+{\displaystyle \forall x\in X\;\exists y\in Y:(x,y)\in R.}{\displaystyle \forall x\in X\;\exists y\in Y:(x,y)\in R.}
+Formally, functions are identified as relations that are both univalent and total. Univalent relations that are not total are called partial functions.
+
+Various properties of functions and function composition may be reformulated in the language of relations. For example, a function is injective if the converse relation {\displaystyle R^{\text{T}}\subseteq Y\times X}{\displaystyle R^{\text{T}}\subseteq Y\times X} is univalent, where the converse relation is defined as {\displaystyle R^{\text{T}}=\{(y,x)\mid (x,y)\in R\}.}{\displaystyle R^{\text{T}}=\{(y,x)\mid (x,y)\in R\}.}[6]
+
+As an element of a Cartesian product over a domain
+The set of all functions from some given domain to a codomain is sometimes identified with the Cartesian product of copies of the codomain, indexed by the domain. Namely, given sets {\displaystyle X}X and {\displaystyle Y,}Y, any function {\displaystyle f\colon X\to Y}f\colon X\to Y is an element of the Cartesian product of copies of {\displaystyle Y}Ys over the index set {\displaystyle X}X
+
+{\displaystyle f\in \prod _{X}Y=Y^{X}.}{\displaystyle f\in \prod _{X}Y=Y^{X}.}
+Viewing {\displaystyle f}f as tuple with coordinates, then for each {\displaystyle x\in X}x\in X, the {\displaystyle x}xth coordinate of this tuple is the value {\displaystyle f(x)\in Y.}{\displaystyle f(x)\in Y.} This reflects the intuition that for each {\displaystyle x\in X,}{\displaystyle x\in X,} the function picks some element {\displaystyle y\in Y,}{\displaystyle y\in Y,} namely, {\displaystyle f(x).}f(x). (This point of view is used for example in the discussion of a choice function.)
+
+Infinite Cartesian products are often simply "defined" as sets of functions.[7]
+
+Notation
+There are various standard ways for denoting functions. The most commonly used notation is functional notation, which defines the function using an equation that gives the names of the function and the argument explicitly. This gives rise to a subtle point, often glossed over in elementary treatments of functions: functions are distinct from their values. Thus, a function f should be distinguished from its value f(x0) at the value x0 in its domain. To some extent, even working mathematicians will conflate the two in informal settings for convenience, and to avoid appearing pedantic. However, strictly speaking, it is an abuse of notation to write "let {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }{\displaystyle f\colon \mathbb {R} \to \mathbb {R} } be the function f(x) = x2 ", since f(x) and x2 should both be understood as the value of f at x, rather than the function itself. Instead, it is correct, though long-winded, to write "let {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }{\displaystyle f\colon \mathbb {R} \to \mathbb {R} } be the function defined by the equation f(x) = x2, valid for all real values of x ". A compact phrasing is "let {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }{\displaystyle f\colon \mathbb {R} \to \mathbb {R} } with f(x) = x2," where the redundant "be the function" is omitted and, by convention, "for all {\displaystyle x}x in the domain of {\displaystyle f}f" is understood.
+
+This distinction in language and notation becomes important in cases where functions themselves serve as inputs for other functions. (A function taking another function as an input is termed a functional.) Other approaches to denoting functions, detailed below, avoid this problem but are less commonly used.
+
+Functional notation
+As first used by Leonhard Euler in 1734,[8] functions are denoted by a symbol consisting generally of a single letter in italic font, most often the lower-case letters f, g, h. Some widely used functions are represented by a symbol consisting of several letters (usually two or three, generally an abbreviation of their name). By convention, in this case, a roman type is used, such as "sin" for the sine function, in contrast to italic font for single-letter symbols.
+
+The notation (read: "y equals f of x")
+
+{\displaystyle y=f(x)}y=f(x)
+means that the pair (x, y) belongs to the set of pairs defining the function f. If X is the domain of f, the set of pairs defining the function is thus, using set-builder notation,
+
+{\displaystyle \{(x,f(x)):x\in X\}.}{\displaystyle \{(x,f(x)):x\in X\}.}
+Often, a definition of the function is given by what f does to the explicit argument x. For example, a function f can be defined by the equation
+
+{\displaystyle f(x)=\sin(x^{2}+1)}{\displaystyle f(x)=\sin(x^{2}+1)}
+for all real numbers x. In this example, f can be thought of as the composite of several simpler functions: squaring, adding 1, and taking the sine. However, only the sine function has a common explicit symbol (sin), while the combination of squaring and then adding 1 is described by the polynomial expression {\displaystyle x^{2}+1}x^{2}+1. In order to explicitly reference functions such as squaring or adding 1 without introducing new function names (e.g., by defining function g and h by {\displaystyle g(x)=x^{2}}g(x)=x^{2} and {\displaystyle h(x)=x+1}{\displaystyle h(x)=x+1}), one of the methods below (arrow notation or dot notation) could be used.
+
+Sometimes the parentheses of functional notation are omitted when the symbol denoting the function consists of several characters and no ambiguity may arise. For example, {\displaystyle \sin x}\sin x can be written instead of {\displaystyle \sin(x).}{\displaystyle \sin(x).}
+
+Arrow notation
+For explicitly expressing domain X and the codomain Y of a function f, the arrow notation is often used (read: "the function f from X to Y" or "the function f mapping elements of X to elements of Y"):
+
+{\displaystyle f\colon X\to Y}f\colon X\to Y
+or
+
+{\displaystyle X~{\stackrel {f}{\to }}~Y.}{\displaystyle X~{\stackrel {f}{\to }}~Y.}
+This is often used in relation with the arrow notation for elements (read: "f maps x to f (x)"), often stacked immediately below the arrow notation giving the function symbol, domain, and codomain:
+
+{\displaystyle x\mapsto f(x).}{\displaystyle x\mapsto f(x).}
+For example, if a multiplication is defined on a set X, then the square function {\displaystyle \operatorname {sqr} }{\displaystyle \operatorname {sqr} } on X is unambiguously defined by (read: "the function {\displaystyle \operatorname {sqr} }{\displaystyle \operatorname {sqr} } from X to X that maps x to x ⋅ x")
+
+{\displaystyle {\begin{aligned}\operatorname {sqr} \colon X&\to X\\x&\mapsto x\cdot x,\end{aligned}}}{\displaystyle {\begin{aligned}\operatorname {sqr} \colon X&\to X\\x&\mapsto x\cdot x,\end{aligned}}}
+the latter line being more commonly written
+
+{\displaystyle x\mapsto x^{2}.}{\displaystyle x\mapsto x^{2}.}
+Often, the expression giving the function symbol, domain and codomain is omitted. Thus, the arrow notation is useful for avoiding introducing a symbol for a function that is defined, as it is often the case, by a formula expressing the value of the function in terms of its argument. As a common application of the arrow notation, suppose {\displaystyle f\colon X\times X\to Y;\;(x,t)\mapsto f(x,t)}{\displaystyle f\colon X\times X\to Y;\;(x,t)\mapsto f(x,t)} is a two-argument function, and we want to refer to a partially applied function {\displaystyle X\to Y}X\to Y produced by fixing the second argument to the value t0 without introducing a new function name. The map in question could be denoted {\displaystyle x\mapsto f(x,t_{0})}{\displaystyle x\mapsto f(x,t_{0})} using the arrow notation for elements. The expression {\displaystyle x\mapsto f(x,t_{0})}{\displaystyle x\mapsto f(x,t_{0})} (read: "the map taking x to {\displaystyle f(x,t_{0})}{\displaystyle f(x,t_{0})}") represents this new function with just one argument, whereas the expression {\displaystyle f(x_{0},t_{0})}{\displaystyle f(x_{0},t_{0})} refers to the value of the function f at the point {\displaystyle (x_{0},t_{0})}{\displaystyle (x_{0},t_{0})}.
+
+Index notation
+Index notation is often used instead of functional notation. That is, instead of writing f (x), one writes {\displaystyle f_{x}.}{\displaystyle f_{x}.}
+
+This is typically the case for functions whose domain is the set of the natural numbers. Such a function is called a sequence, and, in this case the element {\displaystyle f_{n}}f_{n} is called the nth element of sequence.
+
+The index notation is also often used for distinguishing some variables called parameters from the "true variables". In fact, parameters are specific variables that are considered as being fixed during the study of a problem. For example, the map {\displaystyle x\mapsto f(x,t)}{\displaystyle x\mapsto f(x,t)} (see above) would be denoted {\displaystyle f_{t}}f_{t} using index notation, if we define the collection of maps {\displaystyle f_{t}}f_{t} by the formula {\displaystyle f_{t}(x)=f(x,t)}{\displaystyle f_{t}(x)=f(x,t)} for all {\displaystyle x,t\in X}{\displaystyle x,t\in X}.
+
+Dot notation
+In the notation {\displaystyle x\mapsto f(x),}{\displaystyle x\mapsto f(x),} the symbol x does not represent any value, it is simply a placeholder meaning that, if x is replaced by any value on the left of the arrow, it should be replaced by the same value on the right of the arrow. Therefore, x may be replaced by any symbol, often an interpunct " ⋅ ". This may be useful for distinguishing the function f (⋅) from its value f (x) at x.
+
+For example, {\displaystyle a(\cdot )^{2}}{\displaystyle a(\cdot )^{2}} may stand for the function {\displaystyle x\mapsto ax^{2}}{\displaystyle x\mapsto ax^{2}}, and {\displaystyle \textstyle \int _{a}^{\,(\cdot )}f(u)\,du}{\displaystyle \textstyle \int _{a}^{\,(\cdot )}f(u)\,du} may stand for a function defined by an integral with variable upper bound: {\displaystyle \textstyle x\mapsto \int _{a}^{x}f(u)\,du}{\displaystyle \textstyle x\mapsto \int _{a}^{x}f(u)\,du}.
+
+Specialized notations
+There are other, specialized notations for functions in sub-disciplines of mathematics. For example, in linear algebra and functional analysis, linear forms and the vectors they act upon are denoted using a dual pair to show the underlying duality. This is similar to the use of bra–ket notation in quantum mechanics. In logic and the theory of computation, the function notation of lambda calculus is used to explicitly express the basic notions of function abstraction and application. In category theory and homological algebra, networks of functions are described in terms of how they and their compositions commute with each other using commutative diagrams that extend and generalize the arrow notation for functions described above.
+
+Other terms
+Term	Distinction from "function"
+Map/Mapping	None; the terms are synonymous.[9]
+A map can have any set as its codomain, while, in some contexts, typically in older books, the codomain of a function is specifically the set of real or complex numbers.[10]
+Alternatively, a map is associated with a special structure (e.g. by explicitly specifying a structured codomain in its definition). For example, a linear map.[11]
+Homomorphism	A function between two structures of the same type that preserves the operations of the structure (e.g. a group homomorphism).[12][13]
+Morphism	A generalisation of homomorphisms to any category, even when the objects of the category are not sets (for example, a group defines a category with only one object, which has the elements of the group as morphisms; see Category (mathematics) § Examples for this example and other similar ones).[14][12][15]
+Map
+A function is often also called a map or a mapping, but some authors make a distinction between the term "map" and "function". For example, the term "map" is often reserved for a "function" with some sort of special structure (e.g. maps of manifolds). In particular map is often used in place of homomorphism for the sake of succinctness (e.g., linear map or map from G to H instead of group homomorphism from G to H). Some authors[16] reserve the word mapping for the case where the structure of the codomain belongs explicitly to the definition of the function.
+
+Some authors, such as Serge Lang,[17] use "function" only to refer to maps for which the codomain is a subset of the real or complex numbers, and use the term mapping for more general functions.
+
+In the theory of dynamical systems, a map denotes an evolution function used to create discrete dynamical systems. See also Poincaré map.
+
+Whichever definition of map is used, related terms like domain, codomain, injective, continuous have the same meaning as for a function.
+
+Specifying a function
+Given a function {\displaystyle f}f, by definition, to each element {\displaystyle x}x of the domain of the function {\displaystyle f}f, there is a unique element associated to it, the value {\displaystyle f(x)}f(x) of {\displaystyle f}f at {\displaystyle x}x. There are several ways to specify or describe how {\displaystyle x}x is related to {\displaystyle f(x)}f(x), both explicitly and implicitly. Sometimes, a theorem or an axiom asserts the existence of a function having some properties, without describing it more precisely. Often, the specification or description is referred to as the definition of the function {\displaystyle f}f.
+
+By listing function values
+On a finite set, a function may be defined by listing the elements of the codomain that are associated to the elements of the domain. E.g., if {\displaystyle A=\{1,2,3\}}{\displaystyle A=\{1,2,3\}}, then one can define a function {\displaystyle f\colon A\to \mathbb {R} }{\displaystyle f\colon A\to \mathbb {R} } by {\displaystyle f(1)=2,f(2)=3,f(3)=4.}{\displaystyle f(1)=2,f(2)=3,f(3)=4.}
+
+By a formula
+Functions are often defined by a formula that describes a combination of arithmetic operations and previously defined functions; such a formula allows computing the value of the function from the value of any element of the domain. For example, in the above example, {\displaystyle f}f can be defined by the formula {\displaystyle f(n)=n+1}{\displaystyle f(n)=n+1}, for {\displaystyle n\in \{1,2,3\}}{\displaystyle n\in \{1,2,3\}}.
+
+When a function is defined this way, the determination of its domain is sometimes difficult. If the formula that defines the function contains divisions, the values of the variable for which a denominator is zero must be excluded from the domain; thus, for a complicated function, the determination of the domain passes through the computation of the zeros of auxiliary functions. Similarly, if square roots occur in the definition of a function from {\displaystyle \mathbb {R} }\mathbb {R}  to {\displaystyle \mathbb {R} ,}{\displaystyle \mathbb {R} ,} the domain is included in the set of the values of the variable for which the arguments of the square roots are nonnegative.
+
+For example, {\displaystyle f(x)={\sqrt {1+x^{2}}}}{\displaystyle f(x)={\sqrt {1+x^{2}}}} defines a function {\displaystyle f\colon \mathbb {R} \to \mathbb {R} }f\colon \mathbb{R} \to \mathbb{R} whose domain is {\displaystyle \mathbb {R} ,}{\displaystyle \mathbb {R} ,} because {\displaystyle 1+x^{2}}{\displaystyle 1+x^{2}} is always positive if x is a real number. On the other hand, {\displaystyle f(x)={\sqrt {1-x^{2}}}}f(x)=\sqrt{1-x^2} defines a function from the reals to the reals whose domain is reduced to the interval [–1, 1]. (In old texts, such a domain was called the domain of definition of the function.)
+
+Functions are often classified by the nature of formulas that can that define them:
+
+A quadratic function is a function that may be written {\displaystyle f(x)=ax^{2}+bx+c,}{\displaystyle f(x)=ax^{2}+bx+c,} where a, b, c are constants.
+More generally, a polynomial function is a function that can be defined by a formula involving only additions, subtractions, multiplications, and exponentiation to nonnegative integers. For example, {\displaystyle f(x)=x^{3}-3x-1,}{\displaystyle f(x)=x^{3}-3x-1,} and {\displaystyle f(x)=(x-1)(x^{3}+1)+2x^{2}-1.}{\displaystyle f(x)=(x-1)(x^{3}+1)+2x^{2}-1.}
+A rational function is the same, with divisions also allowed, such as {\displaystyle f(x)={\frac {x-1}{x+1}},}{\displaystyle f(x)={\frac {x-1}{x+1}},} and {\displaystyle f(x)={\frac {1}{x+1}}+{\frac {3}{x}}-{\frac {2}{x-1}}.}{\displaystyle f(x)={\frac {1}{x+1}}+{\frac {3}{x}}-{\frac {2}{x-1}}.}
+An algebraic function is the same, with nth roots and roots of polynomials also allowed.
+An elementary function[note 5] is the same, with logarithms and exponential functions allowed.
+Inverse and implicit functions
+A function {\displaystyle f\colon X\to Y,}{\displaystyle f\colon X\to Y,} with domain X and codomain Y, is bijective, if for every y in Y, there is one and only one element x in X such that y = f(x). In this case, the inverse function of f is the function {\displaystyle f^{-1}\colon Y\to X}{\displaystyle f^{-1}\colon Y\to X} that maps {\displaystyle y\in Y}y\in Y to the element {\displaystyle x\in X}x\in X such that y = f(x). For example, the natural logarithm is a bijective function from the positive real numbers to the real numbers. It has these an inverse, called the exponential function that maps the real numbers onto the positive numbers.
+
+If a function {\displaystyle f\colon X\to Y}f\colon X\to Y is not bijective, it may occur that one can select subsets {\displaystyle E\subseteq X}{\displaystyle E\subseteq X} and {\displaystyle F\subseteq Y}{\displaystyle F\subseteq Y} such that the restriction of f to E is a bijection from E to F, and has thus an inverse. The inverse trigonometric functions are defined this way. For example, the cosine function induces, by restriction, a bijection from the interval [0, π] onto the interval [–1, 1], and its inverse function, called arccosine, maps [–1, 1] onto [0, π]. The other inverse trigonometric functions are defined similarly.
+
+More generally, given a binary relation R between two sets X and Y, let E be a subset of X such that, for every {\displaystyle x\in E,}{\displaystyle x\in E,} there is some {\displaystyle y\in Y}y\in Y such that x R y. If one has a criterion allowing selecting such an y for every {\displaystyle x\in E,}{\displaystyle x\in E,} this defines a function {\displaystyle f\colon E\to Y,}{\displaystyle f\colon E\to Y,} called an implicit function, because it is implicitly defined by the relation R.
+
+For example, the equation of the unit circle {\displaystyle x^{2}+y^{2}=1}x^{2}+y^{2}=1 defines a relation on real numbers. If –1 < x < 1 there are two possible values of y, one positive and one negative. For x = ± 1, these two values become both equal to 0. Otherwise, there is no possible value of y. This means that the equation defines two implicit functions with domain [–1, 1] and respective codomains [0, +∞) and (–∞, 0].
+
+In this example, the equation can be solved in y, giving {\displaystyle y=\pm {\sqrt {1-x^{2}}},}{\displaystyle y=\pm {\sqrt {1-x^{2}}},} but, in more complicated examples, this is impossible. For example, the relation {\displaystyle y^{5}+x+1=0}{\displaystyle y^{5}+x+1=0} defines y as an implicit function of x, called the Bring radical, which has {\displaystyle \mathbb {R} }\mathbb {R}  as domain and range. The Bring radical cannot be expressed in terms of the four arithmetic operations and nth roots.
+
+The implicit function theorem provides mild differentiability conditions for existence and uniqueness of an implicit function in the neighborhood of a point.
+
+Using differential calculus
+Many functions can be defined as the antiderivative of another function. This is the case of the natural logarithm, which is the antiderivative of 1/x that is 0 for x = 1. Another common example is the error function.
+
+More generally, many functions, including most special functions, can be defined as solutions of differential equations. The simplest example is probably the exponential function, which can be defined as the unique function that is equal to its derivative and takes the value 1 for x = 0.
+
+Power series can be used to define functions on the domain in which they converge. For example, the exponential function is given by {\displaystyle e^{x}=\sum _{n=0}^{\infty }{x^{n} \over n!}}{\displaystyle e^{x}=\sum _{n=0}^{\infty }{x^{n} \over n!}}. However, as the coefficients of a series are quite arbitrary, a function that is the sum of a convergent series is generally defined otherwise, and the sequence of the coefficients is the result of some computation based on another definition. Then, the power series can be used to enlarge the domain of the function. Typically, if a function for a real variable is the sum of its Taylor series in some interval, this power series allows immediately enlarging the domain to a subset of the complex numbers, the disc of convergence of the series. Then analytic continuation allows enlarging further the domain for including almost the whole complex plane. This process is the method that is generally used for defining the logarithm, the exponential and the trigonometric functions of a complex number.
+
+By recurrence
+Main article: Recurrence relation
+Functions whose domain are the nonnegative integers, known as sequences, are often defined by recurrence relations.
+
+The factorial function on the nonnegative integers ({\displaystyle n\mapsto n!}{\displaystyle n\mapsto n!}) is a basic example, as it can be defined by the recurrence relation
+
+{\displaystyle n!=n(n-1)!\quad {\text{for}}\quad n>0,}{\displaystyle n!=n(n-1)!\quad {\text{for}}\quad n>0,}
+and the initial condition
+
+{\displaystyle 0!=1.}{\displaystyle 0!=1.}
+Representing a function
+A graph is commonly used to give an intuitive picture of a function. As an example of how a graph helps to understand a function, it is easy to see from its graph whether a function is increasing or decreasing. Some functions may also be represented by bar charts.
+
+Graphs and plots
+Main article: Graph of a function
+
+The function mapping each year to its US motor vehicle death count, shown as a line chart
+
+The same function, shown as a bar chart
+Given a function {\displaystyle f\colon X\to Y,}{\displaystyle f\colon X\to Y,} its graph is, formally, the set
+
+{\displaystyle G=\{(x,f(x)):x\in X\}.}{\displaystyle G=\{(x,f(x)):x\in X\}.}
+In the frequent case where X and Y are subsets of the real numbers (or may be identified with such subsets, e.g. intervals), an element {\displaystyle (x,y)\in G}{\displaystyle (x,y)\in G} may be identified with a point having coordinates x, y in a 2-dimensional coordinate system, e.g. the Cartesian plane. Parts of this may create a plot that represents (parts of) the function. The use of plots is so ubiquitous that they too are called the graph of the function. Graphic representations of functions are also possible in other coordinate systems. For example, the graph of the square function
+
+{\displaystyle x\mapsto x^{2},}{\displaystyle x\mapsto x^{2},}
+consisting of all points with coordinates {\displaystyle (x,x^{2})}{\displaystyle (x,x^{2})} for {\displaystyle x\in \mathbb {R} ,}{\displaystyle x\in \mathbb {R} ,} yields, when depicted in Cartesian coordinates, the well known parabola. If the same quadratic function {\displaystyle x\mapsto x^{2},}{\displaystyle x\mapsto x^{2},} with the same formal graph, consisting of pairs of numbers, is plotted instead in polar coordinates {\displaystyle (r,\theta )=(x,x^{2}),}{\displaystyle (r,\theta )=(x,x^{2}),} the plot obtained is Fermat's spiral.
+
+Tables
+Main article: Mathematical table
+A function can be represented as a table of values. If the domain of a function is finite, then the function can be completely specified in this way. For example, the multiplication function {\displaystyle f\colon \{1,\ldots ,5\}^{2}\to \mathbb {R} }{\displaystyle f\colon \{1,\ldots ,5\}^{2}\to \mathbb {R} } defined as {\displaystyle f(x,y)=xy}f(x,y)=xy can be represented by the familiar multiplication table
+
+y
+x
+1	2	3	4	5
+1	1	2	3	4	5
+2	2	4	6	8	10
+3	3	6	9	12	15
+4	4	8	12	16	20
+5	5	10	15	20	25
+On the other hand, if a function's domain is continuous, a table can give the values of the function at specific values of the domain. If an intermediate value is needed, interpolation can be used to estimate the value of the function. For example, a portion of a table for the sine function might be given as follows, with values rounded to 6 decimal places:
+
+x	sin x
+1.289	0.960557
+1.290	0.960835
+1.291	0.961112
+1.292	0.961387
+1.293	0.961662
+Before the advent of handheld calculators and personal computers, such tables were often compiled and published for functions such as logarithms and trigonometric functions.
+
+Bar chart
+Main article: Bar chart
+Bar charts are often used for representing functions whose domain is a finite set, the natural numbers, or the integers. In this case, an element x of the domain is represented by an interval of the x-axis, and the corresponding value of the function, f(x), is represented by a rectangle whose base is the interval corresponding to x and whose height is f(x) (possibly negative, in which case the bar extends below the x-axis).
+
+General properties
+This section describes general properties of functions, that are independent of specific properties of the domain and the codomain.
+
+Standard functions
+There are a number of standard functions that occur frequently:
+
+For every set X, there is a unique function, called the empty function from the empty set to X. The existence of the empty function from the empty set to itself is required for the category of sets to be a category – in a category, each object must have an "identity morphism", and the empty function serves as the identity for the empty set. The existence of a unique empty function from the empty set to every set A means that the empty set is an initial object in the category of sets. In terms of cardinal arithmetic, it means that k0 = 1 for every cardinal number k.
+For every set X and every singleton set {s}, there is a unique function from X to {s}, which maps every element of X to s. This is a surjection (see below) unless X is the empty set.
+Given a function {\displaystyle f\colon X\to Y,}{\displaystyle f\colon X\to Y,} the canonical surjection of f onto its image {\displaystyle f(X)=\{f(x)\mid x\in X\}}{\displaystyle f(X)=\{f(x)\mid x\in X\}} is the function from X to f(X) that maps x to f(x).
+For every subset A of a set X, the inclusion map of A into X is the injective (see below) function that maps every element of A to itself.
+The identity function on a set X, often denoted by idX, is the inclusion of X into itself.
+Function composition
+Main article: Function composition
+Given two functions {\displaystyle f\colon X\to Y}f\colon X\to Y and {\displaystyle g\colon Y\to Z}{\displaystyle g\colon Y\to Z} such that the domain of g is the codomain of f, their composition is the function {\displaystyle g\circ f\colon X\rightarrow Z}g\circ f\colon X\rightarrow Z defined by
+
+{\displaystyle (g\circ f)(x)=g(f(x)).}(g\circ f)(x)=g(f(x)).
+That is, the value of {\displaystyle g\circ f}g\circ f is obtained by first applying f to x to obtain y =f(x) and then applying g to the result y to obtain g(y) = g(f(x)). In the notation the function that is applied first is always written on the right.
+
+The composition {\displaystyle g\circ f}g\circ f is an operation on functions that is defined only if the codomain of the first function is the domain of the second one. Even when both {\displaystyle g\circ f}g\circ f and {\displaystyle f\circ g}f\circ g satisfy these conditions, the composition is not necessarily commutative, that is, the functions {\displaystyle g\circ f}g\circ f and {\displaystyle f\circ g}{\displaystyle f\circ g} need not be equal, but may deliver different values for the same argument. For example, let f(x) = x2 and g(x) = x + 1, then {\displaystyle g(f(x))=x^{2}+1}{\displaystyle g(f(x))=x^{2}+1} and {\displaystyle f(g(x))=(x+1)^{2}}{\displaystyle f(g(x))=(x+1)^{2}} agree just for {\displaystyle x=0.}x=0.
+
+The function composition is associative in the sense that, if one of {\displaystyle (h\circ g)\circ f}{\displaystyle (h\circ g)\circ f} and {\displaystyle h\circ (g\circ f)}{\displaystyle h\circ (g\circ f)} is defined, then the other is also defined, and they are equal. Thus, one writes
+
+{\displaystyle h\circ g\circ f=(h\circ g)\circ f=h\circ (g\circ f).}{\displaystyle h\circ g\circ f=(h\circ g)\circ f=h\circ (g\circ f).}
+The identity functions {\displaystyle \operatorname {id} _{X}}{\displaystyle \operatorname {id} _{X}} and {\displaystyle \operatorname {id} _{Y}}{\displaystyle \operatorname {id} _{Y}} are respectively a right identity and a left identity for functions from X to Y. That is, if f is a function with domain X, and codomain Y, one has {\displaystyle f\circ \operatorname {id} _{X}=\operatorname {id} _{Y}\circ f=f.}{\displaystyle f\circ \operatorname {id} _{X}=\operatorname {id} _{Y}\circ f=f.}
+
+
+A composite function g(f(x)) can be visualized as the combination of two "machines".
+
+ 
+
+A simple example of a function composition
+
+ 
+
+Another composition. In this example, (g ∘ f )(c) = #.
+
+Image and preimage
+Main article: Image (mathematics)
+Let {\displaystyle f\colon X\to Y.}{\displaystyle f\colon X\to Y.} The image by f of an element x of the domain X is f(x). If A is any subset of X, then the image of A by f, denoted f(A) is the subset of the codomain Y consisting of all images of elements of A, that is,
+
+{\displaystyle f(A)=\{f(x)\mid x\in A\}.}{\displaystyle f(A)=\{f(x)\mid x\in A\}.}
+The image of f is the image of the whole domain, that is f(X). It is also called the range of f, although the term may also refer to the codomain.[18]
+
+On the other hand, the inverse image, or preimage by f of a subset B of the codomain Y is the subset of the domain X consisting of all elements of X whose images belong to B. It is denoted by {\displaystyle f^{-1}(B).}{\displaystyle f^{-1}(B).} That is
+
+{\displaystyle f^{-1}(B)=\{x\in X\mid f(x)\in B\}.}{\displaystyle f^{-1}(B)=\{x\in X\mid f(x)\in B\}.}
+For example, the preimage of {4, 9} under the square function is the set {−3,−2,2,3}.
+
+By definition of a function, the image of an element x of the domain is always a single element of the codomain. However, the preimage of a single element y, denoted {\displaystyle f^{-1}(x),}{\displaystyle f^{-1}(x),} may be empty or contain any number of elements. For example, if f is the function from the integers to themselves that maps every integer to 0, then {\displaystyle f^{-1}(0)=\mathbb {Z} }{\displaystyle f^{-1}(0)=\mathbb {Z} }.
+
+If {\displaystyle f\colon X\to Y}f\colon X\to Y is a function, A and B are subsets of X, and C and D are subsets of Y, then one has the following properties:
+
+{\displaystyle A\subseteq B\Longrightarrow f(A)\subseteq f(B)}{\displaystyle A\subseteq B\Longrightarrow f(A)\subseteq f(B)}
+{\displaystyle C\subseteq D\Longrightarrow f^{-1}(C)\subseteq f^{-1}(D)}{\displaystyle C\subseteq D\Longrightarrow f^{-1}(C)\subseteq f^{-1}(D)}
+{\displaystyle A\subseteq f^{-1}(f(A))}{\displaystyle A\subseteq f^{-1}(f(A))}
+{\displaystyle C\supseteq f(f^{-1}(C))}{\displaystyle C\supseteq f(f^{-1}(C))}
+{\displaystyle f(f^{-1}(f(A)))=f(A)}{\displaystyle f(f^{-1}(f(A)))=f(A)}
+{\displaystyle f^{-1}(f(f^{-1}(C)))=f^{-1}(C)}{\displaystyle f^{-1}(f(f^{-1}(C)))=f^{-1}(C)}
+The preimage by f of an element y of the codomain is sometimes called, in some contexts, the fiber of y under f.
+
+If a function f has an inverse (see below), this inverse is denoted {\displaystyle f^{-1}.}{\displaystyle f^{-1}.} In this case {\displaystyle f^{-1}(C)}{\displaystyle f^{-1}(C)} may denote either the image by {\displaystyle f^{-1}}f^{-1} or the preimage by f of C. This is not a problem, as these sets are equal. The notation {\displaystyle f(A)}f(A) and {\displaystyle f^{-1}(C)}{\displaystyle f^{-1}(C)} may be ambiguous in the case of sets that contain some subsets as elements, such as {\displaystyle \{x,\{x\}\}.}{\displaystyle \{x,\{x\}\}.} In this case, some care may be needed, for example, by using square brackets {\displaystyle f[A],f^{-1}[C]}{\displaystyle f[A],f^{-1}[C]} for images and preimages of subsets, and ordinary parentheses for images and preimages of elements.
+
+Injective, surjective and bijective functions
+
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed.
+Find sources: "Function" mathematics – news · newspapers · books · scholar · JSTOR (August 2019) (Learn how and when to remove this template message)
+Let {\displaystyle f\colon X\to Y}f\colon X\to Y be a function.
+
+The function f is injective (or one-to-one, or is an injection) if f(a) ≠ f(b) for any two different elements a and b of X. Equivalently, f is injective if, for any {\displaystyle y\in Y,}{\displaystyle y\in Y,} the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) contains at most one element. An empty function is always injective. If X is not the empty set, and if, as usual, Zermelo–Fraenkel set theory is assumed, then f is injective if and only if there exists a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle g\circ f=\operatorname {id} _{X},}{\displaystyle g\circ f=\operatorname {id} _{X},} that is, if f has a left inverse. If f is injective, for defining g, one chooses an element {\displaystyle x_{0}}x_{0} in X (which exists as X is supposed to be nonempty),[note 6] and one defines g by {\displaystyle g(y)=x}{\displaystyle g(y)=x} if {\displaystyle y=f(x),}{\displaystyle y=f(x),} and {\displaystyle g(y)=x_{0}}{\displaystyle g(y)=x_{0}}, if {\displaystyle y\not \in f(X).}{\displaystyle y\not \in f(X).}
+
+The function f is surjective (or onto, or is a surjection) if the range equals the codomain, that is, if f(X) = Y. In other words, the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) of every {\displaystyle y\in Y}y\in Y is nonempty. If, as usual, the axiom of choice is assumed, then f is surjective if and only if there exists a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle f\circ g=\operatorname {id} _{Y},}{\displaystyle f\circ g=\operatorname {id} _{Y},} that is, if f has a right inverse. The axiom of choice is needed, because, if f is surjective, one defines g by {\displaystyle g(y)=x,}{\displaystyle g(y)=x,} where {\displaystyle x}x is an arbitrarily chosen element of {\displaystyle f^{-1}(y).}{\displaystyle f^{-1}(y).}
+
+The function f is bijective (or is bijection or a one-to-one correspondence) if it is both injective and surjective. That is f is bijective if, for any {\displaystyle y\in Y,}{\displaystyle y\in Y,} the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) contains exactly one element. The function f is bijective if and only if it admits an inverse function, that is a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle g\circ f=\operatorname {id} _{X},}{\displaystyle g\circ f=\operatorname {id} _{X},} and {\displaystyle f\circ g=\operatorname {id} _{Y}.}{\displaystyle f\circ g=\operatorname {id} _{Y}.} (Contrarily to the case of surjections, this does not require the axiom of choice.)
+
+Every function {\displaystyle f\colon X\to Y}f\colon X\to Y may be factorized as the composition i ∘ s of a surjection followed by an injection, where s is the canonical surjection of X onto f(X), and i is the canonical injection of f(X) into Y. This is the canonical factorization of f.
+
+"One-to-one" and "onto" are terms that were more common in the older English language literature; "injective", "surjective", and "bijective" were originally coined as French words in the second quarter of the 20th century by the Bourbaki group and imported into English. As a word of caution, "a one-to-one function" is one that is injective, while a "one-to-one correspondence" refers to a bijective function. Also, the statement "f maps X onto Y" differs from "f maps X into B" in that the former implies that f is surjective, while the latter makes no assertion about the nature of f the mapping. In a complicated reasoning, the one letter difference can easily be missed. Due to the confusing nature of this older terminology, these terms have declined in popularity relative to the Bourbakian terms, which have also the advantage to be more symmetrical.
+
+Restriction and extension
+Main article: Restriction (mathematics)
+If {\displaystyle f\colon X\to Y}f\colon X\to Y is a function and S is a subset of X, then the restriction of {\displaystyle f}f to S, denoted {\displaystyle f|_{S}}{\displaystyle f|_{S}}, is the function from S to Y defined by
+
+{\displaystyle f|_{S}(x)=f(x)}{\displaystyle f|_{S}(x)=f(x)}
+for all x in S. Restrictions can be used to define partial inverse functions: if there is a subset S of the domain of a function {\displaystyle f}f such that {\displaystyle f|_{S}}{\displaystyle f|_{S}} is injective, then the canonical surjection of {\displaystyle f|_{S}}{\displaystyle f|_{S}} onto its image {\displaystyle f|_{S}(S)=f(S)}{\displaystyle f|_{S}(S)=f(S)} is a bijection, and thus has an inverse function from {\displaystyle f(S)}f(S) to S. One application is the definition of inverse trigonometric functions. For example, the cosine function is injective when restricted to the interval [0, π]. The image of this restriction is the interval [–1, 1], and thus the restriction has an inverse function from [–1, 1] to [0, π], which is called arccosine and is denoted arccos.
+
+Function restriction may also be used for "gluing" functions together. Let {\displaystyle \textstyle X=\bigcup _{i\in I}U_{i}}{\displaystyle \textstyle X=\bigcup _{i\in I}U_{i}} be the decomposition of X as a union of subsets, and suppose that a function {\displaystyle f_{i}\colon U_{i}\to Y}{\displaystyle f_{i}\colon U_{i}\to Y} is defined on each {\displaystyle U_{i}}U_{i} such that for each pair {\displaystyle i,j}i,j of indices, the restrictions of {\displaystyle f_{i}}f_{i} and {\displaystyle f_{j}}f_{j} to {\displaystyle U_{i}\cap U_{j}}{\displaystyle U_{i}\cap U_{j}} are equal. Then this defines a unique function {\displaystyle f\colon X\to Y}f\colon X\to Y such that {\displaystyle f|_{U_{i}}=f_{i}}{\displaystyle f|_{U_{i}}=f_{i}} for all i. This is the way that functions on manifolds are defined.
+
+An extension of a function f is a function g such that f is a restriction of g. A typical use of this concept is the process of analytic continuation, that allows extending functions whose domain is a small part of the complex plane to functions whose domain is almost the whole complex plane.
+
+Here is another classical example of a function extension that is encountered when studying homographies of the real line. A homography is a function {\displaystyle h(x)={\frac {ax+b}{cx+d}}}{\displaystyle h(x)={\frac {ax+b}{cx+d}}} such that ad – bc ≠ 0. Its domain is the set of all real numbers different from {\displaystyle -d/c,}{\displaystyle -d/c,} and its image is the set of all real numbers different from {\displaystyle a/c.}{\displaystyle a/c.} If one extends the real line to the projectively extended real line by including ∞, one may extend h to a bijection from the extended real line to itself by setting {\displaystyle h(\infty )=a/c}{\displaystyle h(\infty )=a/c} and {\displaystyle h(-d/c)=\infty }{\displaystyle h(-d/c)=\infty }.
+
+Multivariate function 
+
+A binary operation is a typical example of a bivariate, function which assigns to each pair {\displaystyle (x,y)}(x,y) the result {\displaystyle x\circ y}{\displaystyle x\circ y}.
+A multivariate function, or function of several variables is a function that depends on several arguments. Such functions are commonly encountered. For example, the position of a car on a road is a function of the time and its speed.
+
+More formally, a function of n variables is a function whose domain is a set of n-tuples. For example, multiplication of integers is a function of two variables, or bivariate function, whose domain is the set of all pairs (2-tuples) of integers, and whose codomain is the set of integers. The same is true for every binary operation. More generally, every mathematical operation is defined as a multivariate function.
+
+The Cartesian product {\displaystyle X_{1}\times \cdots \times X_{n}}{\displaystyle X_{1}\times \cdots \times X_{n}} of n sets {\displaystyle X_{1},\ldots ,X_{n}}X_1, \ldots, X_n is the set of all n-tuples {\displaystyle (x_{1},\ldots ,x_{n})}(x_1, \ldots, x_n) such that {\displaystyle x_{i}\in X_{i}}{\displaystyle x_{i}\in X_{i}} for every i with {\displaystyle 1\leq i\leq n}1\leq i\leq n. Therefore, a function of n variables is a function
+
+{\displaystyle f\colon U\to Y,}{\displaystyle f\colon U\to Y,}
+where the domain U has the form
+
+{\displaystyle U\subseteq X_{1}\times \cdots \times X_{n}.}{\displaystyle U\subseteq X_{1}\times \cdots \times X_{n}.}
+When using function notation, one usually omits the parentheses surrounding tuples, writing {\displaystyle f(x_{1},x_{2})}f(x_1,x_2) instead of {\displaystyle f((x_{1},x_{2})).}{\displaystyle f((x_{1},x_{2})).}
+
+In the case where all the {\displaystyle X_{i}}X_{i} are equal to the set {\displaystyle \mathbb {R} }\mathbb {R}  of real numbers, one has a function of several real variables. If the {\displaystyle X_{i}}X_{i} are equal to the set {\displaystyle \mathbb {C} }\mathbb {C}  of complex numbers, one has a function of several complex variables.
+
+It is common to also consider functions whose codomain is a product of sets. For example, Euclidean division maps every pair (a, b) of integers with b ≠ 0 to a pair of integers called the quotient and the remainder:
+
+{\displaystyle {\begin{aligned}{\text{Euclidean division}}\colon \quad \mathbb {Z} \times (\mathbb {Z} \setminus \{0\})&\to \mathbb {Z} \times \mathbb {Z} \\(a,b)&\mapsto (\operatorname {quotient} (a,b),\operatorname {remainder} (a,b)).\end{aligned}}}{\displaystyle {\begin{aligned}{\text{Euclidean division}}\colon \quad \mathbb {Z} \times (\mathbb {Z} \setminus \{0\})&\to \mathbb {Z} \times \mathbb {Z} \\(a,b)&\mapsto (\operatorname {quotient} (a,b),\operatorname {remainder} (a,b)).\end{aligned}}}
+The codomain may also be a vector space. In this case, one talks of a vector-valued function. If the domain is contained in a Euclidean space, or more generally a manifold, a vector-valued function is often called a vector field.
+
+In calculus
+The idea of function, starting in the 17th century, was fundamental to the new infinitesimal calculus (see History of the function concept). At that time, only real-valued functions of a real variable were considered, and all functions were assumed to be smooth. But the definition was soon extended to functions of several variables and to functions of a complex variable. In the second half of the 19th century, the mathematically rigorous definition of a function was introduced, and functions with arbitrary domains and codomains were defined.
+
+Functions are now used throughout all areas of mathematics. In introductory calculus, when the word function is used without qualification, it means a real-valued function of a single real variable. The more general definition of a function is usually introduced to second or third year college students with STEM majors, and in their senior year they are introduced to calculus in a larger, more rigorous setting in courses such as real analysis and complex analysis.
+
+Real function
+See also: Real analysis
+
+Graph of a linear function
+
+Graph of a polynomial function, here a quadratic function.
+
+Graph of two trigonometric functions: sine and cosine.
+A real function is a real-valued function of a real variable, that is, a function whose codomain is the field of real numbers and whose domain is a set of real numbers that contains an interval. In this section, these functions are simply called functions.
+
+The functions that are most commonly considered in mathematics and its applications have some regularity, that is they are continuous, differentiable, and even analytic. This regularity insures that these functions can be visualized by their graphs. In this section, all functions are differentiable in some interval.
+
+Functions enjoy pointwise operations, that is, if f and g are functions, their sum, difference and product are functions defined by
+
+{\displaystyle {\begin{aligned}(f+g)(x)&=f(x)+g(x)\\(f-g)(x)&=f(x)-g(x)\\(f\cdot g)(x)&=f(x)\cdot g(x)\\\end{aligned}}.}{\displaystyle {\begin{aligned}(f+g)(x)&=f(x)+g(x)\\(f-g)(x)&=f(x)-g(x)\\(f\cdot g)(x)&=f(x)\cdot g(x)\\\end{aligned}}.}
+The domains of the resulting functions are the intersection of the domains of f and g. The quotient of two functions is defined similarly by
+
+{\displaystyle {\frac {f}{g}}(x)={\frac {f(x)}{g(x)}},}{\displaystyle {\frac {f}{g}}(x)={\frac {f(x)}{g(x)}},}
+but the domain of the resulting function is obtained by removing the zeros of g from the intersection of the domains of f and g.
+
+The polynomial functions are defined by polynomials, and their domain is the whole set of real numbers. They include constant functions, linear functions and quadratic functions. Rational functions are quotients of two polynomial functions, and their domain is the real numbers with a finite number of them removed to avoid division by zero. The simplest rational function is the function {\displaystyle x\mapsto {\frac {1}{x}},}{\displaystyle x\mapsto {\frac {1}{x}},} whose graph is a hyperbola, and whose domain is the whole real line except for 0.
+
+The derivative of a real differentiable function is a real function. An antiderivative of a continuous real function is a real function that is differentiable in any open interval in which the original function is continuous. For example, the function {\displaystyle x\mapsto {\frac {1}{x}}}{\displaystyle x\mapsto {\frac {1}{x}}} is continuous, and even differentiable, on the positive real numbers. Thus one antiderivative, which takes the value zero for x = 1, is a differentiable function called the natural logarithm.
+
+A real function f is monotonic in an interval if the sign of {\displaystyle {\frac {f(x)-f(y)}{x-y}}}{\displaystyle {\frac {f(x)-f(y)}{x-y}}} does not depend of the choice of x and y in the interval. If the function is differentiable in the interval, it is monotonic if the sign of the derivative is constant in the interval. If a real function f is monotonic in an interval I, it has an inverse function, which is a real function with domain f(I) and image I. This is how inverse trigonometric functions are defined in terms of trigonometric functions, where the trigonometric functions are monotonic. Another example: the natural logarithm is monotonic on the positive real numbers, and its image is the whole real line; therefore it has an inverse function that is a bijection between the real numbers and the positive real numbers. This inverse is the exponential function.
+
+Many other real functions are defined either by the implicit function theorem (the inverse function is a particular instance) or as solutions of differential equations. For example, the sine and the cosine functions are the solutions of the linear differential equation
+
+{\displaystyle y''+y=0}{\displaystyle y''+y=0}
+such that
+
+{\displaystyle \sin 0=0,\quad \cos 0=1,\quad {\frac {\partial \sin x}{\partial x}}(0)=1,\quad {\frac {\partial \cos x}{\partial x}}(0)=0.}{\displaystyle \sin 0=0,\quad \cos 0=1,\quad {\frac {\partial \sin x}{\partial x}}(0)=1,\quad {\frac {\partial \cos x}{\partial x}}(0)=0.}
+Vector-valued function
+Main articles: Vector-valued function and Vector field
+When the elements of the codomain of a function are vectors, the function is said to be a vector-valued function. These functions are particularly useful in applications, for example modeling physical properties. For example, the function that associates to each point of a fluid its velocity vector is a vector-valued function.
+
+Some vector-valued functions are defined on a subset of {\displaystyle \mathbb {R} ^{n}}\mathbb {R} ^{n} or other spaces that share geometric or topological properties of {\displaystyle \mathbb {R} ^{n}}\mathbb {R} ^{n}, such as manifolds. These vector-valued functions are given the name vector fields.
+
+Function space
+Main articles: Function space and Functional analysis
+In mathematical analysis, and more specifically in functional analysis, a function space is a set of scalar-valued or vector-valued functions, which share a specific property and form a topological vector space. For example, the real smooth functions with a compact support (that is, they are zero outside some compact set) form a function space that is at the basis of the theory of distributions.
+
+Function spaces play a fundamental role in advanced mathematical analysis, by allowing the use of their algebraic and topological properties for studying properties of functions. For example, all theorems of existence and uniqueness of solutions of ordinary or partial differential equations result of the study of function spaces.
+
+Multi-valued functions
+Main article: Multi-valued function
+
+Together, the two square roots of all nonnegative real numbers form a single smooth curve.
+Xto3minus3x.svg
+Several methods for specifying functions of real or complex variables start from a local definition of the function at a point or on a neighbourhood of a point, and then extend by continuity the function to a much larger domain. Frequently, for a starting point {\displaystyle x_{0},}x_0, there are several possible starting values for the function.
+
+For example, in defining the square root as the inverse function of the square function, for any positive real number {\displaystyle x_{0},}x_0, there are two choices for the value of the square root, one of which is positive and denoted {\displaystyle {\sqrt {x_{0}}},}{\displaystyle {\sqrt {x_{0}}},} and another which is negative and denoted {\displaystyle -{\sqrt {x_{0}}}.}{\displaystyle -{\sqrt {x_{0}}}.} These choices define two continuous functions, both having the nonnegative real numbers as a domain, and having either the nonnegative or the nonpositive real numbers as images. When looking at the graphs of these functions, one can see that, together, they form a single smooth curve. It is therefore often useful to consider these two square root functions as a single function that has two values for positive x, one value for 0 and no value for negative x.
+
+In the preceding example, one choice, the positive square root, is more natural than the other. This is not the case in general. For example, let consider the implicit function that maps y to a root x of {\displaystyle x^{3}-3x-y=0}{\displaystyle x^{3}-3x-y=0} (see the figure on the right). For y = 0 one may choose either {\displaystyle 0,{\sqrt {3}},{\text{ or }}-{\sqrt {3}}}{\displaystyle 0,{\sqrt {3}},{\text{ or }}-{\sqrt {3}}} for x. By the implicit function theorem, each choice defines a function; for the first one, the (maximal) domain is the interval [–2, 2] and the image is [–1, 1]; for the second one, the domain is [–2, ∞) and the image is [1, ∞); for the last one, the domain is (–∞, 2] and the image is (–∞, –1]. As the three graphs together form a smooth curve, and there is no reason for preferring one choice, these three functions are often considered as a single multi-valued function of y that has three values for –2 < y < 2, and only one value for y ≤ –2 and y ≥ –2.
+
+Usefulness of the concept of multi-valued functions is clearer when considering complex functions, typically analytic functions. The domain to which a complex function may be extended by analytic continuation generally consists of almost the whole complex plane. However, when extending the domain through two different paths, one often gets different values. For example, when extending the domain of the square root function, along a path of complex numbers with positive imaginary parts, one gets i for the square root of –1; while, when extending through complex numbers with negative imaginary parts, one gets –i. There are generally two ways of solving the problem. One may define a function that is not continuous along some curve, called a branch cut. Such a function is called the principal value of the function. The other way is to consider that one has a multi-valued function, which is analytic everywhere except for isolated singularities, but whose value may "jump" if one follows a closed loop around a singularity. This jump is called the monodromy.
+
+In the foundations of mathematics and set theory
+The definition of a function that is given in this article requires the concept of set, since the domain and the codomain of a function must be a set. This is not a problem in usual mathematics, as it is generally not difficult to consider only functions whose domain and codomain are sets, which are well defined, even if the domain is not explicitly defined. However, it is sometimes useful to consider more general functions.
+
+For example, the singleton set may be considered as a function {\displaystyle x\mapsto \{x\}.}{\displaystyle x\mapsto \{x\}.} Its domain would include all sets, and therefore would not be a set. In usual mathematics, one avoids this kind of problem by specifying a domain, which means that one has many singleton functions. However, when establishing foundations of mathematics, one may have to use functions whose domain, codomain or both are not specified, and some authors, often logicians, give precise definition for these weakly specified functions.[19]
+
+These generalized functions may be critical in the development of a formalization of the foundations of mathematics. For example, Von Neumann–Bernays–Gödel set theory, is an extension of the set theory in which the collection of all sets is a class. This theory includes the replacement axiom, which may be stated as: If X is a set and F is a function, then F[X] is a set.
+
+In computer science
+Main articles: Function (programming) and Lambda calculus
+In computer programming, a function is, in general, a piece of a computer program, which implements the abstract concept of function. That is, it is a program unit that produces an output for each input. However, in many programming languages every subroutine is called a function, even when there is no output, and when the functionality consists simply of modifying some data in the computer memory.
+
+Functional programming is the programming paradigm consisting of building programs by using only subroutines that behave like mathematical functions. For example, if_then_else is a function that takes three functions as arguments, and, depending on the result of the first function (true or false), returns the result of either the second or the third function. An important advantage of functional programming is that it makes easier program proofs, as being based on a well founded theory, the lambda calculus (see below).
+
+Except for computer-language terminology, "function" has the usual mathematical meaning in computer science. In this area, a property of major interest is the computability of a function. For giving a precise meaning to this concept, and to the related concept of algorithm, several models of computation have been introduced, the old ones being general recursive functions, lambda calculus and Turing machine. The fundamental theorem of computability theory is that these three models of computation define the same set of computable functions, and that all the other models of computation that have ever been proposed define the same set of computable functions or a smaller one. The Church–Turing thesis is the claim that every philosophically acceptable definition of a computable function defines also the same functions.
+
+General recursive functions are partial functions from integers to integers that can be defined from
+
+constant functions,
+successor, and
+projection functions
+via the operators
+
+composition,
+primitive recursion, and
+minimization.
+Although defined only for functions from integers to integers, they can model any computable function as a consequence of the following properties:
+
+a computation is the manipulation of finite sequences of symbols (digits of numbers, formulas, ...),
+every sequence of symbols may be coded as a sequence of bits,
+a bit sequence can be interpreted as the binary representation of an integer.
+Lambda calculus is a theory that defines computable functions without using set theory, and is the theoretical background of functional programming. It consists of terms that are either variables, function definitions (λ-terms), or applications of functions to terms. Terms are manipulated through some rules, (the α-equivalence, the β-reduction, and the η-conversion), which are the axioms of the theory and may be interpreted as rules of computation.
+
+In its original form, lambda calculus does not include the concepts of domain and codomain of a function. Roughly speaking, they have been introduced in the theory under the name of type in typed lambda calculus. Most kinds of typed lambda calculi can define fewer functions than untyped lambda calculus.
+
+See also
+Subpages
+List of types of functions
+List of functions
+Function fitting
+Implicit function
+Generalizations
+Homomorphism
+Morphism
+Microfunction
+Distribution
+Functor
+Related topics
+Associative array
+Functional
+Functional decomposition
+Functional predicate
+Functional programming
+Parametric equation
+Elementary function
+Closed-form expression
+Notes
+ The words map, mapping, transformation, correspondence, and operator are often used synonymously. Halmos 1970, p. 30.
+ This definition of "graph" refers to a set of pairs of objects. Graphs, in the sense of diagrams, are most applicable to functions from the real numbers to themselves. All functions can be described by sets of pairs but it may not be practical to construct a diagram for functions between other sets (such as sets of matrices).
+ The sets X, Y are parts of data defining a function; i.e., a function is a set of ordered pairs {\displaystyle (x,y)}(x,y) with {\displaystyle x\in X,y\in Y}{\displaystyle x\in X,y\in Y}, together with the sets X, Y, such that for each {\displaystyle x\in X}x\in X, there is a unique {\displaystyle y\in Y}y\in Y with {\displaystyle (x,y)}(x,y) in the set.
+ This follows from the axiom of extensionality, which says two sets are the same if and only if they have the same members. Some authors drop codomain from a definition of a function, and in that definition, the notion of equality has to be handled with care; see, for example, "When do two functions become equal?". Stack Exchange. August 19, 2015.
+ Here "elementary" has not exactly its common sense: although most functions that are encountered in elementary courses of mathematics are elementary in this sense, some elementary functions are not elementary for the common sense, for example, those that involve roots of polynomials of high degree.
+ The axiom of choice is not needed here, as the choice is done in a single set.
+References
+ MacLane, Saunders; Birkhoff, Garrett (1967). Algebra (First ed.). New York: Macmillan. pp. 1–13.
+ Spivak 2008, p. 39.
+ Hamilton, A. G. (1982). Numbers, sets, and axioms: the apparatus of mathematics. Cambridge University Press. p. 83. ISBN 978-0-521-24509-8.
+ Apostol 1981, p. 35.
+ Kaplan 1972, p. 25.
+ Gunther Schmidt( 2011) Relational Mathematics, Encyclopedia of Mathematics and its Applications, vol. 132, sect 5.1 Functions, pp. 49–60, Cambridge University Press ISBN 978-0-521-76268-7 CUP blurb for Relational Mathematics
+ Halmos, Naive Set Theory, 1968, sect.9 ("Families")
+ Ron Larson, Bruce H. Edwards (2010), Calculus of a Single Variable, Cengage Learning, p. 19, ISBN 978-0-538-73552-0
+ Weisstein, Eric W. "Map". mathworld.wolfram.com. Retrieved 2019-06-12.
+ Lang, Serge (1971), Linear Algebra (2nd ed.), Addison-Wesley, p. 83
+ T. M. Apostol (1981). Mathematical Analysis. Addison-Wesley. p. 35.
+ "function in nLab". ncatlab.org. Retrieved 2019-06-12.
+ "homomorphism in nLab". ncatlab.org. Retrieved 2019-06-12.
+ "morphism". nLab. Retrieved 2019-06-12.
+ Weisstein, Eric W. "Morphism". mathworld.wolfram.com. Retrieved 2019-06-12.
+ T. M. Apostol (1981). Mathematical Analysis. Addison-Wesley. p. 35.
+ Lang, Serge (1971), Linear Algebra (2nd ed.), Addison-Wesley, p. 83
+ Quantities and Units - Part 2: Mathematical signs and symbols to be used in the natural sciences and technology, p. 15. ISO 80000-2 (ISO/IEC 2009-12-01)
+ Gödel 1940, p. 16; Jech 2003, p. 11; Cunningham 2016, p. 57
+Sources
+Bartle, Robert (1967). The Elements of Real Analysis. John Wiley & Sons.
+Bloch, Ethan D. (2011). Proofs and Fundamentals: A First Course in Abstract Mathematics. Springer. ISBN 978-1-4419-7126-5.
+Cunningham, Daniel W. (2016). Set theory: A First Course. Cambridge University Press. ISBN 978-1-107-12032-7.
+Gödel, Kurt (1940). The Consistency of the Continuum Hypothesis. Princeton University Press. ISBN 978-0-691-07927-1.
+Halmos, Paul R. (1970). Naive Set Theory. Springer-Verlag. ISBN 978-0-387-90092-6.
+Jech, Thomas (2003). Set theory (Third Millennium ed.). Springer-Verlag. ISBN 978-3-540-44085-7.
+Spivak, Michael (2008). Calculus (4th ed.). Publish or Perish. ISBN 978-0-914098-91-1.
+Further reading
+Anton, Howard (1980). Calculus with Analytical Geometry. Wiley. ISBN 978-0-471-03248-9.
+Bartle, Robert G. (1976). The Elements of Real Analysis (2nd ed.). Wiley. ISBN 978-0-471-05464-1.
+Dubinsky, Ed; Harel, Guershon (1992). The Concept of Function: Aspects of Epistemology and Pedagogy. Mathematical Association of America. ISBN 978-0-88385-081-7.
+Hammack, Richard (2009). "12. Functions" (PDF). Book of Proof. Virginia Commonwealth University. Retrieved 2012-08-01.
+Husch, Lawrence S. (2001). Visual Calculus. University of Tennessee. Retrieved 2007-09-27.
+Katz, Robert (1964). Axiomatic Analysis. D. C. Heath and Company.
+Kleiner, Israel (1989). "Evolution of the Function Concept: A Brief Survey". The College Mathematics Journal. 20 (4): 282–300. CiteSeerX 10.1.1.113.6352. doi:10.2307/2686848. JSTOR 2686848.
+Lützen, Jesper (2003). "Between rigor and applications: Developments in the concept of function in mathematical analysis". In Porter, Roy (ed.). The Cambridge History of Science: The modern physical and mathematical sciences. Cambridge University Press. ISBN 978-0-521-57199-9. An approachable and diverting historical presentation.
+Malik, M. A. (1980). "Historical and pedagogical aspects of the definition of function". International Journal of Mathematical Education in Science and Technology. 11 (4): 489–492. doi:10.1080/0020739800110404.
+Reichenbach, Hans (1947) Elements of Symbolic Logic, Dover Publishing Inc., New York, ISBN 0-486-24004-5.
+Ruthing, D. (1984). "Some definitions of the concept of function from Bernoulli, Joh. to Bourbaki, N.". Mathematical Intelligencer. 6 (4): 72–77.
+Thomas, George B.; Finney, Ross L. (1995). Calculus and Analytic Geometry (9th ed.). Addison-Wesley. ISBN 978-0-201-53174-9.
+External links
+	Wikimedia Commons has media related to Functions (mathematics).
+Hazewinkel, Michiel, ed. (2001) [1994], "Function", Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4
+Weisstein, Eric W. "Function". MathWorld.
+The Wolfram Functions Site gives formulae and visualizations of many mathematical functions.
+NIST Digital Library of Mathematical Functions
+
+
+Equation
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+For other uses, see Equation (disambiguation).
+
+The first use of an equals sign, equivalent to 14x + 15 = 71 in modern notation. From The Whetstone of Witte by Robert Recorde of Wales (1557).[1]
+In mathematics, an equation is a statement that asserts the equality of two expressions. The word equation and its cognates in other languages may have subtly different meanings; for example, in French an équation is defined as containing one or more variables, while in English any equality is an equation.[2]
+
+Solving an equation containing variables consists of determining which values of the variables make the equality true. Variables are also called unknowns and the values of the unknowns that satisfy the equality are called solutions of the equation. There are two kinds of equations: identities and conditional equations. An identity is true for all values of the variable. A conditional equation is only true for particular values of the variables.[3][4]
+
+An equation is written as two expressions, connected by an equals sign ("="). The expressions on the two sides of the equals sign are called the "left-hand side" and "right-hand side" of the equation.
+
+The most common type of equation is an algebraic equation, in which the two sides are algebraic expressions. Each side of an algebraic equation will contain one or more terms. For example, the equation
+
+{\displaystyle Ax^{2}+Bx+C=y}{\displaystyle Ax^{2}+Bx+C=y}
+has left-hand side {\displaystyle Ax^{2}+Bx+C}{\displaystyle Ax^{2}+Bx+C}, which has three terms, and right-hand side {\displaystyle y}y, consisting of just one term. The unknowns are x and y and the parameters are A, B, and C.
+
+An equation is analogous to a scale into which weights are placed. When equal weights of something (grain for example) are placed into the two pans, the two weights cause the scale to be in balance and are said to be equal. If a quantity of grain is removed from one pan of the balance, an equal amount of grain must be removed from the other pan to keep the scale in balance. Likewise, to keep an equation in balance, the same operations of addition, subtraction, multiplication and division must be performed on both sides of an equation for it to remain true.
+
+In geometry, equations are used to describe geometric figures. As the equations that are considered, such as implicit equations or parametric equations, have infinitely many solutions, the objective is now different: instead of giving the solutions explicitly or counting them, which is impossible, one uses equations for studying properties of figures. This is the starting idea of algebraic geometry, an important area of mathematics.
+
+Algebra studies two main families of equations: polynomial equations and, among them, the special case of linear equations. When there is only one variable, polynomial equations have the form P(x) = 0, where P is a polynomial, and linear equations have the form ax + b = 0, where a and b are parameters. To solve equations from either family, one uses algorithmic or geometric techniques that originate from linear algebra or mathematical analysis. Algebra also studies Diophantine equations where the coefficients and solutions are integers. The techniques used are different and come from number theory. These equations are difficult in general; one often searches just to find the existence or absence of a solution, and, if they exist, to count the number of solutions.
+
+Differential equations are equations that involve one or more functions and their derivatives. They are solved by finding an expression for the function that does not involve derivatives. Differential equations are used to model processes that involve the rates of change of the variable, and are used in areas such as physics, chemistry, biology, and economics.
+
+The "=" symbol, which appears in every equation, was invented in 1557 by Robert Recorde, who considered that nothing could be more equal than parallel straight lines with the same length.[1]
+
+
+Contents
+1	Introduction
+1.1	Analogous illustration
+1.2	Parameters and unknowns
+1.3	Identities
+2	Properties
+3	Algebra
+3.1	Polynomial equations
+3.2	Systems of linear equations
+4	Geometry
+4.1	Analytic geometry
+4.2	Cartesian equations
+4.3	Parametric equations
+5	Number theory
+5.1	Diophantine equations
+5.2	Algebraic and transcendental numbers
+5.3	Algebraic geometry
+6	Differential equations
+6.1	Ordinary differential equations
+6.2	Partial differential equations
+7	Types of equations
+8	See also
+9	Notes
+10	References
+11	External links
+Introduction
+Analogous illustration
+
+Illustration of a simple equation; x, y, z are real numbers, analogous to weights.
+An equation is analogous to a weighing scale, balance, or seesaw.
+
+Each side of the equation corresponds to one side of the balance. Different quantities can be placed on each side: if the weights on the two sides are equal, the scale balances, and in analogy the equality that represents the balance is also balanced (if not, then the lack of balance corresponds to an inequality represented by an inequation).
+
+In the illustration, x, y and z are all different quantities (in this case real numbers) represented as circular weights, and each of x, y, and z has a different weight. Addition corresponds to adding weight, while subtraction corresponds to removing weight from what is already there. When equality holds, the total weight on each side is the same.
+
+Parameters and unknowns
+See also: Expression (mathematics)
+Equations often contain terms other than the unknowns. These other terms, which are assumed to be known, are usually called constants, coefficients or parameters.
+
+An example of an equation involving x and y as unknowns and the parameter R is
+
+{\displaystyle x^{2}+y^{2}=R^{2}.}{\displaystyle x^{2}+y^{2}=R^{2}.}
+When R is chosen to have the value of 2 (R = 2), this equation would be recognized, when sketched in Cartesian coordinates, as the equation for a particular circle with a radius of 2. Hence, the equation with R unspecified is the general equation for the circle.
+
+Usually, the unknowns are denoted by letters at the end of the alphabet, x, y, z, w, ..., while coefficients (parameters) are denoted by letters at the beginning, a, b, c, d, ... . For example, the general quadratic equation is usually written ax2 + bx + c = 0. The process of finding the solutions, or, in case of parameters, expressing the unknowns in terms of the parameters is called solving the equation. Such expressions of the solutions in terms of the parameters are also called solutions.
+
+A system of equations is a set of simultaneous equations, usually in several unknowns, for which the common solutions are sought. Thus a solution to the system is a set of values for each of the unknowns, which together form a solution to each equation in the system. For example, the system
+
+{\displaystyle {\begin{aligned}3x+5y&=2\\5x+8y&=3\end{aligned}}}{\begin{aligned}3x+5y&=2\\5x+8y&=3\end{aligned}}
+has the unique solution x = −1, y = 1.
+
+Identities
+Main articles: Identity (mathematics) and List of trigonometric identities
+An identity is an equation that is true for all possible values of the variable(s) it contains. Many identities are known in algebra and calculus. In the process of solving an equation, an identity is often used to simplify an equation making it more easily solvable.
+
+In algebra, an example of an identity is the difference of two squares:
+
+{\displaystyle x^{2}-y^{2}=(x+y)(x-y)}x^{2}-y^{2}=(x+y)(x-y)
+which is true for all x and y.
+
+Trigonometry is an area where many identities exist; these are useful in manipulating or solving trigonometric equations. Two of many that involve the sine and cosine functions are:
+
+{\displaystyle \sin ^{2}(\theta )+\cos ^{2}(\theta )=1}{\displaystyle \sin ^{2}(\theta )+\cos ^{2}(\theta )=1}
+and
+
+{\displaystyle \sin(2\theta )=2\sin(\theta )\cos(\theta )}\sin(2\theta )=2\sin(\theta )\cos(\theta )
+which are both true for all values of θ.
+
+For example, to solve for the value of θ that satisfies the equation:
+
+{\displaystyle 3\sin(\theta )\cos(\theta )=1\,,}3\sin(\theta )\cos(\theta )=1\,,
+where θ is known to be limited to between 0 and 45 degrees, we may use the above identity for the product to give:
+
+{\displaystyle {\frac {3}{2}}\sin(2\theta )=1\,,}{\frac {3}{2}}\sin(2\theta )=1\,,
+yielding the solution for θ
+
+{\displaystyle \theta ={\frac {1}{2}}\arcsin \left({\frac {2}{3}}\right)\approx 20.9^{\circ }.}\theta ={\frac {1}{2}}\arcsin \left({\frac {2}{3}}\right)\approx 20.9^{\circ }.
+Since the sine function is a periodic function, there are infinitely many solutions if there are no restrictions on θ. In this example, the restriction that θ be between 0 and 45 degrees implies there is only one solution.
+
+Properties
+Two equations or two systems of equations are equivalent if they have the same set of solutions. The following operations transform an equation or a system of equations into an equivalent one – provided that the operations are meaningful for the expressions they are applied to:
+
+Adding or subtracting the same quantity to both sides of an equation. This shows that every equation is equivalent to an equation in which the right-hand side is zero.
+Multiplying or dividing both sides of an equation by a non-zero quantity.
+Applying an identity to transform one side of the equation. For example, expanding a product or factoring a sum.
+For a system: adding to both sides of an equation the corresponding side of another equation, multiplied by the same quantity.
+If some function is applied to both sides of an equation, the resulting equation has the solutions of the initial equation among its solutions, but may have further solutions called extraneous solutions. For example, the equation {\displaystyle x=1}x=1 has the solution {\displaystyle x=1.}x=1. Raising both sides to the exponent of 2 (which means applying the function {\displaystyle f(s)=s^{2}}f(s)=s^{2} to both sides of the equation) changes the equation to {\displaystyle x^{2}=1}x^{2}=1, which not only has the previous solution but also introduces the extraneous solution, {\displaystyle x=-1.}x=-1. Moreover, if the function is not defined at some values (such as 1/x, which is not defined for x = 0), solutions existing at those values may be lost. Thus, caution must be exercised when applying such a transformation to an equation.
+
+The above transformations are the basis of most elementary methods for equation solving as well as some less elementary ones, like Gaussian elimination.
+
+Further information: Equation solving
+Algebra
+Polynomial equations
+Main article: Polynomial equation
+
+The solutions –1 and 2 of the polynomial equation x2 – x + 2 = 0 are the points where the graph of the quadratic function y = x2 – x + 2 cuts the x-axis.
+In general, an algebraic equation or polynomial equation is an equation of the form
+
+{\displaystyle P=0}P=0, or
+{\displaystyle P=Q}P=Q
+where P and Q are polynomials with coefficients in some field (real numbers, complex numbers, etc.), which is often the field of the rational numbers. An algebraic equation is univariate if it involves only one variable. On the other hand, a polynomial equation may involve several variables, in which case it is called multivariate (multiple variables, x, y, z, etc.). The term polynomial equation is usually preferred to algebraic equation.
+
+For example,
+
+{\displaystyle x^{5}-3x+1=0}x^{5}-3x+1=0
+is a univariate algebraic (polynomial) equation with integer coefficients and
+
+{\displaystyle y^{4}+{\frac {xy}{2}}={\frac {x^{3}}{3}}-xy^{2}+y^{2}-{\frac {1}{7}}}y^{4}+{\frac {xy}{2}}={\frac {x^{3}}{3}}-xy^{2}+y^{2}-{\frac {1}{7}}
+is a multivariate polynomial equation over the rational numbers.
+
+Some but not all polynomial equations with rational coefficients have a solution that is an algebraic expression with a finite number of operations involving just those coefficients (that is, it can be solved algebraically). This can be done for all such equations of degree one, two, three, or four; but for degree five or more it can be solved for some equations but, as the Abel–Ruffini theorem demonstrates, not for all. A large amount of research has been devoted to compute efficiently accurate approximations of the real or complex solutions of a univariate algebraic equation (see Root-finding algorithm) and of the common solutions of several multivariate polynomial equations (see System of polynomial equations).
+
+Systems of linear equations
+
+The Nine Chapters on the Mathematical Art is an anonymous Chinese book proposing a method of resolution for linear equations.
+A system of linear equations (or linear system) is a collection of linear equations involving the same set of variables.[a] For example,
+
+{\displaystyle {\begin{alignedat}{7}3x&&\;+\;&&2y&&\;-\;&&z&&\;=\;&&1&\\2x&&\;-\;&&2y&&\;+\;&&4z&&\;=\;&&-2&\\-x&&\;+\;&&{\tfrac {1}{2}}y&&\;-\;&&z&&\;=\;&&0&\end{alignedat}}}{\begin{alignedat}{7}3x&&\;+\;&&2y&&\;-\;&&z&&\;=\;&&1&\\2x&&\;-\;&&2y&&\;+\;&&4z&&\;=\;&&-2&\\-x&&\;+\;&&{\tfrac {1}{2}}y&&\;-\;&&z&&\;=\;&&0&\end{alignedat}}
+is a system of three equations in the three variables x, y, z. A solution to a linear system is an assignment of numbers to the variables such that all the equations are simultaneously satisfied. A solution to the system above is given by
+
+{\displaystyle {\begin{alignedat}{2}x&\,=\,&1\\y&\,=\,&-2\\z&\,=\,&-2\end{alignedat}}}{\begin{alignedat}{2}x&\,=\,&1\\y&\,=\,&-2\\z&\,=\,&-2\end{alignedat}}
+since it makes all three equations valid. The word "system" indicates that the equations are to be considered collectively, rather than individually.
+
+In mathematics, the theory of linear systems is the basis and a fundamental part of linear algebra, a subject which is used in most parts of modern mathematics. Computational algorithms for finding the solutions are an important part of numerical linear algebra, and play a prominent role in physics, engineering, chemistry, computer science, and economics. A system of non-linear equations can often be approximated by a linear system (see linearization), a helpful technique when making a mathematical model or computer simulation of a relatively complex system.
+
+Geometry
+Analytic geometry
+
+A conic section is the intersection of a plane and a cone of revolution.
+In Euclidean geometry, it is possible to associate a set of coordinates to each point in space, for example by an orthogonal grid. This method allows one to characterize geometric figures by equations. A plane in three-dimensional space can be expressed as the solution set of an equation of the form {\displaystyle ax+by+cz+d=0}ax+by+cz+d=0, where {\displaystyle a,b,c}a,b,c and {\displaystyle d}d are real numbers and {\displaystyle x,y,z}x,y,z are the unknowns that correspond to the coordinates of a point in the system given by the orthogonal grid. The values {\displaystyle a,b,c}a,b,c are the coordinates of a vector perpendicular to the plane defined by the equation. A line is expressed as the intersection of two planes, that is as the solution set of a single linear equation with values in {\displaystyle \mathbb {R} ^{2}}\mathbb {R} ^{2} or as the solution set of two linear equations with values in {\displaystyle \mathbb {R} ^{3}.}\mathbb {R} ^{3}.
+
+A conic section is the intersection of a cone with equation {\displaystyle x^{2}+y^{2}=z^{2}}x^{2}+y^{2}=z^{2} and a plane. In other words, in space, all conics are defined as the solution set of an equation of a plane and of the equation of a cone just given. This formalism allows one to determine the positions and the properties of the focuses of a conic.
+
+The use of equations allows one to call on a large area of mathematics to solve geometric questions. The Cartesian coordinate system transforms a geometric problem into an analysis problem, once the figures are transformed into equations; thus the name analytic geometry. This point of view, outlined by Descartes, enriches and modifies the type of geometry conceived of by the ancient Greek mathematicians.
+
+Currently, analytic geometry designates an active branch of mathematics. Although it still uses equations to characterize figures, it also uses other sophisticated techniques such as functional analysis and linear algebra.
+
+Cartesian equations
+A Cartesian coordinate system is a coordinate system that specifies each point uniquely in a plane by a pair of numerical coordinates, which are the signed distances from the point to two fixed perpendicular directed lines, that are marked using the same unit of length.
+
+One can use the same principle to specify the position of any point in three-dimensional space by the use of three Cartesian coordinates, which are the signed distances to three mutually perpendicular planes (or, equivalently, by its perpendicular projection onto three mutually perpendicular lines).
+
+
+Cartesian coordinate system with a circle of radius 2 centered at the origin marked in red. The equation of a circle is (x − a)2 + (y − b)2 = r2 where a and b are the coordinates of the center (a, b) and r is the radius.
+The invention of Cartesian coordinates in the 17th century by René Descartes (Latinized name: Cartesius) revolutionized mathematics by providing the first systematic link between Euclidean geometry and algebra. Using the Cartesian coordinate system, geometric shapes (such as curves) can be described by Cartesian equations: algebraic equations involving the coordinates of the points lying on the shape. For example, a circle of radius 2 in a plane, centered on a particular point called the origin, may be described as the set of all points whose coordinates x and y satisfy the equation x2 + y2 = 4.
+
+Parametric equations
+Main article: Parametric equation
+A parametric equation for a curve expresses the coordinates of the points of the curve as functions of a variable, called a parameter.[5][6] For example,
+
+{\displaystyle {\begin{aligned}x&=\cos t\\y&=\sin t\end{aligned}}}{\begin{aligned}x&=\cos t\\y&=\sin t\end{aligned}}
+are parametric equations for the unit circle, where t is the parameter. Together, these equations are called a parametric representation of the curve.
+
+The notion of parametric equation has been generalized to surfaces, manifolds and algebraic varieties of higher dimension, with the number of parameters being equal to the dimension of the manifold or variety, and the number of equations being equal to the dimension of the space in which the manifold or variety is considered (for curves the dimension is one and one parameter is used, for surfaces dimension two and two parameters, etc.).
+
+Number theory
+Diophantine equations
+Main article: Diophantine equation
+A Diophantine equation is a polynomial equation in two or more unknowns for which only the integer solutions are sought (an integer solution is a solution such that all the unknowns take integer values). A linear Diophantine equation is an equation between two sums of monomials of degree zero or one. An example of linear Diophantine equation is ax + by = c where a, b, and c are constants. An exponential Diophantine equation is one for which exponents of the terms of the equation can be unknowns.
+
+Diophantine problems have fewer equations than unknown variables and involve finding integers that work correctly for all equations. In more technical language, they define an algebraic curve, algebraic surface, or more general object, and ask about the lattice points on it.
+
+The word Diophantine refers to the Hellenistic mathematician of the 3rd century, Diophantus of Alexandria, who made a study of such equations and was one of the first mathematicians to introduce symbolism into algebra. The mathematical study of Diophantine problems that Diophantus initiated is now called Diophantine analysis.
+
+Algebraic and transcendental numbers
+Main articles: Algebraic number and Transcendental number
+An algebraic number is a number that is a solution of a non-zero polynomial equation in one variable with rational coefficients (or equivalently — by clearing denominators — with integer coefficients). Numbers such as π that are not algebraic are said to be transcendental. Almost all real and complex numbers are transcendental.
+
+Algebraic geometry
+Main article: Algebraic geometry
+Algebraic geometry is a branch of mathematics, classically studying solutions of polynomial equations. Modern algebraic geometry is based on more abstract techniques of abstract algebra, especially commutative algebra, with the language and the problems of geometry.
+
+The fundamental objects of study in algebraic geometry are algebraic varieties, which are geometric manifestations of solutions of systems of polynomial equations. Examples of the most studied classes of algebraic varieties are: plane algebraic curves, which include lines, circles, parabolas, ellipses, hyperbolas, cubic curves like elliptic curves and quartic curves like lemniscates, and Cassini ovals. A point of the plane belongs to an algebraic curve if its coordinates satisfy a given polynomial equation. Basic questions involve the study of the points of special interest like the singular points, the inflection points and the points at infinity. More advanced questions involve the topology of the curve and relations between the curves given by different equations.
+
+Differential equations
+Main article: Differential equation
+
+A strange attractor, which arises when solving a certain differential equation.
+A differential equation is a mathematical equation that relates some function with its derivatives. In applications, the functions usually represent physical quantities, the derivatives represent their rates of change, and the equation defines a relationship between the two. Because such relations are extremely common, differential equations play a prominent role in many disciplines including physics, engineering, economics, and biology.
+
+In pure mathematics, differential equations are studied from several different perspectives, mostly concerned with their solutions — the set of functions that satisfy the equation. Only the simplest differential equations are solvable by explicit formulas; however, some properties of solutions of a given differential equation may be determined without finding their exact form.
+
+If a self-contained formula for the solution is not available, the solution may be numerically approximated using computers. The theory of dynamical systems puts emphasis on qualitative analysis of systems described by differential equations, while many numerical methods have been developed to determine solutions with a given degree of accuracy.
+
+Ordinary differential equations
+Main article: Ordinary differential equation
+An ordinary differential equation or ODE is an equation containing a function of one independent variable and its derivatives. The term "ordinary" is used in contrast with the term partial differential equation, which may be with respect to more than one independent variable.
+
+Linear differential equations, which have solutions that can be added and multiplied by coefficients, are well-defined and understood, and exact closed-form solutions are obtained. By contrast, ODEs that lack additive solutions are nonlinear, and solving them is far more intricate, as one can rarely represent them by elementary functions in closed form: Instead, exact and analytic solutions of ODEs are in series or integral form. Graphical and numerical methods, applied by hand or by computer, may approximate solutions of ODEs and perhaps yield useful information, often sufficing in the absence of exact, analytic solutions.
+
+Partial differential equations
+Main article: Partial differential equation
+A partial differential equation (PDE) is a differential equation that contains unknown multivariable functions and their partial derivatives. (This is in contrast to ordinary differential equations, which deal with functions of a single variable and their derivatives.) PDEs are used to formulate problems involving functions of several variables, and are either solved by hand, or used to create a relevant computer model.
+
+PDEs can be used to describe a wide variety of phenomena such as sound, heat, electrostatics, electrodynamics, fluid flow, elasticity, or quantum mechanics. These seemingly distinct physical phenomena can be formalised similarly in terms of PDEs. Just as ordinary differential equations often model one-dimensional dynamical systems, partial differential equations often model multidimensional systems. PDEs find their generalisation in stochastic partial differential equations.
+
+Types of equations
+Equations can be classified according to the types of operations and quantities involved. Important types include:
+
+An algebraic equation or polynomial equation is an equation in which both sides are polynomials (see also system of polynomial equations). These are further classified by degree:
+linear equation for degree one
+quadratic equation for degree two
+cubic equation for degree three
+quartic equation for degree four
+quintic equation for degree five
+sextic equation for degree six
+septic equation for degree seven
+octic equation for degree eight
+A Diophantine equation is an equation where the unknowns are required to be integers
+A transcendental equation is an equation involving a transcendental function of its unknowns
+A parametric equation is an equation in which the solutions for the variables are expressed as functions of some other variables, called parameters appearing in the equations
+A functional equation is an equation in which the unknowns are functions rather than simple quantities
+Equations involving derivatives, integrals and finite differences:
+A differential equation is a functional equation involving derivatives of the unknown functions, where the function and its derivatives are evaluated at the same point, such as {\displaystyle f'(x)=x^{2}}{\displaystyle f'(x)=x^{2}}. Differential equations are subdivided into ordinary differential equations for functions of a single variable and partial differential equations for functions of multiple variables
+An integral equation is a functional equation involving the antiderivatives of the unknown functions. For functions of one variable, such an equation differs from a differential equation primarily through a change of variable substituting the function by its derivative, however this is not the case when the integral is taken over an open surface
+An integro-differential equation is a functional equation involving both the derivatives and the antiderivatives of the unknown functions. For functions of one variable, such an equation differs from integral and differential equations through a similar change of variable.
+A functional differential equation of delay differential equation is a function equation involving derivatives of the unknown functions, evaluated at multiple points, such as {\displaystyle f'(x)=f(x-2)}{\displaystyle f'(x)=f(x-2)}
+A difference equation is an equation where the unknown is a function f that occurs in the equation through f(x), f(x−1), ..., f(x−k), for some whole integer k called the order of the equation. If x is restricted to be an integer, a difference equation is the same as a recurrence relation
+A stochastic differential equation is a differential equation in which one or more of the terms is a stochastic process
+See also
+Formula
+History of algebra
+List of equations
+List of scientific equations named after people
+Term (logic)
+Theory of equations
+Cancelling out
+Notes
+ The subject of this article is basic in mathematics, and is treated in a lot of textbooks. Among them, Lay 2005, Meyer 2001, and Strang 2005 contain the material of this article.
+References
+ Recorde, Robert, The Whetstone of Witte … (London, England: Jhon Kyngstone, 1557), the third page of the chapter "The rule of equation, commonly called Algebers Rule."
+ Marcus, Solomon; Watt, Stephen M. "What is an Equation?". Retrieved 2019-02-27.
+ Lachaud, Gilles. "Équation, mathématique". Encyclopædia Universalis (in French).
+ "A statement of equality between two expressions. Equations are of two types, identities and conditional equations (or usually simply "equations")". « Equation », in Mathematics Dictionary, Glenn James [de] et Robert C. James [de] (éd.), Van Nostrand, 1968, 3 ed. 1st ed. 1948, p. 131.
+ Thomas, George B., and Finney, Ross L., Calculus and Analytic Geometry, Addison Wesley Publishing Co., fifth edition, 1979, p. 91.
+ Weisstein, Eric W. "Parametric Equations." From MathWorld--A Wolfram Web Resource. http://mathworld.wolfram.com/ParametricEquations.html
+External links
+Winplot: General Purpose plotter that can draw and animate 2D and 3D mathematical equations.
+Equation plotter: A web page for producing and downloading pdf or postscript plots of the solution sets to equations and inequations in two variables (x and y).
+

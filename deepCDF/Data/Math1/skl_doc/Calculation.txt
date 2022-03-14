@@ -1,0 +1,55 @@
+﻿Calculation
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+For the card game, see Calculation (game).
+
+This article needs additional citations for verification. Please help improve this article by adding citations to reliable sources. Unsourced material may be challenged and removed.
+Find sources: "Calculation" – news · newspapers · books · scholar · JSTOR (August 2019) (Learn how and when to remove this template message)
+Arithmetic operationsvte
+Addition (+)
+{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{term}}\,+\,{\text{term}}\\\scriptstyle {\text{summand}}\,+\,{\text{summand}}\\\scriptstyle {\text{addend (broad sense)}}\,+\,{\text{addend (broad sense)}}\\\scriptstyle {\text{augend}}\,+\,{\text{addend (strict sense)}}\end{matrix}}\right\}\,=\,}{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{term}}\,+\,{\text{term}}\\\scriptstyle {\text{summand}}\,+\,{\text{summand}}\\\scriptstyle {\text{addend (broad sense)}}\,+\,{\text{addend (broad sense)}}\\\scriptstyle {\text{augend}}\,+\,{\text{addend (strict sense)}}\end{matrix}}\right\}\,=\,}	{\displaystyle \scriptstyle {\text{sum}}}\scriptstyle {\text{sum}}
+Subtraction (−)
+{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{term}}\,-\,{\text{term}}\\\scriptstyle {\text{minuend}}\,-\,{\text{subtrahend}}\end{matrix}}\right\}\,=\,}{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{term}}\,-\,{\text{term}}\\\scriptstyle {\text{minuend}}\,-\,{\text{subtrahend}}\end{matrix}}\right\}\,=\,}	{\displaystyle \scriptstyle {\text{difference}}}\scriptstyle {\text{difference}}
+Multiplication (×)
+{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{factor}}\,\times \,{\text{factor}}\\\scriptstyle {\text{multiplier}}\,\times \,{\text{multiplicand}}\end{matrix}}\right\}\,=\,}{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\text{factor}}\,\times \,{\text{factor}}\\\scriptstyle {\text{multiplier}}\,\times \,{\text{multiplicand}}\end{matrix}}\right\}\,=\,}	{\displaystyle \scriptstyle {\text{product}}}\scriptstyle {\text{product}}
+Division (÷)
+{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\frac {\scriptstyle {\text{dividend}}}{\scriptstyle {\text{divisor}}}}\\\scriptstyle {\text{ }}\\\scriptstyle {\frac {\scriptstyle {\text{numerator}}}{\scriptstyle {\text{denominator}}}}\end{matrix}}\right\}\,=\,}{\displaystyle \scriptstyle \left.{\begin{matrix}\scriptstyle {\frac {\scriptstyle {\text{dividend}}}{\scriptstyle {\text{divisor}}}}\\\scriptstyle {\text{ }}\\\scriptstyle {\frac {\scriptstyle {\text{numerator}}}{\scriptstyle {\text{denominator}}}}\end{matrix}}\right\}\,=\,}	{\displaystyle {\begin{matrix}\scriptstyle {\text{fraction}}\\\scriptstyle {\text{quotient}}\\\scriptstyle {\text{ratio}}\end{matrix}}}{\displaystyle {\begin{matrix}\scriptstyle {\text{fraction}}\\\scriptstyle {\text{quotient}}\\\scriptstyle {\text{ratio}}\end{matrix}}}
+Exponentiation
+{\displaystyle \scriptstyle {\text{base}}^{\text{exponent}}\,=\,}{\displaystyle \scriptstyle {\text{base}}^{\text{exponent}}\,=\,}	{\displaystyle \scriptstyle {\text{power}}}\scriptstyle {\text{power}}
+nth root (√)
+{\displaystyle \scriptstyle {\sqrt[{\text{degree}}]{\scriptstyle {\text{radicand}}}}\,=\,}{\displaystyle \scriptstyle {\sqrt[{\text{degree}}]{\scriptstyle {\text{radicand}}}}\,=\,}	{\displaystyle \scriptstyle {\text{root}}}\scriptstyle {\text{root}}
+Logarithm (log)
+{\displaystyle \scriptstyle \log _{\text{base}}({\text{anti-logarithm}})\,=\,}{\displaystyle \scriptstyle \log _{\text{base}}({\text{anti-logarithm}})\,=\,}	{\displaystyle \scriptstyle {\text{logarithm}}}\scriptstyle {\text{logarithm}}
+A calculation is a deliberate process that transforms one or more inputs into one or more results, with variable change. The term is used in a variety of senses, from the very definite arithmetical calculation of using an algorithm, to the vague heuristics of calculating a strategy in a competition, or calculating the chance of a successful relationship between two people.
+
+For example, multiplying 7 by 6 is a simple algorithmic calculation. Estimating the fair price for financial instruments using the Black–Scholes model is a more complex algorithmic calculation.
+
+Statistical estimations of the likely election results from opinion polls also involve algorithmic calculations, but produces ranges of possibilities rather than exact answers.
+
+To calculate means to determine mathematically in the case of a number or amount, or in the case of an abstract problem to deduce the answer using logic, reason or common sense.[1] The English word derives from the Latin calculus, which originally meant a small stone in the gall-bladder (from Latin calx). It also meant a pebble used for calculating, or a small stone used as a counter in an abacus (Latin abacus, Greek abax). The abacus was an instrument used by Greeks and Romans for arithmetic calculations, preceding the slide-rule and the electronic calculator, and consisted of perforated pebbles sliding on iron bars.
+
+
+Contents
+1	Comparison to computation
+2	See also
+3	References
+4	External links
+Comparison to computation
+Calculation is a prerequisite for computation.[2] The difference in the meaning of calculation and computation appears to originate from the late medieval period.[3]
+
+See also
+	Philosophy portal
+	Psychology portal
+Abacus
+Calculator
+Calculus (disambiguation)
+Calculability
+Computation
+Cost accounting
+List of algorithms
+Mathematics
+Mental calculation
+References
+ "calculate | Definition of calculate in English by Oxford Dictionaries". Oxford Dictionaries | English. Retrieved 2018-08-30.
+ Jrank.org
+ Jrank.org

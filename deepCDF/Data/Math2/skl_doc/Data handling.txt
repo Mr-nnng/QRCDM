@@ -1,0 +1,66 @@
+
+Responsible Conduct in Data Management
+	Home	Topics	About the Module	Feedback	Contact Us	ORI	
+												
+Data Handling	Main	Quiz	Games	Cases	Glossary
+												
+
+Data handling is the process of ensuring that research data is stored, archived or disposed off in a safe and secure manner during and after the conclusion of a research project. This includes the development of policies and procedures to manage data handled electronically as well as through non-electronic means .
+
+Data handling is important in ensuring the integrity of research data since it addresses concerns related to confidentially, security, and preservation/retention of research data. Proper planning for data handling can also result in efficient and economical storage, retrieval, and disposal of data. In the case of data handled electronically, data integrity is a primary concern to ensure that recorded data is not altered, erased, lost or accessed by unauthorized users.
+
+Data handling issues encompass both electronic as well as non-electronic systems, such as paper files, journals, and laboratory notebooks. Electronic systems include computer workstations and laptops, personal digital assistants (PDA), storage media such as videotape, diskette, CD, DVD, memory cards, and other electronic instrumentation. These systems may be used for storage, archival, sharing, and disposing off data, and therefore, require adequate planning at the start of a research project so that issues related to data integrity can be analyzed and addressed early on.
+
+Considerations/issues in data handling
+
+Issues that should be considered in ensuring integrity of data handled include the following:
+
+Type of data handled and its impact on the environment (especially if it is on a toxic media).
+Type of media containing data and its storage capacity, handling and storage requirements, reliability, longevity (in the case of degradable medium), retrieval effectiveness, and ease of upgrade to newer media.
+Data handling responsibilities/privileges, that is, who can handle which portion of data, at what point during the project, for what purpose, etc.
+Data handling procedures that describe how long the data should be kept, and when, how, and who should handle data for storage, sharing, archival, retrieval and disposal purposes.
+Deciding how long research data should be kept may depend on the nature of the project, sponsoring agency’s guidelines, ongoing interest in or need for the data, cost of maintaining the data in the long run, and other relevant considerations. Under current Health and Human Services requirements, research records must be maintained for at least three years after the last expenditure report. Federal regulations or institutional guidelines may require that data be retained for longer periods.
+
+In the case of data stored electronically, the potential for altering, erasing, losing, or unauthorized access is high. Several years of valuable research data can be compromised or lost as it happned in April 2001, when an intruder broke into a server used by a group of Univeristy of Washington graduate students and deleted the entire file system (UoW website, 2003). Although some aspects of protection from these threats are the responsibility of IT professionals, researchers are ultimately responsible for ensuring the security of their data.
+
+In the “ Data Management Guidelines Issued by British Medical Research Council” published on the ORI website (2003) it states that:
+
+" If the data are recorded electronically, the data should be regularly backed up on disc; a hard copy should be made of particularly important data; relevant software must be retained to ensure future access, and special attention should be given to guaranteeing the security of electronic data” (ORI website, 2003).
+
+Creating a secure environment for electronic data usually involves all members of a project, which can include an IT Manager, system administrator, support personnel, and several end- users. Some issues to consider when handling data electronically include the following:
+
+Protect systems’ and individual files with login and passwords
+Manage access rights (in the case of computer system administrators not involved in the project their access rights could be limited)
+Regularly update virus protection to prevent vulnerability of data
+Limit physical access to equipment and storage media (for example, in the case of data stored on a computer using a stand-alone computer may be secure than a networked, computer)
+Accurate data removal from old hardware and certification that the data was removed
+Ensure data recoverability in case of emergencies
+Regularly update electronic storage media to avoid outdated storage/retrieval devices
+Backup multiple copies in secured multiple locations
+Encrypt files when wireless devices are used, and keep track of wireless connectivity to prevent accidental file sharing
+Record date and time when a piece of electronic data was originally recorded to prevent alteration or manipulation at a future date
+In the article entiled “Preventing data theft”, Lynn Greiner quotes Paul Hyde, CEO of Kasten Chase (a company that develops high-assurance data security systems) that:
+
+" It's important to have a level of security that is adequate if the machine is stolen. Everyone who is in the position where they could be separated from the device needs security.I think the best way to look at it, is to look at the criticality of what you're doing, (and) of its importance to the business environment. You have to determine what the value of the information is, and match up security accordingly" (Greiner, 2002).
+
+One of the key issues to consider in storing or archiving data manually or electronically is “configuration management.” This involves keeping track of data on different media or format during different stages of the project by different users. For example, in a research effort raw data could be recorded in a laboratory notebook, then transferred to an electronic data file for analysis, which could result in output data. The output data then could be converted to plots or graphs. Configuration management will involve keeping track of all these and upgrading the data to newer media or formats as necessary during the life of a particular project. Effective configuration management will not only ensure data integrity but also simplify the use of data .
+
+Disposing research data requires adequate plans, procedures, and impact analysis to ensure that the appropriate data is discarded in a safe and secure manner. Retaining data on paper files and electronic media when not needed after a project is over can lead to unauthorized access to confidential data. The likelihood of this is very high especially when principal investigators retire, leave the project, or die without establishing proper data management procedures on which data should be kept, disposed off, shared, etc.
+
+Disposing of data containing confidential information on human subjects or national security requires additional care to ensure that the information could not be reconstructed from the disposed media. When disposing electronically data stored on computer disks, the disks will have to be erased several times and certified that data could not be recovered from them. Some federal and state agencies have guidelines on how many times a computer disk should be erased to ensure the disk is free of recoverable data. In the case of data stored on film or other toxic media, care should be taken to ensure that the disposal process does not pollute the environment.
+
+Research organizations often contract to commercial data disposing companies to dispose of data stored on non-electronic media such as laboratory notebooks, paper files, etc., and it is the responsibility of the research organization to ensure the commercial company will dispose off the data in a safe and non-recoverable manner .
+
+Data handling requires adequate planning, development of procedures, and training and supervision of research staff to ensure that data is stored, archived or disposed off in a safe and secure manner that preserves the integrity of research data as well as simplifies data management .
+
+References
+University of Washington. "Is Your Computer Safe?" Computing & Communications Windows on Technology, No. 27, June 2002. 18 Nov. 2003. http://www.washington.edu/computing/windows/issue27/safe.html
+
+Greiner, Lynn. "Preventing data theft " Computer Dealer News, February 22, 2002, Vol. 18 No. 3. 21 Nov. 2003. http://www.itbusiness.ca/index.asp?theaction=61&sid=47850
+
+Office of Research Integrity. "Data Management Guidelines Issued by British Medical Research Council" September 2001, Vol. 9, No. 4. 20 Nov. 2003. http://ori.dhhs.gov/html/resources/britishmed.asp
+
+Source: University Of Texas Southwestern Medical Center At Dallas Date: 2000-10-10 Collecting Research Data On Computer Wave Of Future, UT Southwestern Researchers Report In Jama http://www.sciencedaily.com/releases/2000/10/001010071729.htm
+
+RCR Education Consortium (2004). Accessed on April 15, 2004. http://rcrec.org/index.php?module=ContentExpress&func=display&bid=24&btitle=Navigation&mid=29&ceid=2
+

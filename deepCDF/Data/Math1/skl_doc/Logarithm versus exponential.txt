@@ -1,0 +1,955 @@
+﻿Logarithm
+In mathematics, the logarithm is the inverse function to exponentiation. That means the logarithm of a given number x is the exponent to which another fixed number, the base b, must be raised, to produce that number x. In the simplest case, the logarithm counts the number of occurrences of the same factor in repeated multiplication; e.g., since 1000 = 10 × 10 × 10 = 103, the "logarithm to base 10" of 1000 is 3. The logarithm of x to base b is denoted as logb (x), or without parentheses, logb x, or even without the explicit base, log x—if no confusion is possible.
+
+More generally, exponentiation allows any positive real number as base to be raised to any real power, always producing a positive result, so logb (x) for any two positive real numbers b and x, where b is not equal to 1, is always a unique real number y. More explicitly, the defining relation between exponentiation and logarithm is:
+
+{\displaystyle \log _{b}(x)=y\quad }{\displaystyle \log _{b}(x)=y\quad } exactly if {\displaystyle \quad b^{y}=x.}{\displaystyle \quad b^{y}=x.}
+For example, log2 64 = 6, as 26 = 64.
+
+The logarithm to base 10 (that is b = 10) is called the common logarithm and has many applications in science and engineering. The natural logarithm has the number e (that is b ≈ 2.718) as its base; its use is widespread in mathematics and physics, because of its simpler integral and derivative. The binary logarithm uses base 2 (that is b = 2) and is commonly used in computer science. Logarithms are examples of concave functions.[1]
+
+Logarithms were introduced by John Napier in 1614 as a means to simplify calculations.[2] They were rapidly adopted by navigators, scientists, engineers, surveyors and others to perform high-accuracy computations more easily. Using logarithm tables, tedious multi-digit multiplication steps can be replaced by table look-ups and simpler addition. This is possible because of the fact—important in its own right—that the logarithm of a product is the sum of the logarithms of the factors:
+
+{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y,\,}{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y,\,}
+provided that b, x and y are all positive and b ≠ 1. The slide rule, also based on logarithms, allows quick calculations without tables, but at lower precision. The present-day notion of logarithms comes from Leonhard Euler, who connected them to the exponential function in the 18th century, and who also introduced the letter e as the base of natural logarithms.[3]
+
+Logarithmic scales reduce wide-ranging quantities to tiny scopes. For example, the decibel (dB) is a unit used to express ratio as logarithms, mostly for signal power and amplitude (of which sound pressure is a common example). In chemistry, pH is a logarithmic measure for the acidity of an aqueous solution. Logarithms are commonplace in scientific formulae, and in measurements of the complexity of algorithms and of geometric objects called fractals. They help describing frequency ratios of musical intervals, appear in formulas counting prime numbers or approximating factorials, inform some models in psychophysics, and can aid in forensic accounting.
+
+In the same way as the logarithm reverses exponentiation, the complex logarithm is the inverse function of the exponential function applied to complex numbers. The modular discrete logarithm is another variant; it has uses in public-key cryptography.
+
+
+Contents
+1	Motivation and definition
+1.1	Exponentiation
+1.2	Definition
+1.3	Examples
+2	Logarithmic identities
+2.1	Product, quotient, power, and root
+2.2	Change of base
+3	Particular bases
+4	History
+5	Logarithm tables, slide rules, and historical applications
+5.1	Log tables
+5.2	Computations
+5.3	Slide rules
+6	Analytic properties
+6.1	Logarithmic function
+6.2	Inverse function
+6.3	Derivative and antiderivative
+6.4	Integral representation of the natural logarithm
+6.5	Transcendence of the logarithm
+7	Calculation
+7.1	Power series
+7.2	Arithmetic–geometric mean approximation
+7.3	Feynman's algorithm
+8	Applications
+8.1	Logarithmic scale
+8.2	Psychology
+8.3	Probability theory and statistics
+8.4	Computational complexity
+8.5	Entropy and chaos
+8.6	Fractals
+8.7	Music
+8.8	Number theory
+9	Generalizations
+9.1	Complex logarithm
+9.2	Inverses of other exponential functions
+9.3	Related concepts
+10	See also
+11	Notes
+12	References
+13	External links
+Motivation and definition
+Addition, multiplication, and exponentiation are three fundamental arithmetic operations (or in some context the first three hyperoperations). Addition, the simplest of these, can be undone by subtraction: for example, the addition of 2 in 3 + 2 = 5 can be undone by subtracting 2: 5 − 2 = 3. Multiplication, the next-simplest operation, can be undone by division: doubling a number x, i.e., multiplying x by 2, the result is 2x. To get back x, it is necessary to divide by 2. For example, 3 × 2 = 6 and the process of multiplying by 2 is undone by dividing by 2: 6 ÷ 2 = 3. The idea and purpose of logarithms is also to undo a fundamental arithmetic operation, namely raising a number to a certain power (an operation also known as exponentiation). For example, raising 2 to the power 3 yields 8, because 8 is the product of three factors of 2:
+
+{\displaystyle 2^{3}=2\times 2\times 2=8}{\displaystyle 2^{3}=2\times 2\times 2=8}
+The logarithm (with respect to base 2) of 8 is 3, reflecting the fact that 2 was raised to the power 3 to get 8.
+
+Exponentiation
+This subsection contains a short overview of the exponentiation operation, which is fundamental to understanding logarithms. Raising b to the n-th power, where n is a natural number, is done by multiplying n factors equal to b. The n-th power of b is written bn, so that
+
+{\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}}{\displaystyle b^{n}=\underbrace {b\times b\times \cdots \times b} _{n{\text{ factors}}}}
+Exponentiation may be extended to by, where b is a positive number and the exponent y is any real number.[4] For example, b−1 is the reciprocal of b, that is, 1/b. Raising b to the power 1/2 is the square root of b.
+
+More generally, raising b to a rational power p/q, where p and q are integers, is given by
+
+{\displaystyle b^{p/q}={\sqrt[{q}]{b^{p}}},}{\displaystyle b^{p/q}={\sqrt[{q}]{b^{p}}},}
+the q-th root of {\displaystyle b^{p}\!\!}{\displaystyle b^{p}\!\!}.
+
+Finally, any irrational number (a real number which is not rational) y can be approximated to arbitrary precision by rational numbers. This can be used to compute the y-th power of b: for example {\displaystyle {\sqrt {2}}\approx 1.414...}{\displaystyle {\sqrt {2}}\approx 1.414...} and {\displaystyle b^{\sqrt {2}}}{\displaystyle b^{\sqrt {2}}} is increasingly well approximated by {\displaystyle b^{1},b^{1.4},b^{1.41},b^{1.414},...}{\displaystyle b^{1},b^{1.4},b^{1.41},b^{1.414},...}. A more detailed explanation, as well as the formula bm + n = bm · bn is contained in the article on exponentiation.
+
+Definition
+The logarithm of a positive real number x with respect to base b[nb 1] is the exponent by which b must be raised to yield x. In other words, the logarithm of x to base b is the solution y to the equation[5]
+
+{\displaystyle b^{y}=x.}{\displaystyle b^{y}=x.}
+The logarithm is denoted "logb x" (pronounced as "the logarithm of x to base b" or "the base-b logarithm of x" or (most commonly) "the log, base b, of x").
+
+In the equation y = logb x, the value y is the answer to the question "To what power must b be raised, in order to yield x?".
+
+Examples
+log2 16 = 4 , since 24 = 2 ×2 × 2 × 2 = 16.
+Logarithms can also be negative: {\displaystyle \quad \log _{2}\!{\frac {1}{2}}=-1\quad }{\displaystyle \quad \log _{2}\!{\frac {1}{2}}=-1\quad } since {\displaystyle \quad 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}{\displaystyle \quad 2^{-1}={\frac {1}{2^{1}}}={\frac {1}{2}}.}
+log10150 is approximately 2.176, which lies between 2 and 3, just as 150 lies between 102 = 100 and 103 = 1000.
+For any base b, logb b = 1 and logb 1 = 0, since b1 = b and b0 = 1, respectively.
+Logarithmic identities
+Main article: List of logarithmic identities
+Several important formulas, sometimes called logarithmic identities or logarithmic laws, relate logarithms to one another.[6]
+
+Product, quotient, power, and root
+The logarithm of a product is the sum of the logarithms of the numbers being multiplied; the logarithm of the ratio of two numbers is the difference of the logarithms. The logarithm of the p-th power of a number is p times the logarithm of the number itself; the logarithm of a p-th root is the logarithm of the number divided by p. The following table lists these identities with examples. Each of the identities can be derived after substitution of the logarithm definitions {\displaystyle x=b^{\log _{b}x}}{\displaystyle x=b^{\log _{b}x}} or {\displaystyle y=b^{\log _{b}y}}{\displaystyle y=b^{\log _{b}y}} in the left hand sides.[1]
+
+Formula	Example
+Product	{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y}{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y}	{\displaystyle \log _{3}243=\log _{3}(9\cdot 27)=\log _{3}9+\log _{3}27=2+3=5}{\displaystyle \log _{3}243=\log _{3}(9\cdot 27)=\log _{3}9+\log _{3}27=2+3=5}
+Quotient	{\displaystyle \log _{b}\!{\frac {x}{y}}=\log _{b}x-\log _{b}y}{\displaystyle \log _{b}\!{\frac {x}{y}}=\log _{b}x-\log _{b}y}	{\displaystyle \log _{2}16=\log _{2}\!{\frac {64}{4}}=\log _{2}64-\log _{2}4=6-2=4}{\displaystyle \log _{2}16=\log _{2}\!{\frac {64}{4}}=\log _{2}64-\log _{2}4=6-2=4}
+Power	{\displaystyle \log _{b}\left(x^{p}\right)=p\log _{b}x}{\displaystyle \log _{b}\left(x^{p}\right)=p\log _{b}x}	{\displaystyle \log _{2}64=\log _{2}\left(2^{6}\right)=6\log _{2}2=6}{\displaystyle \log _{2}64=\log _{2}\left(2^{6}\right)=6\log _{2}2=6}
+Root	{\displaystyle \log _{b}{\sqrt[{p}]{x}}={\frac {\log _{b}x}{p}}}{\displaystyle \log _{b}{\sqrt[{p}]{x}}={\frac {\log _{b}x}{p}}}	{\displaystyle \log _{10}{\sqrt {1000}}={\frac {1}{2}}\log _{10}1000={\frac {3}{2}}=1.5}{\displaystyle \log _{10}{\sqrt {1000}}={\frac {1}{2}}\log _{10}1000={\frac {3}{2}}=1.5}
+Change of base
+The logarithm logbx can be computed from the logarithms of x and b with respect to an arbitrary base k using the following formula:
+
+{\displaystyle \log _{b}x={\frac {\log _{k}x}{\log _{k}b}}.\,}{\displaystyle \log _{b}x={\frac {\log _{k}x}{\log _{k}b}}.\,}
+Derivation of the conversion factor between logarithms of arbitrary base
+Typical scientific calculators calculate the logarithms to bases 10 and e.[7] Logarithms with respect to any base b can be determined using either of these two logarithms by the previous formula:
+
+{\displaystyle \log _{b}x={\frac {\log _{10}x}{\log _{10}b}}={\frac {\log _{e}x}{\log _{e}b}}.\,}{\displaystyle \log _{b}x={\frac {\log _{10}x}{\log _{10}b}}={\frac {\log _{e}x}{\log _{e}b}}.\,}
+Given a number x and its logarithm logbx to an unknown base b, the base is given by:
+
+{\displaystyle b=x^{\frac {1}{\log _{b}x}},}{\displaystyle b=x^{\frac {1}{\log _{b}x}},}
+which can be seen from taking the defining equation {\displaystyle x=b^{\log _{b}x}}{\displaystyle x=b^{\log _{b}x}} to the power of {\displaystyle \;{\tfrac {1}{\log _{b}x}}.}{\displaystyle \;{\tfrac {1}{\log _{b}x}}.}
+
+Particular bases
+
+Plots of logarithm for bases 0.5, 2, and e
+Among all choices for the base, three are particularly common. These are b = 10, b = e (the irrational mathematical constant ≈ 2.71828), and b = 2 (the binary logarithm). In mathematical analysis, the logarithm to base e is widespread because of its particular analytical properties explained below. On the other hand, base-10 logarithms are easy to use for manual calculations in the decimal number system:[8]
+
+{\displaystyle \log _{10}(10x)=\log _{10}10+\log _{10}x=1+\log _{10}x.\ }{\displaystyle \log _{10}(10x)=\log _{10}10+\log _{10}x=1+\log _{10}x.\ }
+Thus, log10x is related to the number of decimal digits of a positive integer x: the number of digits is the smallest integer strictly bigger than log10x.[9] For example, log101430 is approximately 3.15. The next integer is 4, which is the number of digits of 1430. Both the natural logarithm and the logarithm to base two are used in information theory, corresponding to the use of nats or bits as the fundamental units of information, respectively.[10] Binary logarithms are also used in computer science, where the binary system is ubiquitous, in music theory, where a pitch ratio of two (the octave) is ubiquitous and the cent is the binary logarithm (scaled by 1200) of the ratio between two adjacent equally-tempered pitches in European classical music, and in photography to measure exposure values.[11]
+
+The following table lists common notations for logarithms to these bases and the fields where they are used. Many disciplines write logx instead of logbx, when the intended base can be determined from the context. The notation blogx also occurs.[12] The "ISO notation" column lists designations suggested by the International Organization for Standardization (ISO 31-11).[13] Because the notation log x has been used for all three bases (or when the base is indeterminate or immaterial), the intended base must often be inferred based on context or discipline. In computer science and mathematics, log usually refers to log2 and loge, respectively.[1][14] In other contexts log often means log10.[15]
+
+Base b	Name for logbx	ISO notation	Other notations	Used in
+2	binary logarithm	lb x[16]	ld x, log x, lg x,[17] log2x	computer science, information theory, music theory, photography
+e	natural logarithm	ln x[nb 2]	log x
+(in mathematics [1][21] and many programming languages[nb 3])	mathematics, physics, chemistry,
+statistics, economics, information theory, and engineering
+10	common logarithm	lg x	log x, log10x
+(in engineering, biology, astronomy)	various engineering fields (see decibel and see below),
+logarithm tables, handheld calculators, spectroscopy
+History
+Main article: History of logarithms
+The history of logarithm in seventeenth-century Europe is the discovery of a new function that extended the realm of analysis beyond the scope of algebraic methods. The method of logarithms was publicly propounded by John Napier in 1614, in a book titled Mirifici Logarithmorum Canonis Descriptio (Description of the Wonderful Rule of Logarithms).[22][23] Prior to Napier's invention, there had been other techniques of similar scopes, such as the prosthaphaeresis or the use of tables of progressions, extensively developed by Jost Bürgi around 1600.[24][25]
+
+The common logarithm of a number is the index of that power of ten which equals the number.[26] Speaking of a number as requiring so many figures is a rough allusion to common logarithm, and was referred to by Archimedes as the "order of a number".[27] The first real logarithms were heuristic methods to turn multiplication into addition, thus facilitating rapid computation. Some of these methods used tables derived from trigonometric identities.[28] Such methods are called prosthaphaeresis.
+
+Invention of the function now known as natural logarithm began as an attempt to perform a quadrature of a rectangular hyperbola by Grégoire de Saint-Vincent, a Belgian Jesuit residing in Prague. Archimedes had written The Quadrature of the Parabola in the third century BC, but a quadrature for the hyperbola eluded all efforts until Saint-Vincent published his results in 1647. The relation that the logarithm provides between a geometric progression in its argument and an arithmetic progression of values, prompted A. A. de Sarasa to make the connection of Saint-Vincent's quadrature and the tradition of logarithms in prosthaphaeresis, leading to the term "hyperbolic logarithm", a synonym for natural logarithm. Soon the new function was appreciated by Christiaan Huygens, and James Gregory. The notation Log y was adopted by Leibniz in 1675,[29] and the next year he connected it to the integral {\displaystyle \int {\frac {dy}{y}}.}\int {\frac {dy}{y}}.
+
+Logarithm tables, slide rules, and historical applications
+
+The 1797 Encyclopædia Britannica explanation of logarithms
+By simplifying difficult calculations before calculators and computers became available, logarithms contributed to the advance of science, especially astronomy. They were critical to advances in surveying, celestial navigation, and other domains. Pierre-Simon Laplace called logarithms
+
+"...[a]n admirable artifice which, by reducing to a few days the labour of many months, doubles the life of the astronomer, and spares him the errors and disgust inseparable from long calculations."[30]
+As the function f(x) = bx is the inverse function of logbx, it has been called the antilogarithm.[31]
+
+Log tables
+A key tool that enabled the practical use of logarithms was the table of logarithms.[32] The first such table was compiled by Henry Briggs in 1617, immediately after Napier's invention but with the innovation of using 10 as the base. Briggs' first table contained the common logarithms of all integers in the range 1–1000, with a precision of 14 digits. Subsequently, tables with increasing scope were written. These tables listed the values of log10x for any number x in a certain range, at a certain precision. Base-10 logarithms were universally used for computation, hence the name common logarithm, since numbers that differ by factors of 10 have logarithms that differ by integers. The common logarithm of x can be separated into an integer part and a fractional part, known as the characteristic and mantissa. Tables of logarithms need only include the mantissa, as the characteristic can be easily determined by counting digits from the decimal point.[33] The characteristic of 10 · x is one plus the characteristic of x, and their mantissas are the same. Thus using a three-digit log table, the logarithm of 3542 is approximated by
+
+{\displaystyle \log _{10}3542=\log _{10}(1000\cdot 3.542)=3+\log _{10}3.542\approx 3+\log _{10}3.54\,}{\displaystyle \log _{10}3542=\log _{10}(1000\cdot 3.542)=3+\log _{10}3.542\approx 3+\log _{10}3.54\,}
+Greater accuracy can be obtained by interpolation:
+
+{\displaystyle \log _{10}3542\approx 3+\log _{10}3.54+0.2(\log _{10}3.55-\log _{10}3.54)\,}{\displaystyle \log _{10}3542\approx 3+\log _{10}3.54+0.2(\log _{10}3.55-\log _{10}3.54)\,}
+The value of 10x can be determined by reverse look up in the same table, since the logarithm is a monotonic function.
+
+Computations
+The product and quotient of two positive numbers c and d were routinely calculated as the sum and difference of their logarithms. The product cd or quotient c/d came from looking up the antilogarithm of the sum or difference, via the same table:
+
+{\displaystyle cd=10^{\ \log _{10}c}\,10^{\ \log _{10}d}=10^{\ \log _{10}c+\ \log _{10}d}\,}{\displaystyle cd=10^{\ \log _{10}c}\,10^{\ \log _{10}d}=10^{\ \log _{10}c+\ \log _{10}d}\,}
+and
+
+{\displaystyle {\frac {c}{d}}=cd^{-1}=10^{\ \log _{10}c-\ \log _{10}d}.\,}{\displaystyle {\frac {c}{d}}=cd^{-1}=10^{\ \log _{10}c-\ \log _{10}d}.\,}
+For manual calculations that demand any appreciable precision, performing the lookups of the two logarithms, calculating their sum or difference, and looking up the antilogarithm is much faster than performing the multiplication by earlier methods such as prosthaphaeresis, which relies on trigonometric identities.
+
+Calculations of powers and roots are reduced to multiplications or divisions and look-ups by
+
+{\displaystyle c^{d}=\left(10^{\ \log _{10}c}\right)^{d}=10^{d\ \log _{10}c}\,}{\displaystyle c^{d}=\left(10^{\ \log _{10}c}\right)^{d}=10^{d\ \log _{10}c}\,}
+and
+
+{\displaystyle {\sqrt[{d}]{c}}=c^{\frac {1}{d}}=10^{{\frac {1}{d}}\ \log _{10}c}.\,}{\displaystyle {\sqrt[{d}]{c}}=c^{\frac {1}{d}}=10^{{\frac {1}{d}}\ \log _{10}c}.\,}
+Trigonometric calculations were facilitated by tables that contained the common logarithms of trigonometric functions.
+
+Slide rules
+Another critical application was the slide rule, a pair of logarithmically divided scales used for calculation. The non-sliding logarithmic scale, Gunter's rule, was invented shortly after Napier's invention. William Oughtred enhanced it to create the slide rule—a pair of logarithmic scales movable with respect to each other. Numbers are placed on sliding scales at distances proportional to the differences between their logarithms. Sliding the upper scale appropriately amounts to mechanically adding logarithms, as illustrated here:
+
+A slide rule: two rectangles with logarithmically ticked axes, arrangement to add the distance from 1 to 2 to the distance from 1 to 3, indicating the product 6.
+Schematic depiction of a slide rule. Starting from 2 on the lower scale, add the distance to 3 on the upper scale to reach the product 6. The slide rule works because it is marked such that the distance from 1 to x is proportional to the logarithm of x.
+For example, adding the distance from 1 to 2 on the lower scale to the distance from 1 to 3 on the upper scale yields a product of 6, which is read off at the lower part. The slide rule was an essential calculating tool for engineers and scientists until the 1970s, because it allows, at the expense of precision, much faster computation than techniques based on tables.[34]
+
+Analytic properties
+A deeper study of logarithms requires the concept of a function. A function is a rule that, given one number, produces another number.[35] An example is the function producing the x-th power of b from any real number x, where the base b is a fixed number. This function is written: {\displaystyle f(x)=b^{x}.\,}f(x)=b^{x}.\,
+
+Logarithmic function
+To justify the definition of logarithms, it is necessary to show that the equation
+
+{\displaystyle b^{x}=y\,}b^{x}=y\,
+has a solution x and that this solution is unique, provided that y is positive and that b is positive and unequal to 1. A proof of that fact requires the intermediate value theorem from elementary calculus.[36] This theorem states that a continuous function that produces two values m and n also produces any value that lies between m and n. A function is continuous if it does not "jump", that is, if its graph can be drawn without lifting the pen.
+
+This property can be shown to hold for the function f(x) = bx. Because f takes arbitrarily large and arbitrarily small positive values, any number y > 0 lies between f(x0) and f(x1) for suitable x0 and x1. Hence, the intermediate value theorem ensures that the equation f(x) = y has a solution. Moreover, there is only one solution to this equation, because the function f is strictly increasing (for b > 1), or strictly decreasing (for 0 < b < 1).[37]
+
+The unique solution x is the logarithm of y to base b, logby. The function that assigns to y its logarithm is called logarithm function or logarithmic function (or just logarithm).
+
+The function logbx is essentially characterized by the above product formula
+
+{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y.}{\displaystyle \log _{b}(xy)=\log _{b}x+\log _{b}y.}
+More precisely, the logarithm to any base b > 1 is the only increasing function f from the positive reals to the reals satisfying f(b) = 1 and [38]
+
+{\displaystyle f(xy)=f(x)+f(y).}f(xy)=f(x)+f(y).
+Inverse function
+The graphs of two functions.
+The graph of the logarithm function logb(x) (blue) is obtained by reflecting the graph of the function bx (red) at the diagonal line (x = y).
+The formula for the logarithm of a power says in particular that for any number x,
+
+{\displaystyle \log _{b}\left(b^{x}\right)=x\log _{b}b=x.}{\displaystyle \log _{b}\left(b^{x}\right)=x\log _{b}b=x.}
+In prose, taking the x-th power of b and then the base-b logarithm gives back x. Conversely, given a positive number y, the formula
+
+{\displaystyle b^{\log _{b}y}=y}{\displaystyle b^{\log _{b}y}=y}
+says that first taking the logarithm and then exponentiating gives back y. Thus, the two possible ways of combining (or composing) logarithms and exponentiation give back the original number. Therefore, the logarithm to base b is the inverse function of f(x) = bx.[39]
+
+Inverse functions are closely related to the original functions. Their graphs correspond to each other upon exchanging the x- and the y-coordinates (or upon reflection at the diagonal line x = y), as shown at the right: a point (t, u = bt) on the graph of f yields a point (u, t = logbu) on the graph of the logarithm and vice versa. As a consequence, logb(x) diverges to infinity (gets bigger than any given number) if x grows to infinity, provided that b is greater than one. In that case, logb(x) is an increasing function. For b < 1, logb(x) tends to minus infinity instead. When x approaches zero, logbx goes to minus infinity for b > 1 (plus infinity for b < 1, respectively).
+
+Derivative and antiderivative
+A graph of the logarithm function and a line touching it in one point.
+The graph of the natural logarithm (green) and its tangent at x = 1.5 (black)
+Analytic properties of functions pass to their inverses.[36] Thus, as f(x) = bx is a continuous and differentiable function, so is logby. Roughly, a continuous function is differentiable if its graph has no sharp "corners". Moreover, as the derivative of f(x) evaluates to ln(b)bx by the properties of the exponential function, the chain rule implies that the derivative of logbx is given by[37][40]
+
+{\displaystyle {\frac {d}{dx}}\log _{b}x={\frac {1}{x\ln b}}.}{\displaystyle {\frac {d}{dx}}\log _{b}x={\frac {1}{x\ln b}}.}
+That is, the slope of the tangent touching the graph of the base-b logarithm at the point (x, logb(x)) equals 1/(x ln(b)).
+
+The derivative of ln x is 1/x; this implies that ln x is the unique antiderivative of 1/x that has the value 0 for x =1. It is this very simple formula that motivated to qualify as "natural" the natural logarithm; this is also one of the main reasons of the importance of the constant e.
+
+The derivative with a generalised functional argument f(x) is
+
+{\displaystyle {\frac {d}{dx}}\ln f(x)={\frac {f'(x)}{f(x)}}.}{\displaystyle {\frac {d}{dx}}\ln f(x)={\frac {f'(x)}{f(x)}}.}
+The quotient at the right hand side is called the logarithmic derivative of f. Computing f'(x) by means of the derivative of ln(f(x)) is known as logarithmic differentiation.[41] The antiderivative of the natural logarithm ln(x) is:[42]
+
+{\displaystyle \int \ln(x)\,dx=x\ln(x)-x+C.}\int \ln(x)\,dx=x\ln(x)-x+C.
+Related formulas, such as antiderivatives of logarithms to other bases can be derived from this equation using the change of bases.[43]
+
+Integral representation of the natural logarithm
+A hyperbola with part of the area underneath shaded in grey.
+The natural logarithm of t is the shaded area underneath the graph of the function f(x) = 1/x (reciprocal of x).
+The natural logarithm of t equals the integral of 1/x dx from 1 to t:
+
+{\displaystyle \ln(t)=\int _{1}^{t}{\frac {1}{x}}\,dx.}\ln(t)=\int _{1}^{t}{\frac {1}{x}}\,dx.
+In other words, ln(t) equals the area between the x axis and the graph of the function 1/x, ranging from x = 1 to x = t (figure at the right). This is a consequence of the fundamental theorem of calculus and the fact that the derivative of ln(x) is 1/x. The right hand side of this equation can serve as a definition of the natural logarithm. Product and power logarithm formulas can be derived from this definition.[44] For example, the product formula ln(tu) = ln(t) + ln(u) is deduced as:
+
+{\displaystyle \ln(tu)=\int _{1}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(1)}{=}}\int _{1}^{t}{\frac {1}{x}}\,dx+\int _{t}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(2)}{=}}\ln(t)+\int _{1}^{u}{\frac {1}{w}}\,dw=\ln(t)+\ln(u).}\ln(tu)=\int _{1}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(1)}{=}}\int _{1}^{t}{\frac {1}{x}}\,dx+\int _{t}^{tu}{\frac {1}{x}}\,dx\ {\stackrel {(2)}{=}}\ln(t)+\int _{1}^{u}{\frac {1}{w}}\,dw=\ln(t)+\ln(u).
+The equality (1) splits the integral into two parts, while the equality (2) is a change of variable (w = x/t). In the illustration below, the splitting corresponds to dividing the area into the yellow and blue parts. Rescaling the left hand blue area vertically by the factor t and shrinking it by the same factor horizontally does not change its size. Moving it appropriately, the area fits the graph of the function f(x) = 1/x again. Therefore, the left hand blue area, which is the integral of f(x) from t to tu is the same as the integral from 1 to u. This justifies the equality (2) with a more geometric proof.
+
+The hyperbola depicted twice. The area underneath is split into different parts.
+A visual proof of the product formula of the natural logarithm
+The power formula ln(tr) = r ln(t) may be derived in a similar way:
+
+{\displaystyle \ln(t^{r})=\int _{1}^{t^{r}}{\frac {1}{x}}dx=\int _{1}^{t}{\frac {1}{w^{r}}}\left(rw^{r-1}\,dw\right)=r\int _{1}^{t}{\frac {1}{w}}\,dw=r\ln(t).}\ln(t^{r})=\int _{1}^{t^{r}}{\frac {1}{x}}dx=\int _{1}^{t}{\frac {1}{w^{r}}}\left(rw^{r-1}\,dw\right)=r\int _{1}^{t}{\frac {1}{w}}\,dw=r\ln(t).
+The second equality uses a change of variables (integration by substitution), w = x1/r.
+
+The sum over the reciprocals of natural numbers,
+
+{\displaystyle 1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}=\sum _{k=1}^{n}{\frac {1}{k}},}1+{\frac {1}{2}}+{\frac {1}{3}}+\cdots +{\frac {1}{n}}=\sum _{k=1}^{n}{\frac {1}{k}},
+is called the harmonic series. It is closely tied to the natural logarithm: as n tends to infinity, the difference,
+
+{\displaystyle \sum _{k=1}^{n}{\frac {1}{k}}-\ln(n),}\sum _{k=1}^{n}{\frac {1}{k}}-\ln(n),
+converges (i.e., gets arbitrarily close) to a number known as the Euler–Mascheroni constant γ = 0.5772.... This relation aids in analyzing the performance of algorithms such as quicksort.[45]
+
+There are also some other integral representations of the logarithm that are useful in some situations:
+
+{\displaystyle \ln(x)=-\lim _{\epsilon \to 0}\int _{\epsilon }^{\infty }{\frac {dt}{t}}\left(e^{-xt}-e^{-t}\right)}\ln(x)=-\lim _{\epsilon \to 0}\int _{\epsilon }^{\infty }{\frac {dt}{t}}\left(e^{-xt}-e^{-t}\right)
+{\displaystyle \ln(x)=\int _{0}^{\infty }\,{\frac {dt}{t}}\,\left[\cos(t)-\cos(xt)\right]}{\displaystyle \ln(x)=\int _{0}^{\infty }\,{\frac {dt}{t}}\,\left[\cos(t)-\cos(xt)\right]}
+The first identity can be verified by showing that it has the same value at x = 1, and the same derivative. The second identity can be proven by writing
+
+{\displaystyle {\frac {1}{t}}=\int _{0}^{\infty }\,dq\,e^{-qt}}{\displaystyle {\frac {1}{t}}=\int _{0}^{\infty }\,dq\,e^{-qt}}
+and then inserting the Laplace transform of cos(xt) (and cos(t)).
+
+Transcendence of the logarithm
+Real numbers that are not algebraic are called transcendental;[46] for example, π and e are such numbers, but {\displaystyle {\sqrt {2-{\sqrt {3}}}}}{\sqrt {2-{\sqrt {3}}}} is not. Almost all real numbers are transcendental. The logarithm is an example of a transcendental function. The Gelfond–Schneider theorem asserts that logarithms usually take transcendental, i.e., "difficult" values.[47]
+
+Calculation
+
+The logarithm keys (LOG for base-10 and LN for base-e) on a typical scientific calculator
+Logarithms are easy to compute in some cases, such as log10(1000) = 3. In general, logarithms can be calculated using power series or the arithmetic–geometric mean, or be retrieved from a precalculated logarithm table that provides a fixed precision.[48][49] Newton's method, an iterative method to solve equations approximately, can also be used to calculate the logarithm, because its inverse function, the exponential function, can be computed efficiently.[50] Using look-up tables, CORDIC-like methods can be used to compute logarithms if the only available operations are addition and bit shifts.[51][52] Moreover, the binary logarithm algorithm calculates lb(x) recursively based on repeated squarings of x, taking advantage of the relation
+
+{\displaystyle \log _{2}\left(x^{2}\right)=2\log _{2}(x).\,}{\displaystyle \log _{2}\left(x^{2}\right)=2\log _{2}(x).\,}
+Power series
+Taylor series
+An animation showing increasingly good approximations of the logarithm graph.
+The Taylor series of ln(z) centered at z = 1. The animation shows the first 10 approximations along with the 99th and 100th. The approximations do not converge beyond a distance of 1 from the center.
+For any real number z that satisfies 0 < z < 2, the following formula holds:[nb 4][53]
+
+{\displaystyle \ln(z)={\frac {(z-1)^{1}}{1}}-{\frac {(z-1)^{2}}{2}}+{\frac {(z-1)^{3}}{3}}-{\frac {(z-1)^{4}}{4}}+\cdots =\sum _{k=1}^{\infty }(-1)^{k+1}{\frac {(z-1)^{k}}{k}}}{\displaystyle \ln(z)={\frac {(z-1)^{1}}{1}}-{\frac {(z-1)^{2}}{2}}+{\frac {(z-1)^{3}}{3}}-{\frac {(z-1)^{4}}{4}}+\cdots =\sum _{k=1}^{\infty }(-1)^{k+1}{\frac {(z-1)^{k}}{k}}}
+This is a shorthand for saying that ln(z) can be approximated to a more and more accurate value by the following expressions:
+
+{\displaystyle {\begin{array}{lllll}(z-1)&&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&+&{\frac {(z-1)^{3}}{3}}\\\vdots &\end{array}}}{\begin{array}{lllll}(z-1)&&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&\\(z-1)&-&{\frac {(z-1)^{2}}{2}}&+&{\frac {(z-1)^{3}}{3}}\\\vdots &\end{array}}
+For example, with z = 1.5 the third approximation yields 0.4167, which is about 0.011 greater than ln(1.5) = 0.405465. This series approximates ln(z) with arbitrary precision, provided the number of summands is large enough. In elementary calculus, ln(z) is therefore the limit of this series. It is the Taylor series of the natural logarithm at z = 1. The Taylor series of ln(z) provides a particularly useful approximation to ln(1+z) when z is small, |z| < 1, since then
+
+{\displaystyle \ln(1+z)=z-{\frac {z^{2}}{2}}+{\frac {z^{3}}{3}}\cdots \approx z.}\ln(1+z)=z-{\frac {z^{2}}{2}}+{\frac {z^{3}}{3}}\cdots \approx z.
+For example, with z = 0.1 the first-order approximation gives ln(1.1) ≈ 0.1, which is less than 5% off the correct value 0.0953.
+
+More efficient series
+Another series is based on the area hyperbolic tangent function:
+
+{\displaystyle \ln(z)=2\cdot \operatorname {artanh} \,{\frac {z-1}{z+1}}=2\left({\frac {z-1}{z+1}}+{\frac {1}{3}}{\left({\frac {z-1}{z+1}}\right)}^{3}+{\frac {1}{5}}{\left({\frac {z-1}{z+1}}\right)}^{5}+\cdots \right),}\ln(z)=2\cdot \operatorname {artanh} \,{\frac {z-1}{z+1}}=2\left({\frac {z-1}{z+1}}+{\frac {1}{3}}{\left({\frac {z-1}{z+1}}\right)}^{3}+{\frac {1}{5}}{\left({\frac {z-1}{z+1}}\right)}^{5}+\cdots \right),
+for any real number z > 0.[nb 5][53] Using sigma notation, this is also written as
+
+{\displaystyle \ln(z)=2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {z-1}{z+1}}\right)^{2k+1}.}{\displaystyle \ln(z)=2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {z-1}{z+1}}\right)^{2k+1}.}
+This series can be derived from the above Taylor series. It converges more quickly than the Taylor series, especially if z is close to 1. For example, for z = 1.5, the first three terms of the second series approximate ln(1.5) with an error of about 3×10−6. The quick convergence for z close to 1 can be taken advantage of in the following way: given a low-accuracy approximation y ≈ ln(z) and putting
+
+{\displaystyle A={\frac {z}{\exp(y)}},\,}A={\frac {z}{\exp(y)}},\,
+the logarithm of z is:
+
+{\displaystyle \ln(z)=y+\ln(A).\,}\ln(z)=y+\ln(A).\,
+The better the initial approximation y is, the closer A is to 1, so its logarithm can be calculated efficiently. A can be calculated using the exponential series, which converges quickly provided y is not too large. Calculating the logarithm of larger z can be reduced to smaller values of z by writing z = a · 10b, so that ln(z) = ln(a) + b · ln(10).
+
+A closely related method can be used to compute the logarithm of integers. Putting {\displaystyle \textstyle z={\frac {n+1}{n}}}{\displaystyle \textstyle z={\frac {n+1}{n}}} in the above series, it follows that:
+
+{\displaystyle \ln(n+1)=\ln(n)+2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {1}{2n+1}}\right)^{2k+1}.}\ln(n+1)=\ln(n)+2\sum _{k=0}^{\infty }{\frac {1}{2k+1}}\left({\frac {1}{2n+1}}\right)^{2k+1}.
+If the logarithm of a large integer n is known, then this series yields a fast converging series for log(n+1), with a rate of convergence of {\displaystyle {\frac {1}{2n+1}}}{\displaystyle {\frac {1}{2n+1}}}.
+
+Arithmetic–geometric mean approximation
+The arithmetic–geometric mean yields high precision approximations of the natural logarithm. Sasaki and Kanada showed in 1982 that it was particularly fast for precisions between 400 and 1000 decimal places, while Taylor series methods were typically faster when less precision was needed. In their work ln(x) is approximated to a precision of 2−p (or p precise bits) by the following formula (due to Carl Friedrich Gauss):[54][55]
+
+{\displaystyle \ln(x)\approx {\frac {\pi }{2M(1,2^{2-m}/x)}}-m\ln(2).}\ln(x)\approx {\frac {\pi }{2M(1,2^{2-m}/x)}}-m\ln(2).
+Here M(x,y) denotes the arithmetic–geometric mean of x and y. It is obtained by repeatedly calculating the average {\displaystyle (x+y)/2}{\displaystyle (x+y)/2} (arithmetic mean) and {\displaystyle {\sqrt {xy}}}{\sqrt  {xy}} (geometric mean) of x and y then let those two numbers become the next x and y. The two numbers quickly converge to a common limit which is the value of M(x,y). m is chosen such that
+
+{\displaystyle x\,2^{m}>2^{p/2}.\,}x\,2^{m}>2^{p/2}.\,
+to ensure the required precision. A larger m makes the M(x,y) calculation take more steps (the initial x and y are farther apart so it takes more steps to converge) but gives more precision. The constants pi and ln(2) can be calculated with quickly converging series.
+
+Feynman's algorithm
+While at Los Alamos National Laboratory working on the Manhattan Project, Richard Feynman developed a bit-processing algorithm that is similar to long division and was later used in the Connection Machine. The algorithm uses the fact that every real number {\displaystyle 1<x<2}{\displaystyle 1<x<2} is uniquely representable as a product of distinct factors of the form {\displaystyle 1+2^{-k}}{\displaystyle 1+2^{-k}}. The algorithm sequentially builds that product {\displaystyle P}P: if {\displaystyle P\cdot (1+2^{-k})<x}{\displaystyle P\cdot (1+2^{-k})<x}, then it changes {\displaystyle P}P to {\displaystyle P\cdot (1+2^{-k})}{\displaystyle P\cdot (1+2^{-k})}. It then increase {\displaystyle k}k by one regardless. The algorithm stops when {\displaystyle k}k is large enough to give the desired accuracy. Because {\displaystyle \log(x)}\log(x) is the sum of the terms of the form {\displaystyle \log(1+2^{-k})}{\displaystyle \log(1+2^{-k})} corresponding to those {\displaystyle k}k for which the factor {\displaystyle 1+2^{-k}}{\displaystyle 1+2^{-k}} was included in the product {\displaystyle P}P, {\displaystyle \log(x)}\log(x) may be computed by simple addition, using a table of {\displaystyle \log(1+2^{-k})}{\displaystyle \log(1+2^{-k})} for all {\displaystyle k}k. Any base may be used for the logarithm table.[56]
+
+Applications
+A photograph of a nautilus' shell.
+A nautilus displaying a logarithmic spiral
+Logarithms have many applications inside and outside mathematics. Some of these occurrences are related to the notion of scale invariance. For example, each chamber of the shell of a nautilus is an approximate copy of the next one, scaled by a constant factor. This gives rise to a logarithmic spiral.[57] Benford's law on the distribution of leading digits can also be explained by scale invariance.[58] Logarithms are also linked to self-similarity. For example, logarithms appear in the analysis of algorithms that solve a problem by dividing it into two similar smaller problems and patching their solutions.[59] The dimensions of self-similar geometric shapes, that is, shapes whose parts resemble the overall picture are also based on logarithms. Logarithmic scales are useful for quantifying the relative change of a value as opposed to its absolute difference. Moreover, because the logarithmic function log(x) grows very slowly for large x, logarithmic scales are used to compress large-scale scientific data. Logarithms also occur in numerous scientific formulas, such as the Tsiolkovsky rocket equation, the Fenske equation, or the Nernst equation.
+
+Logarithmic scale
+Main article: Logarithmic scale
+A graph of the value of one mark over time. The line showing its value is increasing very quickly, even with logarithmic scale.
+A logarithmic chart depicting the value of one Goldmark in Papiermarks during the German hyperinflation in the 1920s
+Scientific quantities are often expressed as logarithms of other quantities, using a logarithmic scale. For example, the decibel is a unit of measurement associated with logarithmic-scale quantities. It is based on the common logarithm of ratios—10 times the common logarithm of a power ratio or 20 times the common logarithm of a voltage ratio. It is used to quantify the loss of voltage levels in transmitting electrical signals,[60] to describe power levels of sounds in acoustics,[61] and the absorbance of light in the fields of spectrometry and optics. The signal-to-noise ratio describing the amount of unwanted noise in relation to a (meaningful) signal is also measured in decibels.[62] In a similar vein, the peak signal-to-noise ratio is commonly used to assess the quality of sound and image compression methods using the logarithm.[63]
+
+The strength of an earthquake is measured by taking the common logarithm of the energy emitted at the quake. This is used in the moment magnitude scale or the Richter magnitude scale. For example, a 5.0 earthquake releases 32 times (101.5) and a 6.0 releases 1000 times (103) the energy of a 4.0.[64] Another logarithmic scale is apparent magnitude. It measures the brightness of stars logarithmically.[65] Yet another example is pH in chemistry; pH is the negative of the common logarithm of the activity of hydronium ions (the form hydrogen ions H+
+ take in water).[66] The activity of hydronium ions in neutral water is 10−7 mol·L−1, hence a pH of 7. Vinegar typically has a pH of about 3. The difference of 4 corresponds to a ratio of 104 of the activity, that is, vinegar's hydronium ion activity is about 10−3 mol·L−1.
+
+Semilog (log-linear) graphs use the logarithmic scale concept for visualization: one axis, typically the vertical one, is scaled logarithmically. For example, the chart at the right compresses the steep increase from 1 million to 1 trillion to the same space (on the vertical axis) as the increase from 1 to 1 million. In such graphs, exponential functions of the form f(x) = a · bx appear as straight lines with slope equal to the logarithm of b. Log-log graphs scale both axes logarithmically, which causes functions of the form f(x) = a · xk to be depicted as straight lines with slope equal to the exponent k. This is applied in visualizing and analyzing power laws.[67]
+
+Psychology
+Logarithms occur in several laws describing human perception:[68][69] Hick's law proposes a logarithmic relation between the time individuals take to choose an alternative and the number of choices they have.[70] Fitts's law predicts that the time required to rapidly move to a target area is a logarithmic function of the distance to and the size of the target.[71] In psychophysics, the Weber–Fechner law proposes a logarithmic relationship between stimulus and sensation such as the actual vs. the perceived weight of an item a person is carrying.[72] (This "law", however, is less realistic than more recent models, such as Stevens's power law.[73])
+
+Psychological studies found that individuals with little mathematics education tend to estimate quantities logarithmically, that is, they position a number on an unmarked line according to its logarithm, so that 10 is positioned as close to 100 as 100 is to 1000. Increasing education shifts this to a linear estimate (positioning 1000 10x as far away) in some circumstances, while logarithms are used when the numbers to be plotted are difficult to plot linearly.[74][75]
+
+Probability theory and statistics
+Three asymmetric PDF curves
+Three probability density functions (PDF) of random variables with log-normal distributions. The location parameter μ, which is zero for all three of the PDFs shown, is the mean of the logarithm of the random variable, not the mean of the variable itself.
+A bar chart and a superimposed second chart. The two differ slightly, but both decrease in a similar fashion.
+Distribution of first digits (in %, red bars) in the population of the 237 countries of the world. Black dots indicate the distribution predicted by Benford's law.
+Logarithms arise in probability theory: the law of large numbers dictates that, for a fair coin, as the number of coin-tosses increases to infinity, the observed proportion of heads approaches one-half. The fluctuations of this proportion about one-half are described by the law of the iterated logarithm.[76]
+
+Logarithms also occur in log-normal distributions. When the logarithm of a random variable has a normal distribution, the variable is said to have a log-normal distribution.[77] Log-normal distributions are encountered in many fields, wherever a variable is formed as the product of many independent positive random variables, for example in the study of turbulence.[78]
+
+Logarithms are used for maximum-likelihood estimation of parametric statistical models. For such a model, the likelihood function depends on at least one parameter that must be estimated. A maximum of the likelihood function occurs at the same parameter-value as a maximum of the logarithm of the likelihood (the "log likelihood"), because the logarithm is an increasing function. The log-likelihood is easier to maximize, especially for the multiplied likelihoods for independent random variables.[79]
+
+Benford's law describes the occurrence of digits in many data sets, such as heights of buildings. According to Benford's law, the probability that the first decimal-digit of an item in the data sample is d (from 1 to 9) equals log10(d + 1) − log10(d), regardless of the unit of measurement.[80] Thus, about 30% of the data can be expected to have 1 as first digit, 18% start with 2, etc. Auditors examine deviations from Benford's law to detect fraudulent accounting.[81]
+
+Computational complexity
+Analysis of algorithms is a branch of computer science that studies the performance of algorithms (computer programs solving a certain problem).[82] Logarithms are valuable for describing algorithms that divide a problem into smaller ones, and join the solutions of the subproblems.[83]
+
+For example, to find a number in a sorted list, the binary search algorithm checks the middle entry and proceeds with the half before or after the middle entry if the number is still not found. This algorithm requires, on average, log2(N) comparisons, where N is the list's length.[84] Similarly, the merge sort algorithm sorts an unsorted list by dividing the list into halves and sorting these first before merging the results. Merge sort algorithms typically require a time approximately proportional to N · log(N).[85] The base of the logarithm is not specified here, because the result only changes by a constant factor when another base is used. A constant factor is usually disregarded in the analysis of algorithms under the standard uniform cost model.[86]
+
+A function f(x) is said to grow logarithmically if f(x) is (exactly or approximately) proportional to the logarithm of x. (Biological descriptions of organism growth, however, use this term for an exponential function.[87]) For example, any natural number N can be represented in binary form in no more than log2(N) + 1 bits. In other words, the amount of memory needed to store N grows logarithmically with N.
+
+Entropy and chaos
+An oval shape with the trajectories of two particles.
+Billiards on an oval billiard table. Two particles, starting at the center with an angle differing by one degree, take paths that diverge chaotically because of reflections at the boundary.
+Entropy is broadly a measure of the disorder of some system. In statistical thermodynamics, the entropy S of some physical system is defined as
+
+{\displaystyle S=-k\sum _{i}p_{i}\ln(p_{i}).\,}S=-k\sum _{i}p_{i}\ln(p_{i}).\,
+The sum is over all possible states i of the system in question, such as the positions of gas particles in a container. Moreover, pi is the probability that the state i is attained and k is the Boltzmann constant. Similarly, entropy in information theory measures the quantity of information. If a message recipient may expect any one of N possible messages with equal likelihood, then the amount of information conveyed by any one such message is quantified as log2(N) bits.[88]
+
+Lyapunov exponents use logarithms to gauge the degree of chaoticity of a dynamical system. For example, for a particle moving on an oval billiard table, even small changes of the initial conditions result in very different paths of the particle. Such systems are chaotic in a deterministic way, because small measurement errors of the initial state predictably lead to largely different final states.[89] At least one Lyapunov exponent of a deterministically chaotic system is positive.
+
+Fractals
+Parts of a triangle are removed in an iterated way.
+The Sierpinski triangle (at the right) is constructed by repeatedly replacing equilateral triangles by three smaller ones.
+Logarithms occur in definitions of the dimension of fractals.[90] Fractals are geometric objects that are self-similar: small parts reproduce, at least roughly, the entire global structure. The Sierpinski triangle (pictured) can be covered by three copies of itself, each having sides half the original length. This makes the Hausdorff dimension of this structure ln(3)/ln(2) ≈ 1.58. Another logarithm-based notion of dimension is obtained by counting the number of boxes needed to cover the fractal in question.
+
+Music
+Four different octaves shown on a linear scale.
+Four different octaves shown on a logarithmic scale.
+Four different octaves shown on a linear scale, then shown on a logarithmic scale (as the ear hears them).
+Logarithms are related to musical tones and intervals. In equal temperament, the frequency ratio depends only on the interval between two tones, not on the specific frequency, or pitch, of the individual tones. For example, the note A has a frequency of 440 Hz and B-flat has a frequency of 466 Hz. The interval between A and B-flat is a semitone, as is the one between B-flat and B (frequency 493 Hz). Accordingly, the frequency ratios agree:
+
+{\displaystyle {\frac {466}{440}}\approx {\frac {493}{466}}\approx 1.059\approx {\sqrt[{12}]{2}}.}{\frac {466}{440}}\approx {\frac {493}{466}}\approx 1.059\approx {\sqrt[{12}]{2}}.
+Therefore, logarithms can be used to describe the intervals: an interval is measured in semitones by taking the base-21/12 logarithm of the frequency ratio, while the base-21/1200 logarithm of the frequency ratio expresses the interval in cents, hundredths of a semitone. The latter is used for finer encoding, as it is needed for non-equal temperaments.[91]
+
+Interval
+(the two tones are played at the same time)	1/12 tone About this soundplay (help·info)	Semitone About this soundplay	Just major third About this soundplay	Major third About this soundplay	Tritone About this soundplay	Octave About this soundplay
+Frequency ratio r	{\displaystyle 2^{\frac {1}{72}}\approx 1.0097}2^{\frac {1}{72}}\approx 1.0097	{\displaystyle 2^{\frac {1}{12}}\approx 1.0595}2^{\frac {1}{12}}\approx 1.0595	{\displaystyle {\tfrac {5}{4}}=1.25}{\tfrac {5}{4}}=1.25	{\displaystyle {\begin{aligned}2^{\frac {4}{12}}&={\sqrt[{3}]{2}}\\&\approx 1.2599\end{aligned}}}{\begin{aligned}2^{\frac {4}{12}}&={\sqrt[{3}]{2}}\\&\approx 1.2599\end{aligned}}	{\displaystyle {\begin{aligned}2^{\frac {6}{12}}&={\sqrt {2}}\\&\approx 1.4142\end{aligned}}}{\begin{aligned}2^{\frac {6}{12}}&={\sqrt {2}}\\&\approx 1.4142\end{aligned}}	{\displaystyle 2^{\frac {12}{12}}=2}2^{\frac {12}{12}}=2
+Corresponding number of semitones
+{\displaystyle \log _{\sqrt[{12}]{2}}(r)=12\log _{2}(r)}\log _{\sqrt[{12}]{2}}(r)=12\log _{2}(r)	{\displaystyle {\tfrac {1}{6}}\,}{\tfrac {1}{6}}\,	{\displaystyle 1\,}1\,	{\displaystyle \approx 3.8631\,}\approx 3.8631\,	{\displaystyle 4\,}4\,	{\displaystyle 6\,}6\,	{\displaystyle 12\,}12\,
+Corresponding number of cents
+{\displaystyle \log _{\sqrt[{1200}]{2}}(r)=1200\log _{2}(r)}\log _{\sqrt[{1200}]{2}}(r)=1200\log _{2}(r)	{\displaystyle 16{\tfrac {2}{3}}\,}16{\tfrac {2}{3}}\,	{\displaystyle 100\,}100\,	{\displaystyle \approx 386.31\,}\approx 386.31\,	{\displaystyle 400\,}400\,	{\displaystyle 600\,}600\,	{\displaystyle 1200\,}1200\,
+Number theory
+Natural logarithms are closely linked to counting prime numbers (2, 3, 5, 7, 11, ...), an important topic in number theory. For any integer x, the quantity of prime numbers less than or equal to x is denoted π(x). The prime number theorem asserts that π(x) is approximately given by
+
+{\displaystyle {\frac {x}{\ln(x)}},}{\frac {x}{\ln(x)}},
+in the sense that the ratio of π(x) and that fraction approaches 1 when x tends to infinity.[92] As a consequence, the probability that a randomly chosen number between 1 and x is prime is inversely proportional to the number of decimal digits of x. A far better estimate of π(x) is given by the offset logarithmic integral function Li(x), defined by
+
+{\displaystyle \mathrm {Li} (x)=\int _{2}^{x}{\frac {1}{\ln(t)}}\,dt.}\mathrm {Li} (x)=\int _{2}^{x}{\frac {1}{\ln(t)}}\,dt.
+The Riemann hypothesis, one of the oldest open mathematical conjectures, can be stated in terms of comparing π(x) and Li(x).[93] The Erdős–Kac theorem describing the number of distinct prime factors also involves the natural logarithm.
+
+The logarithm of n factorial, n! = 1 · 2 · ... · n, is given by
+
+{\displaystyle \ln(n!)=\ln(1)+\ln(2)+\cdots +\ln(n).\,}\ln(n!)=\ln(1)+\ln(2)+\cdots +\ln(n).\,
+This can be used to obtain Stirling's formula, an approximation of n! for large n.[94]
+
+Generalizations
+Complex logarithm
+Main article: Complex logarithm
+An illustration of the polar form: a point is described by an arrow or equivalently by its length and angle to the x axis.
+Polar form of z = x + iy. Both φ and φ' are arguments of z.
+All the complex numbers a that solve the equation
+
+{\displaystyle e^{a}=z}{\displaystyle e^{a}=z}
+are called complex logarithms of z, when z is (considered as) a complex number. A complex number is commonly represented as z = x + iy, where x and y are real numbers and i is an imaginary unit, the square of which is −1. Such a number can be visualized by a point in the complex plane, as shown at the right. The polar form encodes a non-zero complex number z by its absolute value, that is, the (positive, real) distance r to the origin, and an angle between the real (x) axis Re and the line passing through both the origin and z. This angle is called the argument of z.
+
+The absolute value r of z is given by
+
+{\displaystyle \textstyle r={\sqrt {x^{2}+y^{2}}}.}{\displaystyle \textstyle r={\sqrt {x^{2}+y^{2}}}.}
+Using the geometrical interpretation of {\displaystyle \sin }\sin  and {\displaystyle \cos }\cos and their periodicity in {\displaystyle 2\pi ,}2\pi , any complex number z may be denoted as
+
+{\displaystyle z=x+iy=r(\cos \varphi +i\sin \varphi )=r(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )),}{\displaystyle z=x+iy=r(\cos \varphi +i\sin \varphi )=r(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )),}
+for any integer number k. Evidently the argument of z is not uniquely specified: both φ and φ' = φ + 2kπ are valid arguments of z for all integers k, because adding 2kπ radian or k⋅360°[nb 6] to φ corresponds to "winding" around the origin counter-clock-wise by k turns. The resulting complex number is always z, as illustrated at the right for k = 1. One may select exactly one of the possible arguments of z as the so-called principal argument, denoted Arg(z), with a capital A, by requiring φ to belong to one, conveniently selected turn, e.g., {\displaystyle -\pi <\varphi \leq \pi }{\displaystyle -\pi <\varphi \leq \pi }[95] or {\displaystyle 0\leq \varphi <2\pi .}{\displaystyle 0\leq \varphi <2\pi .}[96] These regions, where the argument of z is uniquely determined are called branches of the argument function.
+
+
+The principal branch (-π, π
+of the complex logarithm, Log(z). The black point at z = 1 corresponds to absolute value zero and brighter (more saturated) colors refer to bigger absolute values. The hue of the color encodes the argument of Log(z).|alt=A density plot. In the middle there is a black point, at the negative axis the hue jumps sharply and evolves smoothly otherwise.]]
+
+Euler's formula connects the trigonometric functions sine and cosine to the complex exponential:
+
+{\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi .}{\displaystyle e^{i\varphi }=\cos \varphi +i\sin \varphi .}
+Using this formula, and again the periodicity, the following identities hold:[97]
+
+{\displaystyle {\begin{array}{lll}z&=&r\left(\cos \varphi +i\sin \varphi \right)\\&=&r\left(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )\right)\\&=&re^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)}e^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)+i(\varphi +2k\pi )}=e^{a_{k}},\end{array}}}{\displaystyle {\begin{array}{lll}z&=&r\left(\cos \varphi +i\sin \varphi \right)\\&=&r\left(\cos(\varphi +2k\pi )+i\sin(\varphi +2k\pi )\right)\\&=&re^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)}e^{i(\varphi +2k\pi )}\\&=&e^{\ln(r)+i(\varphi +2k\pi )}=e^{a_{k}},\end{array}}}
+where ln(r) is the unique real natural logarithm, ak denote the complex logarithms of z, and k is an arbitrary integer. Therefore, the complex logarithms of z, which are all those complex values ak for which the ak-th power of e equals z, are the infinitely many values
+
+{\displaystyle a_{k}=\ln(r)+i(\varphi +2k\pi ),\quad }{\displaystyle a_{k}=\ln(r)+i(\varphi +2k\pi ),\quad } for arbitrary integers k.
+Taking k such that {\displaystyle \varphi +2k\pi }{\displaystyle \varphi +2k\pi } is within the defined interval for the principal arguments, then ak is called the principal value of the logarithm, denoted Log(z), again with a capital L. The principal argument of any positive real number x is 0; hence Log(x) is a real number and equals the real (natural) logarithm. However, the above formulas for logarithms of products and powers do not generalize to the principal value of the complex logarithm.[98]
+
+The illustration at the right depicts Log(z), confining the arguments of z to the interval (-π, π]. This way the corresponding branch of the complex logarithm has discontinuities all along the negative real x axis, which can be seen in the jump in the hue there. This discontinuity arises from jumping to the other boundary in the same branch, when crossing a boundary, i.e., not changing to the corresponding k-value of the continuously neighboring branch. Such a locus is called a branch cut. Dropping the range restrictions on the argument makes the relations "argument of z", and consequently the "logarithm of z", multi-valued functions.
+
+Inverses of other exponential functions
+Exponentiation occurs in many areas of mathematics and its inverse function is often referred to as the logarithm. For example, the logarithm of a matrix is the (multi-valued) inverse function of the matrix exponential.[99] Another example is the p-adic logarithm, the inverse function of the p-adic exponential. Both are defined via Taylor series analogous to the real case.[100] In the context of differential geometry, the exponential map maps the tangent space at a point of a manifold to a neighborhood of that point. Its inverse is also called the logarithmic (or log) map.[101]
+
+In the context of finite groups exponentiation is given by repeatedly multiplying one group element b with itself. The discrete logarithm is the integer n solving the equation
+
+{\displaystyle b^{n}=x,\,}b^{n}=x,\,
+where x is an element of the group. Carrying out the exponentiation can be done efficiently, but the discrete logarithm is believed to be very hard to calculate in some groups. This asymmetry has important applications in public key cryptography, such as for example in the Diffie–Hellman key exchange, a routine that allows secure exchanges of cryptographic keys over unsecured information channels.[102] Zech's logarithm is related to the discrete logarithm in the multiplicative group of non-zero elements of a finite field.[103]
+
+Further logarithm-like inverse functions include the double logarithm ln(ln(x)), the super- or hyper-4-logarithm (a slight variation of which is called iterated logarithm in computer science), the Lambert W function, and the logit. They are the inverse functions of the double exponential function, tetration, of f(w) = wew,[104] and of the logistic function, respectively.[105]
+
+Related concepts
+From the perspective of group theory, the identity log(cd) = log(c) + log(d) expresses a group isomorphism between positive reals under multiplication and reals under addition. Logarithmic functions are the only continuous isomorphisms between these groups.[106] By means of that isomorphism, the Haar measure (Lebesgue measure) dx on the reals corresponds to the Haar measure dx/x on the positive reals.[107] The non-negative reals not only have a multiplication, but also have addition, and form a semiring, called the probability semiring; this is in fact a semifield. The logarithm then takes multiplication to addition (log multiplication), and takes addition to log addition (LogSumExp), giving an isomorphism of semirings between the probability semiring and the log semiring.
+
+Logarithmic one-forms df/f appear in complex analysis and algebraic geometry as differential forms with logarithmic poles.[108]
+
+The polylogarithm is the function defined by
+
+{\displaystyle \operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{z^{k} \over k^{s}}.}\operatorname {Li} _{s}(z)=\sum _{k=1}^{\infty }{z^{k} \over k^{s}}.
+It is related to the natural logarithm by Li1(z) = −ln(1 − z). Moreover, Lis(1) equals the Riemann zeta function ζ(s).[109]
+
+See also
+Cologarithm
+Decimal exponent (dex)
+Exponential function
+Index of logarithm articles
+Notes
+ The restrictions on x and b are explained in the section "Analytic properties".
+ Some mathematicians disapprove of this notation. In his 1985 autobiography, Paul Halmos criticized what he considered the "childish ln notation," which he said no mathematician had ever used.[18] The notation was invented by Irving Stringham, a mathematician.[19][20]
+ For example C, Java, Haskell, and BASIC.
+ The same series holds for the principal value of the complex logarithm for complex numbers z satisfying |z − 1| < 1.
+ The same series holds for the principal value of the complex logarithm for complex numbers z with positive real part.
+ See radian for the conversion between 2π and 360 degree.
+References
+ "The Ultimate Guide to Logarithm — Theory & Applications". Math Vault. 8 May 2016. Retrieved 24 July 2019.
+ Hobson, Ernest William (1914). John Napier and the invention of logarithms, 1614; a lecture. University of California Libraries. Cambridge : University Press.
+ Remmert, Reinhold. (1991). Theory of complex functions. New York: Springer-Verlag. ISBN 0387971955. OCLC 21118309.
+ Shirali, Shailesh (2002), A Primer on Logarithms, Hyderabad: Universities Press, ISBN 978-81-7371-414-6, esp. section 2
+ Kate, S.K.; Bhapkar, H.R. (2009), Basics Of Mathematics, Pune: Technical Publications, ISBN 978-81-8431-755-8, chapter 1
+ All statements in this section can be found in Shailesh Shirali 2002, section 4, (Douglas Downing 2003, p. 275), or Kate & Bhapkar 2009, p. 1-1, for example.
+ Bernstein, Stephen; Bernstein, Ruth (1999), Schaum's outline of theory and problems of elements of statistics. I, Descriptive statistics and probability, Schaum's outline series, New York: McGraw-Hill, ISBN 978-0-07-005023-5, p. 21
+ Downing, Douglas (2003), Algebra the Easy Way, Barron's Educational Series, Hauppauge, NY: Barron's, ISBN 978-0-7641-1972-9, chapter 17, p. 275
+ Wegener, Ingo (2005), Complexity theory: exploring the limits of efficient algorithms, Berlin, New York: Springer-Verlag, ISBN 978-3-540-21045-0, p. 20
+ Van der Lubbe, Jan C. A. (1997), Information Theory, Cambridge University Press, p. 3, ISBN 978-0-521-46760-5
+ Allen, Elizabeth; Triantaphillidou, Sophie (2011), The Manual of Photography, Taylor & Francis, p. 228, ISBN 978-0-240-52037-7
+ Franz Embacher; Petra Oberhuemer, Mathematisches Lexikon (in German), mathe online: für Schule, Fachhochschule, Universität unde Selbststudium, retrieved 22 March 2011
+ Taylor, B.N. (1995), Guide for the Use of the International System of Units (SI), US Department of Commerce, archived from the original on 29 June 2007, retrieved 25 May 2007
+ Goodrich, Michael T.; Tamassia, Roberto (2002), Algorithm Design: Foundations, Analysis, and Internet Examples, John Wiley & Sons, p. 23, One of the interesting and sometimes even surprising aspects of the analysis of data structures and algorithms is the ubiquitous presence of logarithms ... As is the custom in the computing literature, we omit writing the base b of the logarithm when b = 2.
+ Parkhurst, David F. (2007). Introduction to Applied Mathematics for Environmental Science (illustrated ed.). Springer Science & Business Media. p. 288. ISBN 978-0-387-34228-3.
+ Gullberg, Jan (1997), Mathematics: from the birth of numbers., New York: W. W. Norton & Co, ISBN 978-0-393-04002-9
+ See footnote 1 in Perl, Yehoshua; Reingold, Edward M. (December 1977). "Understanding the complexity of interpolation search". Information Processing Letters. 6 (6): 219–22. doi:10.1016/0020-0190(77)90072-2.
+ Paul Halmos (1985), I Want to Be a Mathematician: An Automathography, Berlin, New York: Springer-Verlag, ISBN 978-0-387-96078-4
+ Irving Stringham (1893), Uniplanar algebra: being part I of a propædeutic to the higher mathematical analysis, The Berkeley Press, p. xiii
+ Roy S. Freedman (2006), Introduction to Financial Technology, Amsterdam: Academic Press, p. 59, ISBN 978-0-12-370478-8
+ See Theorem 3.29 in Rudin, Walter (1984). Principles of mathematical analysis (3rd ed., International student ed.). Auckland: McGraw-Hill International. ISBN 978-0-07-085613-4.
+ Napier, John (1614), Mirifici Logarithmorum Canonis Descriptio [The Description of the Wonderful Rule of Logarithms] (in Latin), Edinburgh, Scotland: Andrew Hart
+ Hobson, Ernest William (1914), John Napier and the invention of logarithms, 1614, Cambridge: The University Press
+ Folkerts, Menso; Launert, Dieter; Thom, Andreas (October 2015), Jost Bürgi's Method for Calculating Sines, arXiv:1510.03180, Bibcode:2015arXiv151003180F
+ "Burgi biography". www-history.mcs.st-and.ac.uk. Retrieved 14 February 2018.
+ William Gardner (1742) Tables of Logarithms
+ R.C. Pierce (1977) "A brief history of logarithm", Two-Year College Mathematics Journal 8(1):22–26.
+ Enrique Gonzales-Velasco (2011) Journey through Mathematics – Creative Episodes in its History, §2.4 Hyperbolic logarithms, p. 117, Springer ISBN 978-0-387-92153-2
+ Florian Cajori (1913) "History of the exponential and logarithm concepts", American Mathematical Monthly 20: 5, 35, 75, 107, 148, 173, 205.
+ Bryant, Walter W. (1907), A History of Astronomy, London: Methuen & Co, p. 44
+ Abramowitz, Milton; Stegun, Irene A., eds. (1972), Handbook of Mathematical Functions with Formulas, Graphs, and Mathematical Tables (10th ed.), New York: Dover Publications, ISBN 978-0-486-61272-0, section 4.7., p. 89
+ Campbell-Kelly, Martin (2003), The history of mathematical tables: from Sumer to spreadsheets, Oxford scholarship online, Oxford University Press, ISBN 978-0-19-850841-0, section 2
+ Spiegel, Murray R.; Moyer, R.E. (2006), Schaum's outline of college algebra, Schaum's outline series, New York: McGraw-Hill, ISBN 978-0-07-145227-4, p. 264
+ Maor 2009, sections 1, 13
+ Devlin, Keith (2004). Sets, functions, and logic: an introduction to abstract mathematics. Chapman & Hall/CRC mathematics (3rd ed.). Boca Raton, Fla: Chapman & Hall/CRC. ISBN 978-1-58488-449-1., or see the references in function
+ Lang, Serge (1997), Undergraduate analysis, Undergraduate Texts in Mathematics (2nd ed.), Berlin, New York: Springer-Verlag, doi:10.1007/978-1-4757-2698-5, ISBN 978-0-387-94841-6, MR 1476913, section III.3
+ Lang 1997, section IV.2
+ Dieudonné, Jean (1969). Foundations of Modern Analysis. 1. Academic Press. p. 84. item (4.3.1)
+ Stewart, James (2007), Single Variable Calculus: Early Transcendentals, Belmont: Thomson Brooks/Cole, ISBN 978-0-495-01169-9, section 1.6
+ "Calculation of d/dx(Log(b,x))". Wolfram Alpha. Wolfram Research. Retrieved 15 March 2011.
+ Kline, Morris (1998), Calculus: an intuitive and physical approach, Dover books on mathematics, New York: Dover Publications, ISBN 978-0-486-40453-0, p. 386
+ "Calculation of Integrate(ln(x))". Wolfram Alpha. Wolfram Research. Retrieved 15 March 2011.
+ Abramowitz & Stegun, eds. 1972, p. 69
+ Courant, Richard (1988), Differential and integral calculus. Vol. I, Wiley Classics Library, New York: John Wiley & Sons, ISBN 978-0-471-60842-4, MR 1009558, section III.6
+ Havil, Julian (2003), Gamma: Exploring Euler's Constant, Princeton University Press, ISBN 978-0-691-09983-5, sections 11.5 and 13.8
+ Nomizu, Katsumi (1996), Selected papers on number theory and algebraic geometry, 172, Providence, RI: AMS Bookstore, p. 21, ISBN 978-0-8218-0445-2
+ Baker, Alan (1975), Transcendental number theory, Cambridge University Press, ISBN 978-0-521-20461-3, p. 10
+ Muller, Jean-Michel (2006), Elementary functions (2nd ed.), Boston, MA: Birkhäuser Boston, ISBN 978-0-8176-4372-0, sections 4.2.2 (p. 72) and 5.5.2 (p. 95)
+ Hart; Cheney; Lawson; et al. (1968), Computer Approximations, SIAM Series in Applied Mathematics, New York: John Wiley, section 6.3, pp. 105–11
+ Zhang, M.; Delgado-Frias, J.G.; Vassiliadis, S. (1994), "Table driven Newton scheme for high precision logarithm generation", IEE Proceedings - Computers and Digital Techniques, 141 (5): 281–92, doi:10.1049/ip-cdt:19941268, ISSN 1350-2387, Archived from the original on 29 May 2015, section 1 for an overview
+ Meggitt, J.E. (April 1962), "Pseudo Division and Pseudo Multiplication Processes", IBM Journal, 6 (2): 210–26, doi:10.1147/rd.62.0210
+ Kahan, W. (20 May 2001), Pseudo-Division Algorithms for Floating-Point Logarithms and Exponentials
+ Abramowitz & Stegun, eds. 1972, p. 68
+ Sasaki, T.; Kanada, Y. (1982), "Practically fast multiple-precision evaluation of log(x)", Journal of Information Processing, 5 (4): 247–50, retrieved 30 March 2011
+ Ahrendt, Timm (1999), "Fast Computations of the Exponential Function", Stacs 99, Lecture notes in computer science, 1564, Berlin, New York: Springer, pp. 302–12, doi:10.1007/3-540-49116-3_28, ISBN 978-3-540-65691-3
+ Hillis, Danny (15 January 1989). "Richard Feynman and The Connection Machine". Physics Today. 42 (2): 78. Bibcode:1989PhT....42b..78H. doi:10.1063/1.881196.
+ Maor 2009, p. 135
+ Frey, Bruce (2006), Statistics hacks, Hacks Series, Sebastopol, CA: O'Reilly, ISBN 978-0-596-10164-0, chapter 6, section 64
+ Ricciardi, Luigi M. (1990), Lectures in applied mathematics and informatics, Manchester: Manchester University Press, ISBN 978-0-7190-2671-3, p. 21, section 1.3.2
+ Bakshi, U.A. (2009), Telecommunication Engineering, Pune: Technical Publications, ISBN 978-81-8431-725-1, section 5.2
+ Maling, George C. (2007), "Noise", in Rossing, Thomas D. (ed.), Springer handbook of acoustics, Berlin, New York: Springer-Verlag, ISBN 978-0-387-30446-5, section 23.0.2
+ Tashev, Ivan Jelev (2009), Sound Capture and Processing: Practical Approaches, New York: John Wiley & Sons, p. 98, ISBN 978-0-470-31983-3
+ Chui, C.K. (1997), Wavelets: a mathematical tool for signal processing, SIAM monographs on mathematical modeling and computation, Philadelphia: Society for Industrial and Applied Mathematics, ISBN 978-0-89871-384-8
+ Crauder, Bruce; Evans, Benny; Noell, Alan (2008), Functions and Change: A Modeling Approach to College Algebra (4th ed.), Boston: Cengage Learning, ISBN 978-0-547-15669-9, section 4.4.
+ Bradt, Hale (2004), Astronomy methods: a physical approach to astronomical observations, Cambridge Planetary Science, Cambridge University Press, ISBN 978-0-521-53551-9, section 8.3, p. 231
+ IUPAC (1997), A. D. McNaught, A. Wilkinson (ed.), Compendium of Chemical Terminology ("Gold Book") (2nd ed.), Oxford: Blackwell Scientific Publications, doi:10.1351/goldbook, ISBN 978-0-9678550-9-7
+ Bird, J.O. (2001), Newnes engineering mathematics pocket book (3rd ed.), Oxford: Newnes, ISBN 978-0-7506-4992-6, section 34
+ Goldstein, E. Bruce (2009), Encyclopedia of Perception, Encyclopedia of Perception, Thousand Oaks, CA: Sage, ISBN 978-1-4129-4081-8, pp. 355–56
+ Matthews, Gerald (2000), Human performance: cognition, stress, and individual differences, Human Performance: Cognition, Stress, and Individual Differences, Hove: Psychology Press, ISBN 978-0-415-04406-6, p. 48
+ Welford, A.T. (1968), Fundamentals of skill, London: Methuen, ISBN 978-0-416-03000-6, OCLC 219156, p. 61
+ Paul M. Fitts (June 1954), "The information capacity of the human motor system in controlling the amplitude of movement", Journal of Experimental Psychology, 47 (6): 381–91, doi:10.1037/h0055392, PMID 13174710, reprinted in Paul M. Fitts (1992), "The information capacity of the human motor system in controlling the amplitude of movement" (PDF), Journal of Experimental Psychology: General, 121 (3): 262–69, doi:10.1037/0096-3445.121.3.262, PMID 1402698, retrieved 30 March 2011
+ Banerjee, J.C. (1994), Encyclopaedic dictionary of psychological terms, New Delhi: M.D. Publications, p. 304, ISBN 978-81-85880-28-0, OCLC 33860167
+ Nadel, Lynn (2005), Encyclopedia of cognitive science, New York: John Wiley & Sons, ISBN 978-0-470-01619-0, lemmas Psychophysics and Perception: Overview
+ Siegler, Robert S.; Opfer, John E. (2003), "The Development of Numerical Estimation. Evidence for Multiple Representations of Numerical Quantity" (PDF), Psychological Science, 14 (3): 237–43, CiteSeerX 10.1.1.727.3696, doi:10.1111/1467-9280.02438, PMID 12741747, archived from the original (PDF) on 17 May 2011, retrieved 7 January 2011
+ Dehaene, Stanislas; Izard, Véronique; Spelke, Elizabeth; Pica, Pierre (2008), "Log or Linear? Distinct Intuitions of the Number Scale in Western and Amazonian Indigene Cultures", Science, 320 (5880): 1217–20, Bibcode:2008Sci...320.1217D, CiteSeerX 10.1.1.362.2390, doi:10.1126/science.1156540, PMC 2610411, PMID 18511690
+ Breiman, Leo (1992), Probability, Classics in applied mathematics, Philadelphia: Society for Industrial and Applied Mathematics, ISBN 978-0-89871-296-4, section 12.9
+ Aitchison, J.; Brown, J.A.C. (1969), The lognormal distribution, Cambridge University Press, ISBN 978-0-521-04011-2, OCLC 301100935
+ Jean Mathieu and Julian Scott (2000), An introduction to turbulent flow, Cambridge University Press, p. 50, ISBN 978-0-521-77538-0
+ Rose, Colin; Smith, Murray D. (2002), Mathematical statistics with Mathematica, Springer texts in statistics, Berlin, New York: Springer-Verlag, ISBN 978-0-387-95234-5, section 11.3
+ Tabachnikov, Serge (2005), Geometry and Billiards, Providence, RI: American Mathematical Society, pp. 36–40, ISBN 978-0-8218-3919-5, section 2.1
+ Durtschi, Cindy; Hillison, William; Pacini, Carl (2004). "The Effective Use of Benford's Law in Detecting Fraud in Accounting Data" (PDF). Journal of Forensic Accounting. V: 17–34. Archived from the original (PDF) on 29 August 2017. Retrieved 28 May 2018.
+ Wegener, Ingo (2005), Complexity theory: exploring the limits of efficient algorithms, Berlin, New York: Springer-Verlag, ISBN 978-3-540-21045-0, pp. 1–2
+ Harel, David; Feldman, Yishai A. (2004), Algorithmics: the spirit of computing, New York: Addison-Wesley, ISBN 978-0-321-11784-7, p. 143
+ Knuth, Donald (1998), The Art of Computer Programming, Reading, MA: Addison-Wesley, ISBN 978-0-201-89685-5, section 6.2.1, pp. 409–26
+ Donald Knuth 1998, section 5.2.4, pp. 158–68
+ Wegener, Ingo (2005), Complexity theory: exploring the limits of efficient algorithms, Berlin, New York: Springer-Verlag, p. 20, ISBN 978-3-540-21045-0
+ Mohr, Hans; Schopfer, Peter (1995), Plant physiology, Berlin, New York: Springer-Verlag, ISBN 978-3-540-58016-4, chapter 19, p. 298
+ Eco, Umberto (1989), The open work, Harvard University Press, ISBN 978-0-674-63976-8, section III.I
+ Sprott, Julien Clinton (2010), "Elegant Chaos: Algebraically Simple Chaotic Flows", Elegant Chaos: Algebraically Simple Chaotic Flows. Edited by Sprott Julien Clinton. Published by World Scientific Publishing Co. Pte. Ltd, New Jersey: World Scientific, Bibcode:2010ecas.book.....S, doi:10.1142/7183, ISBN 978-981-283-881-0, section 1.9
+ Helmberg, Gilbert (2007), Getting acquainted with fractals, De Gruyter Textbook, Berlin, New York: Walter de Gruyter, ISBN 978-3-11-019092-2
+ Wright, David (2009), Mathematics and music, Providence, RI: AMS Bookstore, ISBN 978-0-8218-4873-9, chapter 5
+ Bateman, P.T.; Diamond, Harold G. (2004), Analytic number theory: an introductory course, New Jersey: World Scientific, ISBN 978-981-256-080-3, OCLC 492669517, theorem 4.1
+ P. T. Bateman & Diamond 2004, Theorem 8.15
+ Slomson, Alan B. (1991), An introduction to combinatorics, London: CRC Press, ISBN 978-0-412-35370-3, chapter 4
+ Ganguly, S. (2005), Elements of Complex Analysis, Kolkata: Academic Publishers, ISBN 978-81-87504-86-3, Definition 1.6.3
+ Nevanlinna, Rolf Herman; Paatero, Veikko (2007), "Introduction to complex analysis", London: Hilger, Providence, RI: AMS Bookstore, Bibcode:1974aitc.book.....W, ISBN 978-0-8218-4399-4, section 5.9
+ Moore, Theral Orvis; Hadlock, Edwin H. (1991), Complex analysis, Singapore: World Scientific, ISBN 978-981-02-0246-0, section 1.2
+ Wilde, Ivan Francis (2006), Lecture notes on complex analysis, London: Imperial College Press, ISBN 978-1-86094-642-4, theorem 6.1.
+ Higham, Nicholas (2008), Functions of Matrices. Theory and Computation, Philadelphia, PA: SIAM, ISBN 978-0-89871-646-7, chapter 11.
+ Neukirch, Jürgen (1999). Algebraic Number Theory. Grundlehren der mathematischen Wissenschaften. 322. Berlin: Springer-Verlag. ISBN 978-3-540-65399-8. MR 1697859. Zbl 0956.11021., section II.5.
+ Hancock, Edwin R.; Martin, Ralph R.; Sabin, Malcolm A. (2009), Mathematics of Surfaces XIII: 13th IMA International Conference York, UK, September 7–9, 2009 Proceedings, Springer, p. 379, ISBN 978-3-642-03595-1
+ Stinson, Douglas Robert (2006), Cryptography: Theory and Practice (3rd ed.), London: CRC Press, ISBN 978-1-58488-508-5
+ Lidl, Rudolf; Niederreiter, Harald (1997), Finite fields, Cambridge University Press, ISBN 978-0-521-39231-0
+ Corless, R.; Gonnet, G.; Hare, D.; Jeffrey, D.; Knuth, Donald (1996), "On the Lambert W function" (PDF), Advances in Computational Mathematics, 5: 329–59, doi:10.1007/BF02124750, ISSN 1019-7168, archived from the original (PDF) on 14 December 2010, retrieved 13 February 2011
+ Cherkassky, Vladimir; Cherkassky, Vladimir S.; Mulier, Filip (2007), Learning from data: concepts, theory, and methods, Wiley series on adaptive and learning systems for signal processing, communications, and control, New York: John Wiley & Sons, ISBN 978-0-471-68182-3, p. 357
+ Bourbaki, Nicolas (1998), General topology. Chapters 5–10, Elements of Mathematics, Berlin, New York: Springer-Verlag, ISBN 978-3-540-64563-4, MR 1726872, section V.4.1
+ Ambartzumian, R.V. (1990), Factorization calculus and geometric probability, Cambridge University Press, ISBN 978-0-521-34535-4, section 1.4
+ Esnault, Hélène; Viehweg, Eckart (1992), Lectures on vanishing theorems, DMV Seminar, 20, Basel, Boston: Birkhäuser Verlag, CiteSeerX 10.1.1.178.3227, doi:10.1007/978-3-0348-8600-0, ISBN 978-3-7643-2822-1, MR 1193913, section 2
+ Apostol, T.M. (2010), "Logarithm", in Olver, Frank W. J.; Lozier, Daniel M.; Boisvert, Ronald F.; Clark, Charles W. (eds.), NIST Handbook of Mathematical Functions, Cambridge University Press, ISBN 978-0521192255, MR 2723248
+
+Exponential function
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+This article is about functions of the form f(x) = abx. For functions of the form f(x,y) = xy, see Exponentiation. For functions of the form f(x) = xr, see Power function.
+
+The natural exponential function y = ex
+
+Exponential functions with bases 2 and 1/2
+In mathematics, an exponential function is a function of the form
+
+{\displaystyle f(x)=ab^{x},}{\displaystyle f(x)=ab^{x},}
+where b is a positive real number, and in which the argument x occurs as an exponent. For real numbers c and d, a function of the form {\displaystyle f(x)=ab^{cx+d}}{\displaystyle f(x)=ab^{cx+d}} is also an exponential function, as it can be rewritten as
+
+{\displaystyle ab^{cx+d}=\left(ab^{d}\right)\left(b^{c}\right)^{x}.}{\displaystyle ab^{cx+d}=\left(ab^{d}\right)\left(b^{c}\right)^{x}.}
+As functions of a real variable, exponential functions are uniquely characterized by the fact that the growth rate of such a function (that is, its derivative) is directly proportional to the value of the function. The constant of proportionality of this relationship is the natural logarithm of the base b:
+
+{\displaystyle {\frac {d}{dx}}b^{x}=b^{x}\log _{e}b.}{\displaystyle {\frac {d}{dx}}b^{x}=b^{x}\log _{e}b.}
+For b = 1 the real exponential function is a constant and the derivative is zero because {\displaystyle \log _{e}b=0,}{\displaystyle \log _{e}b=0,} for positive a and b > 1 the real exponential functions are monotonically increasing (as depicted for b = e and b = 2), because the derivative is greater than zero for all arguments, and for b < 1 they are monotonically decreasing (as depicted for b = 
+1
+/
+2
+), because the derivative is less than zero for all arguments.
+
+The constant e = 2.71828... is the unique base for which the constant of proportionality is 1, so that the function's derivative is itself:
+
+{\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\log _{e}e=e^{x}.}{\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\log _{e}e=e^{x}.}
+Since changing the base of the exponential function merely results in the appearance of an additional constant factor, it is computationally convenient to reduce the study of exponential functions in mathematical analysis to the study of this particular function, conventionally called the "natural exponential function",[1][2] or simply, "the exponential function" and denoted by
+
+{\displaystyle x\mapsto e^{x}}{\displaystyle x\mapsto e^{x}} or {\displaystyle x\mapsto \exp x.}{\displaystyle x\mapsto \exp x.}
+While both notations are common, the former notation is generally used for simpler exponents, while the latter tends to be used when the exponent is a complicated expression.
+
+The exponential function satisfies the fundamental multiplicative identity
+
+{\displaystyle e^{x+y}=e^{x}e^{y},}{\displaystyle e^{x+y}=e^{x}e^{y},} for all {\displaystyle x,y\in \mathbb {R} .}{\displaystyle x,y\in \mathbb {R} .}
+This identity extends to complex-valued exponents. It can be shown that every continuous, nonzero solution of the functional equation {\displaystyle f(x+y)=f(x)f(y)}f(x+y)=f(x)f(y) is an exponential function, {\displaystyle f:\mathbb {R} \to \mathbb {R} ,\ x\mapsto b^{x},}{\displaystyle f:\mathbb {R} \to \mathbb {R} ,\ x\mapsto b^{x},} with {\displaystyle b>0.}{\displaystyle b>0.} The fundamental multiplicative identity, along with the definition of the number e as e1, shows that {\displaystyle e^{n}=\underbrace {e\times \cdots \times e} _{n{\text{ terms}}}}{\displaystyle e^{n}=\underbrace {e\times \cdots \times e} _{n{\text{ terms}}}} for positive integers n and relates the exponential function to the elementary notion of exponentiation.
+
+The argument of the exponential function can be any real or complex number or even an entirely different kind of mathematical object (for example, a matrix).
+
+Its ubiquitous occurrence in pure and applied mathematics has led mathematician W. Rudin to opine that the exponential function is "the most important function in mathematics".[3] In applied settings, exponential functions model a relationship in which a constant change in the independent variable gives the same proportional change (that is, percentage increase or decrease) in the dependent variable. This occurs widely in the natural and social sciences; thus, the exponential function also appears in a variety of contexts within physics, chemistry, engineering, mathematical biology, and economics.
+
+The graph of {\displaystyle y=e^{x}}y=e^{x} is upward-sloping, and increases faster as x increases. The graph always lies above the x-axis but can be arbitrarily close to it for negative x; thus, the x-axis is a horizontal asymptote. The slope of the tangent to the graph at each point is equal to its y-coordinate at that point, as implied by its derivative function (see above). Its inverse function is the natural logarithm, denoted {\displaystyle \log ,}{\displaystyle \log ,}[nb 1] {\displaystyle \ln ,}{\displaystyle \ln ,}[nb 2] or {\displaystyle \log _{e};}{\displaystyle \log _{e};} because of this, some old texts[4] refer to the exponential function as the antilogarithm.
+
+Part of a series of articles on the
+mathematical constant e
+Euler's formula.svg
+Properties
+Natural logarithmExponential function
+Applications
+compound interestEuler's identityEuler's formulahalf-lives exponential growth and decay
+Defining e
+proof that e is irrationalrepresentations of eLindemann–Weierstrass theorem
+People
+John NapierLeonhard Euler
+Related topics
+Schanuel's conjecture
+vte
+
+Contents
+1	Formal definition
+2	Overview
+3	Derivatives and differential equations
+4	Continued fractions for ex
+5	Complex plane
+5.1	Computation of ab where both a and b are complex
+6	Matrices and Banach algebras
+7	Lie algebras
+8	Transcendency
+9	Computation
+10	See also
+11	Notes
+12	References
+13	External links
+Formal definition
+Main article: Characterizations of the exponential function
+
+The exponential function (in blue), and the sum of the first n + 1 terms of its power series (in red).
+The real exponential function {\displaystyle \exp :\mathbb {R} \to \mathbb {R} }{\displaystyle \exp :\mathbb {R} \to \mathbb {R} } can be characterized in a variety of equivalent ways. Most commonly, it is defined by the following power series:[3]
+
+{\displaystyle \exp x:=\sum _{k=0}^{\infty }{\frac {x^{k}}{k!}}=1+x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+{\frac {x^{4}}{24}}+\cdots }{\displaystyle \exp x:=\sum _{k=0}^{\infty }{\frac {x^{k}}{k!}}=1+x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+{\frac {x^{4}}{24}}+\cdots }
+Since the radius of convergence of this power series is infinite, this definition is, in fact, applicable to all complex numbers {\displaystyle z\in \mathbb {C} }z\in \mathbb {C}  (see below for the extension of {\displaystyle \exp x}\exp x to the complex plane). The constant e can then be defined as {\textstyle e=\exp 1=\sum _{k=0}^{\infty }(1/k!).}{\textstyle e=\exp 1=\sum _{k=0}^{\infty }(1/k!).}
+
+The term-by-term differentiation of this power series reveals that {\displaystyle (d/dx)(\exp x)=\exp x}{\displaystyle (d/dx)(\exp x)=\exp x} for all real x, leading to another common characterization of {\displaystyle \exp x}\exp x as the unique solution of the differential equation
+
+{\displaystyle y'(x)=y(x),}{\displaystyle y'(x)=y(x),}
+satisfying the initial condition {\displaystyle y(0)=1.}y(0)=1.
+
+Based on this characterization, the chain rule shows that its inverse function, the natural logarithm, satisfies {\displaystyle (d/dy)(\log _{e}y)=1/y}{\displaystyle (d/dy)(\log _{e}y)=1/y} for {\displaystyle y>0,}{\displaystyle y>0,} or {\textstyle \log _{e}y=\int _{1}^{y}{\frac {1}{t}}\,dt.}{\textstyle \log _{e}y=\int _{1}^{y}{\frac {1}{t}}\,dt.} This relationship leads to a less common definition of the real exponential function {\displaystyle \exp x}\exp x as the solution {\displaystyle y}y to the equation
+
+{\displaystyle x=\int _{1}^{y}{\frac {1}{t}}\,dt.}{\displaystyle x=\int _{1}^{y}{\frac {1}{t}}\,dt.}
+By way of the binomial theorem and the power series definition, the exponential function can also be defined as the following limit:[5]
+
+{\displaystyle \exp x=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}.}{\displaystyle \exp x=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}.}
+Overview
+
+The red curve is the exponential function. The black horizontal lines show where it crosses the green vertical lines.
+The exponential function arises whenever a quantity grows or decays at a rate proportional to its current value. One such situation is continuously compounded interest, and in fact it was this observation that led Jacob Bernoulli in 1683[6] to the number
+
+{\displaystyle \lim _{n\to \infty }\left(1+{\frac {1}{n}}\right)^{n}}\lim _{n\to \infty }\left(1+{\frac {1}{n}}\right)^{n}
+now known as e. Later, in 1697, Johann Bernoulli studied the calculus of the exponential function.[6]
+
+If a principal amount of 1 earns interest at an annual rate of x compounded monthly, then the interest earned each month is 
+x
+/
+12
+ times the current value, so each month the total value is multiplied by (1 + 
+x
+/
+12
+), and the value at the end of the year is (1 + 
+x
+/
+12
+)12. If instead interest is compounded daily, this becomes (1 + 
+x
+/
+365
+)365. Letting the number of time intervals per year grow without bound leads to the limit definition of the exponential function,
+
+{\displaystyle \exp x=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}}{\displaystyle \exp x=\lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}}
+first given by Leonhard Euler.[5] This is one of a number of characterizations of the exponential function; others involve series or differential equations.
+
+From any of these definitions it can be shown that the exponential function obeys the basic exponentiation identity,
+
+{\displaystyle \exp(x+y)=\exp x\cdot \exp y}{\displaystyle \exp(x+y)=\exp x\cdot \exp y}
+which justifies the notation ex.
+
+The derivative (rate of change) of the exponential function is the exponential function itself. More generally, a function with a rate of change proportional to the function itself (rather than equal to it) is expressible in terms of the exponential function. This function property leads to exponential growth or exponential decay.
+
+The exponential function extends to an entire function on the complex plane. Euler's formula relates its values at purely imaginary arguments to trigonometric functions. The exponential function also has analogues for which the argument is a matrix, or even an element of a Banach algebra or a Lie algebra.
+
+Derivatives and differential equations
+
+The derivative of the exponential function is equal to the value of the function. From any point P on the curve (blue), let a tangent line (red), and a vertical line (green) with height h be drawn, forming a right triangle with a base b on the x-axis. Since the slope of the red tangent line (the derivative) at P is equal to the ratio of the triangle's height to the triangle's base (rise over run), and the derivative is equal to the value of the function, h must be equal to the ratio of h to b. Therefore, the base b must always be 1.
+The importance of the exponential function in mathematics and the sciences stems mainly from its definition as the unique function which is equal to its derivative and is equal to 1 when x = 0. That is,
+
+{\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\quad {\text{and}}\quad e^{0}=1.}{\displaystyle {\frac {d}{dx}}e^{x}=e^{x}\quad {\text{and}}\quad e^{0}=1.}
+Functions of the form cex for constant c are the only functions that are equal to their derivative (by the Picard–Lindelöf theorem). Other ways of saying the same thing include:
+
+The slope of the graph at any point is the height of the function at that point.
+The rate of increase of the function at x is equal to the value of the function at x.
+The function solves the differential equation y′ = y.
+exp is a fixed point of derivative as a functional.
+If a variable's growth or decay rate is proportional to its size—as is the case in unlimited population growth (see Malthusian catastrophe), continuously compounded interest, or radioactive decay—then the variable can be written as a constant times an exponential function of time. Explicitly for any real constant k, a function f: R → R satisfies f′ = kf if and only if f(x) = cekx for some constant c.
+
+Furthermore, for any differentiable function f(x), we find, by the chain rule:
+
+{\displaystyle {\frac {d}{dx}}e^{f(x)}=f'(x)e^{f(x)}.}{\displaystyle {\frac {d}{dx}}e^{f(x)}=f'(x)e^{f(x)}.}
+Continued fractions for ex
+A continued fraction for ex can be obtained via an identity of Euler:
+
+{\displaystyle e^{x}=1+{\cfrac {x}{1-{\cfrac {x}{x+2-{\cfrac {2x}{x+3-{\cfrac {3x}{x+4-\ddots }}}}}}}}}{\displaystyle e^{x}=1+{\cfrac {x}{1-{\cfrac {x}{x+2-{\cfrac {2x}{x+3-{\cfrac {3x}{x+4-\ddots }}}}}}}}}
+The following generalized continued fraction for ez converges more quickly:[7]
+
+{\displaystyle e^{z}=1+{\cfrac {2z}{2-z+{\cfrac {z^{2}}{6+{\cfrac {z^{2}}{10+{\cfrac {z^{2}}{14+\ddots }}}}}}}}}{\displaystyle e^{z}=1+{\cfrac {2z}{2-z+{\cfrac {z^{2}}{6+{\cfrac {z^{2}}{10+{\cfrac {z^{2}}{14+\ddots }}}}}}}}}
+or, by applying the substitution z = 
+x
+/
+y
+:
+
+{\displaystyle e^{\frac {x}{y}}=1+{\cfrac {2x}{2y-x+{\cfrac {x^{2}}{6y+{\cfrac {x^{2}}{10y+{\cfrac {x^{2}}{14y+\ddots }}}}}}}}}{\displaystyle e^{\frac {x}{y}}=1+{\cfrac {2x}{2y-x+{\cfrac {x^{2}}{6y+{\cfrac {x^{2}}{10y+{\cfrac {x^{2}}{14y+\ddots }}}}}}}}}
+with a special case for z = 2:
+
+{\displaystyle e^{2}=1+{\cfrac {4}{0+{\cfrac {2^{2}}{6+{\cfrac {2^{2}}{10+{\cfrac {2^{2}}{14+\ddots \,}}}}}}}}=7+{\cfrac {2}{5+{\cfrac {1}{7+{\cfrac {1}{9+{\cfrac {1}{11+\ddots \,}}}}}}}}}{\displaystyle e^{2}=1+{\cfrac {4}{0+{\cfrac {2^{2}}{6+{\cfrac {2^{2}}{10+{\cfrac {2^{2}}{14+\ddots \,}}}}}}}}=7+{\cfrac {2}{5+{\cfrac {1}{7+{\cfrac {1}{9+{\cfrac {1}{11+\ddots \,}}}}}}}}}
+This formula also converges, though more slowly, for z > 2. For example:
+
+{\displaystyle e^{3}=1+{\cfrac {6}{-1+{\cfrac {3^{2}}{6+{\cfrac {3^{2}}{10+{\cfrac {3^{2}}{14+\ddots \,}}}}}}}}=13+{\cfrac {54}{7+{\cfrac {9}{14+{\cfrac {9}{18+{\cfrac {9}{22+\ddots \,}}}}}}}}}{\displaystyle e^{3}=1+{\cfrac {6}{-1+{\cfrac {3^{2}}{6+{\cfrac {3^{2}}{10+{\cfrac {3^{2}}{14+\ddots \,}}}}}}}}=13+{\cfrac {54}{7+{\cfrac {9}{14+{\cfrac {9}{18+{\cfrac {9}{22+\ddots \,}}}}}}}}}
+
+Complex plane
+
+Exponential function on the complex plane. The transition from dark to light colors shows that the magnitude of the exponential function is increasing to the right. The periodic horizontal bands indicate that the exponential function is periodic in the imaginary part of its argument.
+As in the real case, the exponential function can be defined on the complex plane in several equivalent forms. The most common definition of the complex exponential function parallels the power series definition for real arguments, where the real variable is replaced by a complex one:
+
+{\displaystyle \exp z:=\sum _{k=0}^{\infty }{\frac {z^{k}}{k!}}}{\displaystyle \exp z:=\sum _{k=0}^{\infty }{\frac {z^{k}}{k!}}}
+Term-wise multiplication of two copies of these power series in the Cauchy sense, permitted by Mertens' theorem, shows that the defining multiplicative property of exponential functions continues to hold for all complex arguments:
+
+{\displaystyle \exp(w+z)=\exp w\exp z}{\displaystyle \exp(w+z)=\exp w\exp z} for all {\displaystyle w,z\in \mathbb {C} }{\displaystyle w,z\in \mathbb {C} }
+The definition of the complex exponential function in turn leads to the appropriate definitions extending the trigonometric functions to complex arguments.
+
+In particular, when {\displaystyle z=it}{\displaystyle z=it} ({\displaystyle t}t real), the series definition yields the expansion
+
+{\displaystyle \exp(it)={\Big (}1-{\frac {t^{2}}{2!}}+{\frac {t^{4}}{4!}}-{\frac {t^{6}}{6!}}+\cdots {\Big )}+i{\Big (}t-{\frac {t^{3}}{3!}}+{\frac {t^{5}}{5!}}-{\frac {t^{7}}{7!}}+\cdots {\Big )}}{\displaystyle \exp(it)={\Big (}1-{\frac {t^{2}}{2!}}+{\frac {t^{4}}{4!}}-{\frac {t^{6}}{6!}}+\cdots {\Big )}+i{\Big (}t-{\frac {t^{3}}{3!}}+{\frac {t^{5}}{5!}}-{\frac {t^{7}}{7!}}+\cdots {\Big )}}
+In this expansion, the rearrangement of the terms into real and imaginary parts is justified by the absolute convergence of the series. The real and imaginary parts of the above expression in fact correspond to the series expansions of {\displaystyle \cos t}{\displaystyle \cos t} and {\displaystyle \sin t}\sin t, respectively.
+
+This correspondence provides motivation for defining cosine and sine for all complex arguments in terms of {\displaystyle \exp(\pm iz)}{\displaystyle \exp(\pm iz)} and the equivalent power series:[8]
+
+{\displaystyle \cos z:={\frac {1}{2}}{\Big [}\exp(iz)+\exp(-iz){\Big ]}=\sum _{k=0}^{\infty }(-1)^{k}{\frac {z^{2k}}{(2k)!}}}{\displaystyle \cos z:={\frac {1}{2}}{\Big [}\exp(iz)+\exp(-iz){\Big ]}=\sum _{k=0}^{\infty }(-1)^{k}{\frac {z^{2k}}{(2k)!}}} and {\displaystyle \sin z:={\frac {1}{2i}}{\Big [}\exp(iz)-\exp(-iz){\Big ]}=\sum _{k=0}^{\infty }(-1)^{k}{\frac {z^{2k+1}}{(2k+1)!}}}{\displaystyle \sin z:={\frac {1}{2i}}{\Big [}\exp(iz)-\exp(-iz){\Big ]}=\sum _{k=0}^{\infty }(-1)^{k}{\frac {z^{2k+1}}{(2k+1)!}}} for all {\displaystyle z\in \mathbb {C} }z\in\mathbb{C}
+The functions exp, cos, and sin so defined have infinite radii of convergence by the ratio test and are therefore entire functions (i.e., holomorphic on {\displaystyle \mathbb {C} }\mathbb {C} ). The range of the exponential function is {\displaystyle \mathbb {C} \setminus \{0\}}{\displaystyle \mathbb {C} \setminus \{0\}}, while the ranges of the complex sine and cosine functions are both {\displaystyle \mathbb {C} }\mathbb {C}  in its entirety, in accord with Picard's theorem, which asserts that the range of a nonconstant entire function is either all of {\displaystyle \mathbb {C} }\mathbb {C} , or {\displaystyle \mathbb {C} }\mathbb {C}  excluding one lacunary value.
+
+These definitions for the exponential and trigonometric functions lead trivially to Euler's formula:
+
+{\displaystyle \exp(iz)=\cos z+i\sin z}{\displaystyle \exp(iz)=\cos z+i\sin z} for all {\displaystyle z\in \mathbb {C} }z\in\mathbb{C}
+We could alternatively define the complex exponential function based on this relationship. If {\displaystyle z=x+iy}z=x+iy, where {\displaystyle x}x and {\displaystyle y}y are both real, then we could define its exponential as
+
+{\displaystyle \exp z=\exp(x+iy):=(\exp x)(\cos y+i\sin y)}{\displaystyle \exp z=\exp(x+iy):=(\exp x)(\cos y+i\sin y)}
+where exp, cos, and sin on the right-hand side of the definition sign are to be interpreted as functions of a real variable, previously defined by other means.[9]
+
+For {\displaystyle t\in \mathbb {R} }{\displaystyle t\in \mathbb {R} }, the relationship {\displaystyle {\overline {\exp(it)}}=\exp(-it)}{\displaystyle {\overline {\exp(it)}}=\exp(-it)} holds, so that {\displaystyle |\exp(it)|=1}{\displaystyle |\exp(it)|=1} for real {\displaystyle t}t and {\displaystyle t\mapsto \exp(it)}{\displaystyle t\mapsto \exp(it)} maps the real line (mod {\displaystyle 2\pi }2\pi ) to the unit circle. Based on the relationship between {\displaystyle \exp(it)}{\displaystyle \exp(it)} and the unit circle, it is easy to see that, restricted to real arguments, the definitions of sine and cosine given above coincide with their more elementary definitions based on geometric notions.
+
+The complex exponential function is periodic with period {\displaystyle 2\pi i}2\pi i and {\displaystyle \exp(z+2\pi ik)=\exp z}{\displaystyle \exp(z+2\pi ik)=\exp z} holds for all {\displaystyle z\in \mathbb {C} ,k\in \mathbb {Z} }{\displaystyle z\in \mathbb {C} ,k\in \mathbb {Z} }.
+
+When its domain is extended from the real line to the complex plane, the exponential function retains the following properties:
+
+{\displaystyle e^{z+w}=e^{z}e^{w}\,}e^{z+w}=e^{z}e^{w}\,
+{\displaystyle e^{0}=1\,}e^{0}=1\,
+{\displaystyle e^{z}\neq 0}e^{z}\neq 0
+{\displaystyle {\tfrac {d}{dz}}e^{z}=e^{z}}{\displaystyle {\tfrac {d}{dz}}e^{z}=e^{z}}
+{\displaystyle \left(e^{z}\right)^{n}=e^{nz},n\in \mathbb {Z} }{\displaystyle \left(e^{z}\right)^{n}=e^{nz},n\in \mathbb {Z} }
+for all {\displaystyle w,z\in \mathbb {C} }{\displaystyle w,z\in \mathbb {C} }.
+
+Extending the natural logarithm to complex arguments yields the complex logarithm log z, which is a multivalued function.
+
+We can then define a more general exponentiation:
+
+{\displaystyle z^{w}=e^{w\log z}}z^{w}=e^{w\log z}
+for all complex numbers z and w. This is also a multivalued function, even when z is real. This distinction is problematic, as the multivalued functions log z and zw are easily confused with their single-valued equivalents when substituting a real number for z. The rule about multiplying exponents for the case of positive real numbers must be modified in a multivalued context:
+
+(ez)w
+ ≠ ezw, but rather (ez)w
+ = e(z + 2πin)w multivalued over integers n
+See failure of power and logarithm identities for more about problems with combining powers.
+
+The exponential function maps any line in the complex plane to a logarithmic spiral in the complex plane with the center at the origin. Two special cases exist: when the original line is parallel to the real axis, the resulting spiral never closes in on itself; when the original line is parallel to the imaginary axis, the resulting spiral is a circle of some radius.
+
+3D-Plots of Real Part, Imaginary Part, and Modulus of the exponential function
+
+z = Re(ex + iy)
+
+ 
+
+z = Im(ex + iy)
+
+ 
+
+z = |ex + iy|
+
+Considering the complex exponential function as a function involving four real variables:
+
+{\displaystyle v+iw=\exp(x+iy)}{\displaystyle v+iw=\exp(x+iy)}
+the graph of the exponential function is a two-dimensional surface curving through four dimensions.
+
+Starting with a color-coded portion of the {\displaystyle xy}xy domain, the following are depictions of the graph as variously projected into two or three dimensions.
+
+Graphs of the complex exponential function
+
+Checker board key:
+{\displaystyle x>0:\;{\text{green}}}{\displaystyle x>0:\;{\text{green}}}
+{\displaystyle x<0:\;{\text{red}}}{\displaystyle x<0:\;{\text{red}}}
+{\displaystyle y>0:\;{\text{yellow}}}{\displaystyle y>0:\;{\text{yellow}}}
+{\displaystyle y<0:\;{\text{blue}}}{\displaystyle y<0:\;{\text{blue}}}
+
+ 
+
+Projection onto the range complex plane (V/W). Compare to the next, perspective picture.
+
+ 
+
+Projection into the {\displaystyle x}x, {\displaystyle v}v, and {\displaystyle w}w dimensions, producing a flared horn or funnel shape (envisioned as 2-D perspective image).
+
+ 
+
+Projection into the {\displaystyle y}y, {\displaystyle v}v, and {\displaystyle w}w dimensions, producing a spiral shape. ({\displaystyle y}y range extended to ±2π, again as 2-D perspective image).
+
+The second image shows how the domain complex plane is mapped into the range complex plane:
+
+zero is mapped to 1
+the real {\displaystyle x}x axis is mapped to the positive real {\displaystyle v}v axis
+the imaginary {\displaystyle y}y axis is wrapped around the unit circle at a constant angular rate
+values with negative real parts are mapped inside the unit circle
+values with positive real parts are mapped outside of the unit circle
+values with a constant real part are mapped to circles centered at zero
+values with a constant imaginary part are mapped to rays extending from zero
+The third and fourth images show how the graph in the second image extends into one of the other two dimensions not shown in the second image.
+
+The third image shows the graph extended along the real {\displaystyle x}x axis. It shows the graph is a surface of revolution about the {\displaystyle x}x axis of the graph of the real exponential function, producing a horn or funnel shape.
+
+The fourth image shows the graph extended along the imaginary {\displaystyle y}y axis. It shows that the graph's surface for positive and negative {\displaystyle y}y values doesn't really meet along the negative real {\displaystyle v}v axis, but instead forms a spiral surface about the {\displaystyle y}y axis. Because its {\displaystyle y}y values have been extended to ±2π, this image also better depicts the 2π periodicity in the imaginary {\displaystyle y}y value.
+
+Computation of ab where both a and b are complex
+Main article: Exponentiation
+Complex exponentiation ab can be defined by converting a to polar coordinates and using the identity (eln a)b
+ = ab:
+
+{\displaystyle a^{b}=\left(re^{\theta i}\right)^{b}=\left(e^{(\ln r)+\theta i}\right)^{b}=e^{\left((\ln r)+\theta i\right)b}}{\displaystyle a^{b}=\left(re^{\theta i}\right)^{b}=\left(e^{(\ln r)+\theta i}\right)^{b}=e^{\left((\ln r)+\theta i\right)b}}
+However, when b is not an integer, this function is multivalued, because θ is not unique (see failure of power and logarithm identities).
+
+Matrices and Banach algebras
+The power series definition of the exponential function makes sense for square matrices (for which the function is called the matrix exponential) and more generally in any unital Banach algebra B. In this setting, e0 = 1, and ex is invertible with inverse e−x for any x in B. If xy = yx, then ex + y = exey, but this identity can fail for noncommuting x and y.
+
+Some alternative definitions lead to the same function. For instance, ex can be defined as
+
+{\displaystyle \lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}.}{\displaystyle \lim _{n\to \infty }\left(1+{\frac {x}{n}}\right)^{n}.}
+Or ex can be defined as fx(1), where fx: R→B is the solution to the differential equation 
+dfx
+/
+dt
+(t) = x fx(t), with initial condition fx(0) = 1; it follows that fx(t) = etx for every t in R.
+
+Lie algebras
+Given a Lie group G and its associated Lie algebra {\displaystyle {\mathfrak {g}}}{\mathfrak {g}}, the exponential map is a map {\displaystyle {\mathfrak {g}}}{\mathfrak {g}} ↦ G satisfying similar properties. In fact, since R is the Lie algebra of the Lie group of all positive real numbers under multiplication, the ordinary exponential function for real arguments is a special case of the Lie algebra situation. Similarly, since the Lie group GL(n,R) of invertible n × n matrices has as Lie algebra M(n,R), the space of all n × n matrices, the exponential function for square matrices is a special case of the Lie algebra exponential map.
+
+The identity exp(x + y) = exp x exp y can fail for Lie algebra elements x and y that do not commute; the Baker–Campbell–Hausdorff formula supplies the necessary correction terms.
+
+Transcendency
+The function ez is not in C(z) (i.e., is not the quotient of two polynomials with complex coefficients).
+
+For n distinct complex numbers {a1, …, an}, the set {ea1z, …, eanz} is linearly independent over C(z).
+
+The function ez is transcendental over C(z).
+
+Computation
+When computing (an approximation of) the exponential function near the argument 0, the result will be close to 1, and computing the value of the difference {\displaystyle \exp x-1}{\displaystyle \exp x-1} with floating-point arithmetic may lead to the loss of (possibly all) significant figures, producing a large calculation error, possibly even a meaningless result.
+
+Following a proposal by William Kahan, it may thus be useful to have a dedicated routine, often called expm1, for computing ex − 1 directly, bypassing computation of ex. For example, if the exponential is computed by using its Taylor series
+
+{\displaystyle e^{x}=1+x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+\cdots +{\frac {x^{n}}{n!}}+\cdots ,}{\displaystyle e^{x}=1+x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+\cdots +{\frac {x^{n}}{n!}}+\cdots ,}
+one may use the Taylor series of {\displaystyle e^{x}-1:}{\displaystyle e^{x}-1:}
+
+{\displaystyle e^{x}-1=x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+\cdots +{\frac {x^{n}}{n!}}+\cdots .}{\displaystyle e^{x}-1=x+{\frac {x^{2}}{2}}+{\frac {x^{3}}{6}}+\cdots +{\frac {x^{n}}{n!}}+\cdots .}
+This was first implemented in 1979 in the Hewlett-Packard HP-41C calculator, and provided by several calculators,[10][11] operating systems (for example Berkeley UNIX 4.3BSD[12]), computer algebra systems, and programming languages (for example C99).[13]
+
+In addition to base e, the IEEE 754-2008 standard defines similar exponential functions near 0 for base 2 and 10: {\displaystyle 2^{x}-1}2^{x}-1 and {\displaystyle 10^{x}-1}{\displaystyle 10^{x}-1}.
+
+A similar approach has been used for the logarithm (see lnp1).[nb 3]
+
+An identity in terms of the hyperbolic tangent,
+
+{\displaystyle \operatorname {expm1} (x)=\exp x-1={\frac {2\tanh(x/2)}{1-\tanh(x/2)}},}{\displaystyle \operatorname {expm1} (x)=\exp x-1={\frac {2\tanh(x/2)}{1-\tanh(x/2)}},}
+gives a high-precision value for small values of x on systems that do not implement expm1(x).
+
+See also
+icon	Mathematics portal
+Approximating natural exponents (log base e)
+Carlitz exponential, a characteristic p analogue
+Double exponential function
+Exponential field
+Half-exponential function, a compositional square root of an exponential function
+Linear function
+List of exponential topics
+List of integrals of exponential functions
+Mittag-Leffler function, a generalization of the exponential function
+Multiplicative calculus
+p-adic exponential function
+Polynomial function
+Padé table for exponential function – Padé approximation of exponential function by a fraction of polynomial functions
+Tetration
+Unrestricted algorithm for the computation of the exponential function
+Notes
+ In pure mathematics, the notation log x generally refers to the natural logarithm of x or a logarithm in general if the base is immaterial.
+ The notation ln x is the ISO standard and is prevalent in the natural sciences and secondary education (US). However, some mathematicians (e.g., Paul Halmos) have criticized this notation and prefer to use log x for the natural logarithm of x.
+ A similar approach to reduce round-off errors of calculations for certain input values of trigonometric functions consists of using the less common trigonometric functions versine, vercosine, coversine, covercosine, haversine, havercosine, hacoversine, hacovercosine, exsecant and excosecant.
+References
+ Goldstein, Larry Joel; Lay, David C.; Schneider, David I.; Asmar, Nakhle H. (2006). Brief calculus and its applications (11th ed.). Prentice–Hall. ISBN 978-0-13-191965-5. (467 pages)
+ Courant; Robbins (1996). Stewart (ed.). What is Mathematics? An Elementary Approach to Ideas and Methods (2nd revised ed.). Oxford University Press. p. 448. ISBN 978-0-13-191965-5. This natural exponential function is identical with its derivative. This is really the source of all the properties of the exponential function, and the basic reason for its importance in applications…
+ Rudin, Walter (1987). Real and complex analysis (3rd ed.). New York: McGraw-Hill. p. 1. ISBN 978-0-07-054234-1.
+ Converse, Henry Augustus; Durell, Fletcher (1911). Plane and Spherical Trigonometry. Durell's mathematical series. C. E. Merrill Company. p. 12. Inverse Use of a Table of Logarithms; that is, given a logarithm, to find the number corresponding to it, (called its antilogarithm) ... [1]
+ Maor, Eli. e: the Story of a Number. p. 156.
+ O'Connor, John J.; Robertson, Edmund F. (September 2001). "The number e". School of Mathematics and Statistics. University of St Andrews, Scotland. Retrieved 2011-06-13.
+ Lorentzen, L.; Waadeland, H. (2008). "A.2.2 The exponential function.". Continued Fractions. Atlantis Studies in Mathematics. p. 268. doi:10.2991/978-94-91216-37-4.
+ Rudin, Walter (1976). Principles of Mathematical Analysis. New York: McGraw-Hill. p. 182. ISBN 978-0-07054235-8.
+ Apostol, Tom M. (1974). Mathematical Analysis (2nd ed.). Reading, Mass.: Addison Wesley. p. 19. ISBN 978-0-20100288-1.
+ HP 48G Series – Advanced User's Reference Manual (AUR) (4 ed.). Hewlett-Packard. December 1994 [1993]. HP 00048-90136, 0-88698-01574-2. Retrieved 2015-09-06.
+ HP 50g / 49g+ / 48gII graphing calculator advanced user's reference manual (AUR) (2 ed.). Hewlett-Packard. 2009-07-14 [2005]. HP F2228-90010. Retrieved 2015-10-10. [2]
+ Beebe, Nelson H. F. (2017-08-22). "Chapter 10.2. Exponential near zero". The Mathematical-Function Computation Handbook - Programming Using the MathCW Portable Software Library (1 ed.). Salt Lake City, UT, USA: Springer International Publishing AG. pp. 273–282. doi:10.1007/978-3-319-64110-2. ISBN 978-3-319-64109-6. LCCN 2017947446. Berkeley UNIX 4.3BSD introduced the expm1() function in 1987.
+ Beebe, Nelson H. F. (2002-07-09). "Computation of expm1 = exp(x)−1" (PDF). 1.00. Salt Lake City, Utah, USA: Department of Mathematics, Center for Scientific Computing, University of Utah. Retrieved 2015-11-02.

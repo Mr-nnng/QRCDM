@@ -1,0 +1,18 @@
+Classical theory of probability
+The classical approach to probability expresses probability as a ratio of the number of favorable outcomes in a series of successive trials to the number of total possible outcomes. Note the immediate implication that the number of total possible outcomes be known. Furthermore, all possible outcomes are assumed to be equally probably and no two possible outcomes can both result from the same trial. Here, the term "favorable" is not subjective, but rather indicates that an outcome belongs to a group of outcomes of interest. This group of outcomes is called an event, which will be formalized with the introduction of axiomatic probability theory.
+
+Classical definition of probability
+If the number of outcomes belonging to an event {\displaystyle E}E is {\displaystyle N_{E}}{\displaystyle N_{E}} , and the total number of outcomes is {\displaystyle N}N , then the probability of event {\displaystyle E}E is defined as {\displaystyle p_{E}={\frac {N_{E}}{N}}}{\displaystyle p_{E}={\frac {N_{E}}{N}}} .
+For example, a standard deck of cards (without jokers) has 52 cards. If we randomly draw a card from the deck, we can think of each card as a possible outcome. Therefore, there are 52 total outcomes. We can now look at various events and calculate their probabilities:
+
+Out of the 52 cards, there are 13 clubs. Therefore, if the event of interest is drawing a club, there are 13 favorable outcomes, and the probability of this event is {\displaystyle {\frac {13}{52}}={\frac {1}{4}}}{\displaystyle {\frac {13}{52}}={\frac {1}{4}}} .
+There are 4 kings (one of each suit). The probability of drawing a king is {\displaystyle {\frac {4}{52}}={\frac {1}{13}}}{\displaystyle {\frac {4}{52}}={\frac {1}{13}}} .
+What is the probability of drawing a king OR a club? This example is slightly more complicated. We cannot simply add together the number of outcomes for each event separately ({\displaystyle 4+13=17}{\displaystyle 4+13=17}) as this inadvertently counts one of the outcomes twice (the king of clubs). The correct answer is {\displaystyle {\frac {16}{52}}}{\displaystyle {\frac {16}{52}}} from {\displaystyle {\frac {13}{52}}+{\frac {4}{52}}-{\frac {1}{52}}}{\displaystyle {\frac {13}{52}}+{\frac {4}{52}}-{\frac {1}{52}}} where this is essentially {\displaystyle p({\text{club}})+p({\text{king}})-p({\text{king of clubs}})}{\displaystyle p({\text{club}})+p({\text{king}})-p({\text{king of clubs}})} .
+Classical probability suffers from a serious limitation. The definition of probability implicitly defines all outcomes to be equiprobable. While this might be useful for drawing cards, rolling dice, or pulling balls from urns, it offers no method for dealing with outcomes with unequal probabilities.
+
+This limitation can even lead to mistaken statements about probabilities. An often given example goes like this:
+
+I could be hit by a meteor tomorrow. There are two possible outcomes: I will be hit, or I will not be hit. Therefore, the probability I will be hit by a meteor tomorrow is {\displaystyle {\frac {1}{2}}=50\%}{\displaystyle {\frac {1}{2}}=50\%} .
+Of course, the problem here is not with the classical theory, merely the attempted application of the theory to a situation to which it is not well adapted.
+
+This limitation does not, however, mean that the classical theory of probability is useless. At many points in the development of the axiomatic approach to probability, classical theory is an important guiding factor.

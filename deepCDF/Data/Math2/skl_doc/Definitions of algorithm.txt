@@ -1,0 +1,57 @@
+In mathematics and computer science, an algorithm (/ˈælɡərɪðəm/ (About this soundlisten)) is a finite sequence of well-defined, computer-implementable instructions, typically to solve a class of problems or to perform a computation.[1][2] Algorithms are unambiguous specifications for performing calculation, data processing, automated reasoning, and other tasks.
+
+As an effective method, an algorithm can be expressed within a finite amount of space and time,[3] and in a well-defined formal language[4] for calculating a function.[5] Starting from an initial state and initial input (perhaps empty),[6] the instructions describe a computation that, when executed, proceeds through a finite[7] number of well-defined successive states, eventually producing "output"[8] and terminating at a final ending state. The transition from one state to the next is not necessarily deterministic; some algorithms, known as randomized algorithms, incorporate random input.[9]
+
+The concept of algorithm has existed since antiquity. Arithmetic algorithms, such as a division algorithm, was used by ancient Babylonian mathematicians c. 2500 BC and Egyptian mathematicians c. 1550 BC.[10] Greek mathematicians later used algorithms in the sieve of Eratosthenes for finding prime numbers,[11] and the Euclidean algorithm for finding the greatest common divisor of two numbers.[12] Arabic mathematicians such as Al-Kindi in the 9th century used cryptographic algorithms for code-breaking, based on frequency analysis.[13]
+
+The word algorithm itself is derived from the 9th-century Persian mathematician Muḥammad ibn Mūsā al-Khwārizmī, Latinized Algoritmi.[14] A partial formalization of what would become the modern concept of algorithm began with attempts to solve the Entscheidungsproblem (decision problem) posed by David Hilbert in 1928. Later formalizations were framed as attempts to define "effective calculability"[15] or "effective method".[16] Those formalizations included the Gödel–Herbrand–Kleene recursive functions of 1930, 1934 and 1935, Alonzo Church's lambda calculus of 1936, Emil Post's Formulation 1 of 1936, and Alan Turing's Turing machines of 1936–37 and 1939.
+
+Informal definition
+For a detailed presentation of the various points of view on the definition of "algorithm", see Algorithm characterizations.
+An informal definition could be "a set of rules that precisely defines a sequence of operations",[27] which would include all computer programs, including programs that do not perform numeric calculations, and (for example) any prescribed bureaucratic procedure.[28] In general, a program is only an algorithm if it stops eventually.[29]
+
+A prototypical example of an algorithm is the Euclidean algorithm, which is used to determine the maximum common divisor of two integers; an example (there are others) is described by the flowchart above and as an example in a later section.
+
+Boolos, Jeffrey & 1974, 1999 offer an informal meaning of the word "algorithm" in the following quotation:
+
+No human being can write fast enough, or long enough, or small enough† ( †"smaller and smaller without limit ...you'd be trying to write on molecules, on atoms, on electrons") to list all members of an enumerably infinite set by writing out their names, one after another, in some notation. But humans can do something equally useful, in the case of certain enumerably infinite sets: They can give explicit instructions for determining the nth member of the set, for arbitrary finite n. Such instructions are to be given quite explicitly, in a form in which they could be followed by a computing machine, or by a human who is capable of carrying out only very elementary operations on symbols.[30]
+
+An "enumerably infinite set" is one whose elements can be put into one-to-one correspondence with the integers. Thus, Boolos and Jeffrey are saying that an algorithm implies instructions for a process that "creates" output integers from an arbitrary "input" integer or integers that, in theory, can be arbitrarily large. For example, an algorithm can be an algebraic equation such as y = m + n (i.e., two arbitrary "input variables" m and n that produce an output y), but various authors' attempts to define the notion indicate that the word implies much more than this, something on the order of (for the addition example):
+
+Precise instructions (in language understood by "the computer")[31] for a fast, efficient, "good"[32] process that specifies the "moves" of "the computer" (machine or human, equipped with the necessary internally contained information and capabilities)[33] to find, decode, and then process arbitrary input integers/symbols m and n, symbols + and = ... and "effectively"[34] produce, in a "reasonable" time,[35] output-integer y at a specified place and in a specified format.
+The concept of algorithm is also used to define the notion of decidability—a notion that is central for explaining how formal systems come into being starting from a small set of axioms and rules. In logic, the time that an algorithm requires to complete cannot be measured, as it is not apparently related to the customary physical dimension. From such uncertainties, that characterize ongoing work, stems the unavailability of a definition of algorithm that suits both concrete (in some sense) and abstract usage of the term.
+
+Formalization
+Algorithms are essential to the way computers process data. Many computer programs contain algorithms that detail the specific instructions a computer should perform—in a specific order—to carry out a specified task, such as calculating employees' paychecks or printing students' report cards. Thus, an algorithm can be considered to be any sequence of operations that can be simulated by a Turing-complete system. Authors who assert this thesis include Minsky (1967), Savage (1987) and Gurevich (2000):
+
+Minsky: "But we will also maintain, with Turing ... that any procedure which could "naturally" be called effective, can, in fact, be realized by a (simple) machine. Although this may seem extreme, the arguments ... in its favor are hard to refute".[36]
+
+Gurevich: "...Turing's informal argument in favor of his thesis justifies a stronger thesis: every algorithm can be simulated by a Turing machine ... according to Savage [1987], an algorithm is a computational process defined by a Turing machine".[37]
+
+Turing machines can define computational processes that do not terminate. The informal definitions of algorithms generally require that the algorithm always terminates. This requirement renders the task of deciding whether a formal procedure is an algorithm impossible in the general case—due to of a major theorem of Computability Theory known as the Halting Problem.
+
+Typically, when an algorithm is associated with processing information, data can be read from an input source, written to an output device and stored for further processing. Stored data are regarded as part of the internal state of the entity performing the algorithm. In practice, the state is stored in one or more data structures.
+
+For some of these computational process, the algorithm must be rigorously defined: specified in the way it applies in all possible circumstances that could arise. This means that any conditional steps must be systematically dealt with, case-by-case; the criteria for each case must be clear (and computable).
+
+Because an algorithm is a precise list of precise steps, the order of computation is always crucial to the functioning of the algorithm. Instructions are usually assumed to be listed explicitly, and are described as starting "from the top" and going "down to the bottom"—an idea that is described more formally by flow of control.
+
+So far, the discussion on the formalization of an algorithm has assumed the premises of imperative programming. This is the most common conception—one which attempts to describe a task in discrete, "mechanical" means. Unique to this conception of formalized algorithms is the assignment operation, which sets the value of a variable. It derives from the intuition of "memory" as a scratchpad. An example of such an assignment can be found below.
+
+For some alternate conceptions of what constitutes an algorithm, see functional programming and logic programming.
+
+Expressing algorithms
+Algorithms can be expressed in many kinds of notation, including natural languages, pseudocode, flowcharts, drakon-charts, programming languages or control tables (processed by interpreters). Natural language expressions of algorithms tend to be verbose and ambiguous, and are rarely used for complex or technical algorithms. Pseudocode, flowcharts, drakon-charts and control tables are structured ways to express algorithms that avoid many of the ambiguities common in the statements based on natural language. Programming languages are primarily intended for expressing algorithms in a form that can be executed by a computer, but are also often used as a way to define or document algorithms.
+
+There is a wide variety of representations possible and one can express a given Turing machine program as a sequence of machine tables (see finite-state machine, state transition table and control table for more), as flowcharts and drakon-charts (see state diagram for more), or as a form of rudimentary machine code or assembly code called "sets of quadruples" (see Turing machine for more).
+
+Representations of algorithms can be classed into three accepted levels of Turing machine description, as follows:[38]
+
+1 High-level description
+"...prose to describe an algorithm, ignoring the implementation details. At this level, we do not need to mention how the machine manages its tape or head."
+2 Implementation description
+"...prose used to define the way the Turing machine uses its head and the way that it stores data on its tape. At this level, we do not give details of states or transition function."
+3 Formal description
+Most detailed, "lowest level", gives the Turing machine's "state table".
+For an example of the simple algorithm "Add m+n" described in all three levels, see Algorithm Examples.
+

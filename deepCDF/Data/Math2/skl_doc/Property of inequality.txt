@@ -1,0 +1,63 @@
+Properties on the number line
+Inequalities are governed by the following properties. All of these properties also hold if all of the non-strict inequalities (≤ and ≥) are replaced by their corresponding strict inequalities (< and >) and — in the case of applying a function — monotonic functions are limited to strictly monotonic functions.
+
+Converse
+The relations ≤ and ≥ are each other's converse, meaning that for any real numbers a and b:
+
+a ≤ b and b ≥ a are equivalent.
+Transitivity
+The transitive property of inequality states that for any real numbers a, b, c:[6]
+
+If a ≤ b and b ≤ c, then a ≤ c.
+If either of the premises is a strict inequality, then the conclusion is a strict inequality:
+
+If a ≤ b and b < c, then a < c.
+If a < b and b ≤ c, then a < c.
+Addition and subtraction
+
+If x < y, then x + a < y + a.
+A common constant c may be added to or subtracted from both sides of an inequality.[3] So, for any real numbers a, b, c:
+
+If a ≤ b, then a + c ≤ b + c and a − c ≤ b − c.
+In other words, the inequality relation is preserved under addition (or subtraction) and the real numbers are an ordered group under addition.
+
+Multiplication and division
+
+If x < y and a > 0, then ax < ay.
+
+If x < y and a < 0, then ax > ay.
+The properties that deal with multiplication and division state that for any real numbers, a, b and non-zero c:
+
+If a ≤ b and c > 0, then ac ≤ bc and a/c ≤ b/c.
+If a ≤ b and c < 0, then ac ≥ bc and a/c ≥ b/c.
+In other words, the inequality relation is preserved under multiplication and division with positive constant, but is reversed when a negative constant is involved. More generally, this applies for an ordered field. For more information, see § Ordered fields.
+
+Additive inverse
+The property for the additive inverse states that for any real numbers a and b:
+
+If a ≤ b, then −a ≥ −b.
+Multiplicative inverse
+If both numbers are positive, then the inequality relation between the multiplicative inverses is opposite of that between the original numbers. More specifically, for any non-zero real numbers a and b that are both positive (or both negative):
+
+If a ≤ b, then 1/a ≥ 1/b.
+All of the cases for the signs of a and b can also be written in chained notation, as follows:
+
+If 0 < a ≤ b, then 1/a ≥ 1/b > 0.
+If a ≤ b < 0, then 0 > 1/a ≥ 1/b.
+If a < 0 < b, then 1/a < 0 < 1/b.
+Applying a function to both sides
+
+The graph of y = ln x
+Any monotonically increasing function, by its definition,[7] may be applied to both sides of an inequality without breaking the inequality relation (provided that both expressions are in the domain of that function). However, applying a monotonically decreasing function to both sides of an inequality means the inequality relation would be reversed. The rules for the additive inverse, and the multiplicative inverse for positive numbers, are both examples of applying a monotonically decreasing function.
+
+If the inequality is strict (a < b, a > b) and the function is strictly monotonic, then the inequality remains strict. If only one of these conditions is strict, then the resultant inequality is non-strict. In fact, the rules for additive and multiplicative inverses are both examples of applying a strictly monotonically decreasing function.
+
+A few examples of this rule are:
+
+Raising both sides of an inequality to a power n > 0 (equiv., −n < 0), when a and b are positive real numbers:
+0 ≤ a ≤ b ⇔ 0 ≤ an ≤ bn.
+0 ≤ a ≤ b ⇔ a−n ≥ b−n ≥ 0.
+Taking the natural logarithm on both sides of an inequality, when a and b are positive real numbers:
+0 < a ≤ b ⇔ ln(a) ≤ ln(b).
+0 < a < b ⇔ ln(a) < ln(b).
+(this is true because the natural logarithm is a strictly increasing function.)

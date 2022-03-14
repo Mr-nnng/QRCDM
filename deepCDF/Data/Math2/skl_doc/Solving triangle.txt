@@ -1,0 +1,292 @@
+
+Solution of triangles
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+Solution of triangles (Latin: solutio triangulorum) is the main trigonometric problem of finding the characteristics of a triangle (angles and lengths of sides), when some of these are known. The triangle can be located on a plane or on a sphere. Applications requiring triangle solutions include geodesy, astronomy, construction, and navigation.
+
+
+Contents
+1	Solving plane triangles
+1.1	Trigonomic relations
+1.1.1	Notes
+1.2	Three sides given (SSS)
+1.3	Two sides and the included angle given (SAS)
+1.4	Two sides and non-included angle given (SSA)
+1.5	A side and two adjacent angles given (ASA)
+1.6	A side, one adjacent angle and the opposite angle given (AAS)
+1.7	Other given lengths
+2	Solving spherical triangles
+2.1	Three sides given (spherical SSS)
+2.2	Two sides and the included angle given (spherical SAS)
+2.3	Two sides and non-included angle given (spherical SSA)
+2.4	A side and two adjacent angles given (spherical ASA)
+2.5	A side, one adjacent angle and the opposite angle given (spherical AAS)
+2.6	Three angles given (spherical AAA)
+2.7	Solving right-angled spherical triangles
+3	Some applications
+3.1	Triangulation
+3.2	The distance between two points on the globe
+4	See also
+5	References
+6	External links
+Solving plane triangles
+
+Standard notation for a triangle
+A general form triangle has six main characteristics (see picture): three linear (side lengths a, b, c) and three angular (α, β, γ). The classical plane trigonometry problem is to specify three of the six characteristics and determine the other three. A triangle can be uniquely determined in this sense when given any of the following:[1][2]
+
+Three sides (SSS)
+Two sides and the included angle (SAS)
+Two sides and an angle not included between them (SSA), if the side length adjacent to the angle is shorter than the other side length.
+A side and the two angles adjacent to it (ASA)
+A side, the angle opposite to it and an angle adjacent to it (AAS).
+Three angles (AAA) on the sphere (but not in the plane).
+For all cases in the plane, at least one of the side lengths must be specified. If only the angles are given, the side lengths cannot be determined, because any similar triangle is a solution.
+
+Trigonomic relations
+
+Overview of particular steps and tools used when solving plane triangles
+The standard method of solving the problem is to use fundamental relations.
+
+Law of cosines
+{\displaystyle a^{2}=b^{2}+c^{2}-2bc\cos \alpha }a^{2}=b^{2}+c^{2}-2bc\cos \alpha 
+{\displaystyle b^{2}=a^{2}+c^{2}-2ac\cos \beta }b^{2}=a^{2}+c^{2}-2ac\cos \beta 
+{\displaystyle c^{2}=a^{2}+b^{2}-2ab\cos \gamma }c^{2}=a^{2}+b^{2}-2ab\cos \gamma 
+Law of sines
+{\displaystyle {\frac {a}{\sin \alpha }}={\frac {b}{\sin \beta }}={\frac {c}{\sin \gamma }}}{\frac {a}{\sin \alpha }}={\frac {b}{\sin \beta }}={\frac {c}{\sin \gamma }}
+Sum of angles
+{\displaystyle \alpha +\beta +\gamma =180^{\circ }}\alpha +\beta +\gamma =180^{\circ }
+Law of tangents
+{\displaystyle {\frac {a-b}{a+b}}={\frac {\tan[{\frac {1}{2}}(\alpha -\beta )]}{\tan[{\frac {1}{2}}(\alpha +\beta )]}}.}{\displaystyle {\frac {a-b}{a+b}}={\frac {\tan[{\frac {1}{2}}(\alpha -\beta )]}{\tan[{\frac {1}{2}}(\alpha +\beta )]}}.}
+There are other (sometimes practically useful) universal relations: the law of cotangents and Mollweide's formula.
+
+Notes
+To find an unknown angle, the law of cosines is safer than the law of sines. The reason is that the value of sine for the angle of the triangle does not uniquely determine this angle. For example, if sin β = 0.5, the angle β can equal either 30° or 150°. Using the law of cosines avoids this problem: within the interval from 0° to 180° the cosine value unambiguously determines its angle. On the other hand, if the angle is small (or close to 180°), then it is more robust numerically to determine it from its sine than its cosine because the arc-cosine function has a divergent derivative at 1 (or −1).
+We assume that the relative position of specified characteristics is known. If not, the mirror reflection of the triangle will also be a solution. For example, three side lengths uniquely define either a triangle or its reflection.
+Three sides given (SSS)
+
+Three sides given
+Let three side lengths a, b, c be specified. To find the angles α, β, the law of cosines can be used:[3]
+
+{\displaystyle {\begin{aligned}\alpha &=\arccos {\frac {b^{2}+c^{2}-a^{2}}{2bc}}\\[4pt]\beta &=\arccos {\frac {a^{2}+c^{2}-b^{2}}{2ac}}.\end{aligned}}}{\displaystyle {\begin{aligned}\alpha &=\arccos {\frac {b^{2}+c^{2}-a^{2}}{2bc}}\\[4pt]\beta &=\arccos {\frac {a^{2}+c^{2}-b^{2}}{2ac}}.\end{aligned}}}
+Then angle γ = 180° − α − β.
+
+Some sources recommend to find angle β from the law of sines but (as Note 1 above states) there is a risk of confusing an acute angle value with an obtuse one.
+
+Another method of calculating the angles from known sides is to apply the law of cotangents.
+
+Two sides and the included angle given (SAS)
+
+Two sides and the included angle given
+Here the lengths of sides a, b and the angle γ between these sides are known. The third side can be determined from the law of cosines:[4]
+
+{\displaystyle c={\sqrt {a^{2}+b^{2}-2ab\cos \gamma }}.}c={\sqrt {a^{2}+b^{2}-2ab\cos \gamma }}.
+Now we use law of cosines to find the second angle:
+
+{\displaystyle \alpha =\arccos {\frac {b^{2}+c^{2}-a^{2}}{2bc}}.}\alpha =\arccos {\frac {b^{2}+c^{2}-a^{2}}{2bc}}.
+Finally, β = 180° − α − γ.
+
+Two sides and non-included angle given (SSA)
+
+Two sides and a non-included angle given
+
+Two solutions for the triangle
+This case is not solvable in all cases; a solution is guaranteed to be unique only if the side length adjacent to the angle is shorter than the other side length. Assume that two sides b, c and the angle β are known. The equation for the angle γ can be implied from the law of sines:[5]
+
+{\displaystyle \sin \gamma ={\frac {c}{b}}\sin \beta .}{\displaystyle \sin \gamma ={\frac {c}{b}}\sin \beta .}
+We denote further D = 
+c
+/
+b
+ sin β (the equation's right side). There are four possible cases:
+
+If D > 1, no such triangle exists because the side b does not reach line BC. For the same reason a solution does not exist if the angle β ≥ 90° and b ≤ c.
+If D = 1, a unique solution exists: γ = 90°, i.e., the triangle is right-angled.
+If D < 1 two alternatives are possible.
+If b ≥ c, then β ≥ γ (the larger side corresponds to a larger angle). Since no triangle can have two obtuse angles, γ is an acute angle and the solution γ = arcsin D is unique.
+If b < c, the angle γ may be acute: γ = arcsin D or obtuse: γ′ = 180° − γ. The figure on right shows the point C, the side b and the angle γ as the first solution, and the point C′, side b′ and the angle γ′ as the second solution.
+Once γ is obtained, the third angle α = 180° − β − γ.
+
+The third side can then be found from the law of sines:
+
+{\displaystyle a=b\ {\frac {\sin \alpha }{\sin \beta }}}a=b\ {\frac {\sin \alpha }{\sin \beta }}
+or
+
+{\displaystyle a=c\cos \beta \pm {\sqrt {b^{2}-c^{2}\sin ^{2}\beta }}}{\displaystyle a=c\cos \beta \pm {\sqrt {b^{2}-c^{2}\sin ^{2}\beta }}}
+A side and two adjacent angles given (ASA)
+
+One side and two adjacent angles given
+The known characteristics are the side c and the angles α, β. The third angle γ = 180° − α − β.
+
+Two unknown sides can be calculated from the law of sines:[6]
+
+{\displaystyle a=c\ {\frac {\sin \alpha }{\sin \gamma }};\quad b=c\ {\frac {\sin \beta }{\sin \gamma }}.}a=c\ {\frac {\sin \alpha }{\sin \gamma }};\quad b=c\ {\frac {\sin \beta }{\sin \gamma }}.
+or
+
+{\displaystyle a=c{\frac {\sin \alpha }{\sin \alpha \cos \beta +\sin \beta \cos \alpha }}}{\displaystyle a=c{\frac {\sin \alpha }{\sin \alpha \cos \beta +\sin \beta \cos \alpha }}}
+{\displaystyle b=c{\frac {\sin \beta }{\sin \alpha \cos \beta +\sin \beta \cos \alpha }}}{\displaystyle b=c{\frac {\sin \beta }{\sin \alpha \cos \beta +\sin \beta \cos \alpha }}}
+A side, one adjacent angle and the opposite angle given (AAS)
+The procedure for solving an AAS triangle is same as that for an ASA triangle: First, find the third angle by using the angle sum property of a triangle, then find the other two sides using the law of sines.
+
+Other given lengths
+In many cases, triangles can be solved given three pieces of information some of which are the lengths of the triangle's medians, altitudes, or angle bisectors. Posamentier and Lehmann[7] list the results for the question of solvability using no higher than square roots (i.e., constructibility) for each of the 95 distinct cases; 63 of these are constructible.
+
+Solving spherical triangles
+
+Spherical triangle
+The general spherical triangle is fully determined by three of its six characteristics (3 sides and 3 angles). The lengths of the sides a, b, c of a spherical triangle are their central angles, measured in angular units rather than linear units. (On a unit sphere, the angle (in radians) and length around the sphere are numerically the same. On other spheres, the angle (in radians) is equal to the length around the sphere divided by the radius.)
+
+Spherical geometry differs from planar Euclidean geometry, so the solution of spherical triangles is built on different rules. For example, the sum of the three angles α + β + γ depends on the size of the triangle. In addition, similar triangles cannot be unequal, so the problem of constructing a triangle with specified three angles has a unique solution. The basic relations used to solve a problem are similar to those of the planar case: see Spherical law of cosines and Spherical law of sines.
+
+Among other relationships that may be useful are the half-side formula and Napier's analogies:[8]
+
+{\displaystyle \tan {\frac {c}{2}}\cos {\frac {\alpha -\beta }{2}}=\tan {\frac {a+b}{2}}\cos {\frac {\alpha +\beta }{2}}}{\displaystyle \tan {\frac {c}{2}}\cos {\frac {\alpha -\beta }{2}}=\tan {\frac {a+b}{2}}\cos {\frac {\alpha +\beta }{2}}}
+{\displaystyle \tan {\frac {c}{2}}\sin {\frac {\alpha -\beta }{2}}=\tan {\frac {a-b}{2}}\sin {\frac {\alpha +\beta }{2}}}{\displaystyle \tan {\frac {c}{2}}\sin {\frac {\alpha -\beta }{2}}=\tan {\frac {a-b}{2}}\sin {\frac {\alpha +\beta }{2}}}
+{\displaystyle \cot {\frac {\gamma }{2}}\cos {\frac {a-b}{2}}=\tan {\frac {\alpha +\beta }{2}}\cos {\frac {a+b}{2}}}{\displaystyle \cot {\frac {\gamma }{2}}\cos {\frac {a-b}{2}}=\tan {\frac {\alpha +\beta }{2}}\cos {\frac {a+b}{2}}}
+{\displaystyle \cot {\frac {\gamma }{2}}\sin {\frac {a-b}{2}}=\tan {\frac {\alpha -\beta }{2}}\sin {\frac {a+b}{2}}.}{\displaystyle \cot {\frac {\gamma }{2}}\sin {\frac {a-b}{2}}=\tan {\frac {\alpha -\beta }{2}}\sin {\frac {a+b}{2}}.}
+
+Three sides given
+Three sides given (spherical SSS)
+Known: the sides a, b, c (in angular units). The triangle's angles are computed using the spherical law of cosines:
+
+{\displaystyle \alpha =\arccos \left({\frac {\cos a-\cos b\ \cos c}{\sin b\ \sin c}}\right),}\alpha =\arccos \left({\frac {\cos a-\cos b\ \cos c}{\sin b\ \sin c}}\right),
+{\displaystyle \beta =\arccos \left({\frac {\cos b-\cos c\ \cos a}{\sin c\ \sin a}}\right),}\beta =\arccos \left({\frac {\cos b-\cos c\ \cos a}{\sin c\ \sin a}}\right),
+{\displaystyle \gamma =\arccos \left({\frac {\cos c-\cos a\ \cos b}{\sin a\ \sin b}}\right).}\gamma =\arccos \left({\frac {\cos c-\cos a\ \cos b}{\sin a\ \sin b}}\right).
+
+Two sides and the included angle given
+Two sides and the included angle given (spherical SAS)
+Known: the sides a, b and the angle γ between them. The side c can be found from the spherical law of cosines:
+
+{\displaystyle c=\arccos \left(\cos a\cos b+\sin a\sin b\cos \gamma \right).}c=\arccos \left(\cos a\cos b+\sin a\sin b\cos \gamma \right).
+The angles α, β can be calculated as above, or by using Napier's analogies:
+
+{\displaystyle \alpha =\arctan \ {\frac {2\sin a}{\tan({\frac {\gamma }{2}})\sin(b+a)+\cot({\frac {\gamma }{2}})\sin(b-a)}},}\alpha =\arctan \ {\frac {2\sin a}{\tan({\frac {\gamma }{2}})\sin(b+a)+\cot({\frac {\gamma }{2}})\sin(b-a)}},
+{\displaystyle \beta =\arctan \ {\frac {2\sin b}{\tan({\frac {\gamma }{2}})\sin(a+b)+\cot({\frac {\gamma }{2}})\sin(a-b)}}.}{\displaystyle \beta =\arctan \ {\frac {2\sin b}{\tan({\frac {\gamma }{2}})\sin(a+b)+\cot({\frac {\gamma }{2}})\sin(a-b)}}.}
+This problem arises in the navigation problem of finding the great circle between two points on the earth specified by their latitude and longitude; in this application, it is important to use formulas which are not susceptible to round-off errors. For this purpose, the following formulas (which may be derived using vector algebra) can be used:
+
+{\displaystyle {\begin{aligned}c&=\arctan {\frac {\sqrt {(\sin a\cos b-\cos a\sin b\cos \gamma )^{2}+(\sin b\sin \gamma )^{2}}}{\cos a\cos b+\sin a\sin b\cos \gamma }},\\\alpha &=\arctan {\frac {\sin a\sin \gamma }{\sin b\cos a-\cos b\sin a\cos \gamma }},\\\beta &=\arctan {\frac {\sin b\sin \gamma }{\sin a\cos b-\cos a\sin b\cos \gamma }},\end{aligned}}}{\begin{aligned}c&=\arctan {\frac {\sqrt {(\sin a\cos b-\cos a\sin b\cos \gamma )^{2}+(\sin b\sin \gamma )^{2}}}{\cos a\cos b+\sin a\sin b\cos \gamma }},\\\alpha &=\arctan {\frac {\sin a\sin \gamma }{\sin b\cos a-\cos b\sin a\cos \gamma }},\\\beta &=\arctan {\frac {\sin b\sin \gamma }{\sin a\cos b-\cos a\sin b\cos \gamma }},\end{aligned}}
+where the signs of the numerators and denominators in these expressions should be used to determine the quadrant of the arctangent.
+
+
+Two sides and a non-included angle given
+Two sides and non-included angle given (spherical SSA)
+This problem is not solvable in all cases; a solution is guaranteed to be unique only if the side length adjacent to the angle is shorter than the other side length. Known: the sides b, c and the angle β not between them. A solution exists if the following condition holds:
+
+{\displaystyle b>\arcsin(\sin c\,\sin \beta ).}b>\arcsin(\sin c\,\sin \beta ).
+The angle γ can be found from the spherical law of sines:
+
+{\displaystyle \gamma =\arcsin \left({\frac {\sin c\,\sin \beta }{\sin b}}\right).}\gamma =\arcsin \left({\frac {\sin c\,\sin \beta }{\sin b}}\right).
+As for the plane case, if b < c then there are two solutions: γ and 180° - γ.
+
+We can find other characteristics by using Napier's analogies:
+
+{\displaystyle {\begin{aligned}a&=2\arctan \left[\tan \left({\tfrac {1}{2}}(b-c)\right){\frac {\sin \left({\tfrac {1}{2}}(\beta +\gamma )\right)}{\sin \left({\tfrac {1}{2}}(\beta -\gamma )\right)}}\right],\\[4pt]\alpha &=2\operatorname {arccot} \left[\tan \left({\tfrac {1}{2}}(\beta -\gamma )\right){\frac {\sin \left({\tfrac {1}{2}}(b+c)\right)}{\sin \left({\tfrac {1}{2}}(b-c)\right)}}\right].\end{aligned}}}{\displaystyle {\begin{aligned}a&=2\arctan \left[\tan \left({\tfrac {1}{2}}(b-c)\right){\frac {\sin \left({\tfrac {1}{2}}(\beta +\gamma )\right)}{\sin \left({\tfrac {1}{2}}(\beta -\gamma )\right)}}\right],\\[4pt]\alpha &=2\operatorname {arccot} \left[\tan \left({\tfrac {1}{2}}(\beta -\gamma )\right){\frac {\sin \left({\tfrac {1}{2}}(b+c)\right)}{\sin \left({\tfrac {1}{2}}(b-c)\right)}}\right].\end{aligned}}}
+
+One side and two adjacent angles given
+A side and two adjacent angles given (spherical ASA)
+Known: the side c and the angles α, β. First we determine the angle γ using the spherical law of cosines:
+
+{\displaystyle \gamma =\arccos(\sin \alpha \sin \beta \cos c-\cos \alpha \cos \beta ).\,}\gamma =\arccos(\sin \alpha \sin \beta \cos c-\cos \alpha \cos \beta ).\,
+We can find the two unknown sides from the spherical law of cosines (using the calculated angle γ):
+
+{\displaystyle a=\arccos \left({\frac {\cos \alpha +\cos \beta \cos \gamma }{\sin \beta \sin \gamma }}\right),}a=\arccos \left({\frac {\cos \alpha +\cos \beta \cos \gamma }{\sin \beta \sin \gamma }}\right),
+{\displaystyle b=\arccos \left({\frac {\cos \beta +\cos \alpha \cos \gamma }{\sin \alpha \sin \gamma }}\right),}{\displaystyle b=\arccos \left({\frac {\cos \beta +\cos \alpha \cos \gamma }{\sin \alpha \sin \gamma }}\right),}
+or by using Napier's analogies:
+
+{\displaystyle {\begin{aligned}a&=\arctan \left[{\frac {2\sin \alpha }{\cot({\frac {c}{2}})\sin(\beta +\alpha )+\tan({\frac {c}{2}})\sin(\beta -\alpha )}}\right],\\[4pt]b&=\arctan \left[{\frac {2\sin \beta }{\cot({\frac {c}{2}})\sin(\alpha +\beta )+\tan({\frac {c}{2}})\sin(\alpha -\beta )}}\right].\end{aligned}}}{\displaystyle {\begin{aligned}a&=\arctan \left[{\frac {2\sin \alpha }{\cot({\frac {c}{2}})\sin(\beta +\alpha )+\tan({\frac {c}{2}})\sin(\beta -\alpha )}}\right],\\[4pt]b&=\arctan \left[{\frac {2\sin \beta }{\cot({\frac {c}{2}})\sin(\alpha +\beta )+\tan({\frac {c}{2}})\sin(\alpha -\beta )}}\right].\end{aligned}}}
+
+One side, one adjacent angle and the opposite angle given
+A side, one adjacent angle and the opposite angle given (spherical AAS)
+Known: the side a and the angles α, β. The side b can be found from the spherical law of sines:
+
+{\displaystyle b=\arcsin \left({\frac {\sin a\,\sin \beta }{\sin \alpha }}\right).}b=\arcsin \left({\frac {\sin a\,\sin \beta }{\sin \alpha }}\right).
+If the angle for the side a is acute and α > β, another solution exists:
+
+{\displaystyle b=\pi -\arcsin \left({\frac {\sin a\,\sin \beta }{\sin \alpha }}\right).}b=\pi -\arcsin \left({\frac {\sin a\,\sin \beta }{\sin \alpha }}\right).
+We can find other characteristics by using Napier's analogies:
+
+{\displaystyle {\begin{aligned}c&=2\arctan \left[\tan \left({\tfrac {1}{2}}(a-b)\right){\frac {\sin \left({\tfrac {1}{2}}(\alpha +\beta )\right)}{\sin \left({\frac {1}{2}}(\alpha -\beta )\right)}}\right],\\[4pt]\gamma &=2\operatorname {arccot} \left[\tan \left({\tfrac {1}{2}}(\alpha -\beta )\right){\frac {\sin \left({\tfrac {1}{2}}(a+b)\right)}{\sin \left({\frac {1}{2}}(a-b)\right)}}\right].\end{aligned}}}{\displaystyle {\begin{aligned}c&=2\arctan \left[\tan \left({\tfrac {1}{2}}(a-b)\right){\frac {\sin \left({\tfrac {1}{2}}(\alpha +\beta )\right)}{\sin \left({\frac {1}{2}}(\alpha -\beta )\right)}}\right],\\[4pt]\gamma &=2\operatorname {arccot} \left[\tan \left({\tfrac {1}{2}}(\alpha -\beta )\right){\frac {\sin \left({\tfrac {1}{2}}(a+b)\right)}{\sin \left({\frac {1}{2}}(a-b)\right)}}\right].\end{aligned}}}
+
+Three angles given
+Three angles given (spherical AAA)
+Known: the angles α, β, γ. From the spherical law of cosines we infer:
+
+{\displaystyle a=\arccos \left({\frac {\cos \alpha +\cos \beta \cos \gamma }{\sin \beta \sin \gamma }}\right),}a=\arccos \left({\frac {\cos \alpha +\cos \beta \cos \gamma }{\sin \beta \sin \gamma }}\right),
+{\displaystyle b=\arccos \left({\frac {\cos \beta +\cos \gamma \cos \alpha }{\sin \gamma \sin \alpha }}\right),}b=\arccos \left({\frac {\cos \beta +\cos \gamma \cos \alpha }{\sin \gamma \sin \alpha }}\right),
+{\displaystyle c=\arccos \left({\frac {\cos \gamma +\cos \alpha \cos \beta }{\sin \alpha \sin \beta }}\right).}c=\arccos \left({\frac {\cos \gamma +\cos \alpha \cos \beta }{\sin \alpha \sin \beta }}\right).
+Solving right-angled spherical triangles
+The above algorithms become much simpler if one of the angles of a triangle (for example, the angle C) is the right angle. Such a spherical triangle is fully defined by its two elements, and the other three can be calculated using Napier's Pentagon or the following relations.
+
+{\displaystyle \sin a=\sin c\cdot \sin A}\sin a=\sin c\cdot \sin A (from the spherical law of sines)
+{\displaystyle \tan a=\sin b\cdot \tan A}\tan a=\sin b\cdot \tan A
+{\displaystyle \cos c=\cos a\cdot \cos b}\cos c=\cos a\cdot \cos b (from the spherical law of cosines)
+{\displaystyle \tan b=\tan c\cdot \cos A}\tan b=\tan c\cdot \cos A
+{\displaystyle \cos A=\cos a\cdot \sin B}\cos A=\cos a\cdot \sin B (also from the spherical law of cosines)
+{\displaystyle \cos c=\cot A\cdot \cot B}\cos c=\cot A\cdot \cot B
+Some applications
+Triangulation
+
+Distance measurement by triangulation
+Main article: Triangulation
+If one wants to measure the distance d from shore to a remote ship via triangulation, one marks on the shore two points with known distance l between them (the baseline). Let α, β be the angles between the baseline and the direction to the ship.
+
+From the formulae above (ASA case, assuming planar geometry) one can compute the distance as the triangle height:
+
+{\displaystyle d={\frac {\sin \alpha \,\sin \beta }{\sin(\alpha +\beta )}}\ell ={\frac {\tan \alpha \,\tan \beta }{\tan \alpha +\tan \beta }}\ell .}{\displaystyle d={\frac {\sin \alpha \,\sin \beta }{\sin(\alpha +\beta )}}\ell ={\frac {\tan \alpha \,\tan \beta }{\tan \alpha +\tan \beta }}\ell .}
+For the spherical case, one can first compute the length of side from the point at α to the ship (i.e. the side opposite to β) via the ASA formula
+
+{\displaystyle \tan b={\frac {2\sin \beta }{\cot(l/2)\sin(\alpha +\beta )+\tan(l/2)\sin(\alpha -\beta )}},}{\displaystyle \tan b={\frac {2\sin \beta }{\cot(l/2)\sin(\alpha +\beta )+\tan(l/2)\sin(\alpha -\beta )}},}
+and insert this into the AAS formula for the right subtriangle that contains the angle α and the sides b and d:
+
+{\displaystyle \sin d=\sin b\sin \alpha ={\frac {\tan b}{\sqrt {1+\tan ^{2}b}}}\sin \alpha .}{\displaystyle \sin d=\sin b\sin \alpha ={\frac {\tan b}{\sqrt {1+\tan ^{2}b}}}\sin \alpha .}
+(The planar formula is actually the first term of the Taylor expansion of d of the spherical solution in powers of l.)
+
+This method is used in cabotage. The angles α, β are defined by observation of familiar landmarks from the ship.
+
+
+How to measure a mountain's height
+As another example, if one wants to measure the height h of a mountain or a high building, the angles α, β from two ground points to the top are specified. Let ℓ be the distance between these points. From the same ASA case formulas we obtain:
+
+{\displaystyle h={\frac {\sin \alpha \,\sin \beta }{\sin(\beta -\alpha )}}\ell ={\frac {\tan \alpha \,\tan \beta }{\tan \beta -\tan \alpha }}\ell .}{\displaystyle h={\frac {\sin \alpha \,\sin \beta }{\sin(\beta -\alpha )}}\ell ={\frac {\tan \alpha \,\tan \beta }{\tan \beta -\tan \alpha }}\ell .}
+The distance between two points on the globe
+Main article: Great-circle distance
+Distance on earth.png
+To calculate the distance between two points on the globe,
+
+Point A: latitude λA, longitude LA, and
+Point B: latitude λB, longitude LB
+we consider the spherical triangle ABC, where C is the North Pole. Some characteristics are:
+
+{\displaystyle a=90^{\mathrm {o} }-\lambda _{\mathrm {B} },\,}a=90^{\mathrm {o} }-\lambda _{\mathrm {B} },\,
+{\displaystyle b=90^{\mathrm {o} }-\lambda _{\mathrm {A} },\,}b=90^{\mathrm {o} }-\lambda _{\mathrm {A} },\,
+{\displaystyle \gamma =L_{\mathrm {A} }-L_{\mathrm {B} }.\,}\gamma =L_{\mathrm {A} }-L_{\mathrm {B} }.\,
+If two sides and the included angle given, we obtain from the formulas
+
+{\displaystyle \mathrm {AB} =R\arccos \left[\sin \lambda _{\mathrm {A} }\,\sin \lambda _{\mathrm {B} }+\cos \lambda _{\mathrm {A} }\,\cos \lambda _{\mathrm {B} }\,\cos \left(L_{\mathrm {A} }-L_{\mathrm {B} }\right)\right].}{\displaystyle \mathrm {AB} =R\arccos \left[\sin \lambda _{\mathrm {A} }\,\sin \lambda _{\mathrm {B} }+\cos \lambda _{\mathrm {A} }\,\cos \lambda _{\mathrm {B} }\,\cos \left(L_{\mathrm {A} }-L_{\mathrm {B} }\right)\right].}
+Here R is the Earth's radius.
+
+See also
+Congruence
+Hansen's problem
+Hinge theorem
+Lénárt sphere
+Snellius–Pothenot problem
+References
+ "Solving Triangles". Maths is Fun. Retrieved 4 April 2012.
+ "Solving Triangles". web.horacemann.org. Archived from the original on 7 January 2014. Retrieved 4 April 2012.
+ "Solving SSS Triangles". Maths is Fun. Retrieved 13 January 2015.
+ "Solving SAS Triangles". Maths is Fun. Retrieved 13 January 2015.
+ "Solving SSA Triangles". Maths is Fun. Retrieved 9 March 2013.
+ "Solving ASA Triangles". Maths is Fun. Retrieved 13 January 2015.
+ Alfred S. Posamentier and Ingmar Lehmann, The Secrets of Triangles, Prometheus Books, 2012: pp. 201–203.
+ Napier's Analogies at MathWorld
+Euclid (1956) [1925]. Sir Thomas Heath (ed.). The Thirteen Books of the Elements. Volume I. Translated with introduction and commentary. Dover. ISBN 0-486-60088-2.
+External links
+Trigonometric Delights, by Eli Maor, Princeton University Press, 1998. Ebook version, in PDF format, full text presented.
+Trigonometry by Alfred Monroe Kenyon and Louis Ingold, The Macmillan Company, 1914. In images, full text presented. Google book.
+Spherical trigonometry on Math World.
+Intro to Spherical Trig. Includes discussion of The Napier circle and Napier's rules
+Spherical Trigonometry — for the use of colleges and schools by I. Todhunter, M.A., F.R.S. Historical Math Monograph posted by Cornell University Library.
+Triangulator – Triangle solver. Solve any plane triangle problem with the minimum of input data. Drawing of the solved triangle.
+TriSph – Free software to solve the spherical triangles, configurable to different practical applications and configured for gnomonic.
+Spherical Triangle Calculator – Solves spherical triangles.
+Categories: Spherical trigonometryTriangle geometryTrigonometry

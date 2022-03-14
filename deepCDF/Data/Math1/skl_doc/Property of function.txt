@@ -1,0 +1,89 @@
+﻿General properties
+This section describes general properties of functions, that are independent of specific properties of the domain and the codomain.
+
+Standard functions
+There are a number of standard functions that occur frequently:
+
+For every set X, there is a unique function, called the empty function from the empty set to X. The existence of the empty function from the empty set to itself is required for the category of sets to be a category – in a category, each object must have an "identity morphism", and the empty function serves as the identity for the empty set. The existence of a unique empty function from the empty set to every set A means that the empty set is an initial object in the category of sets. In terms of cardinal arithmetic, it means that k0 = 1 for every cardinal number k.
+For every set X and every singleton set {s}, there is a unique function from X to {s}, which maps every element of X to s. This is a surjection (see below) unless X is the empty set.
+Given a function {\displaystyle f\colon X\to Y,}{\displaystyle f\colon X\to Y,} the canonical surjection of f onto its image {\displaystyle f(X)=\{f(x)\mid x\in X\}}{\displaystyle f(X)=\{f(x)\mid x\in X\}} is the function from X to f(X) that maps x to f(x).
+For every subset A of a set X, the inclusion map of A into X is the injective (see below) function that maps every element of A to itself.
+The identity function on a set X, often denoted by idX, is the inclusion of X into itself.
+Function composition
+Main article: Function composition
+Given two functions {\displaystyle f\colon X\to Y}f\colon X\to Y and {\displaystyle g\colon Y\to Z}{\displaystyle g\colon Y\to Z} such that the domain of g is the codomain of f, their composition is the function {\displaystyle g\circ f\colon X\rightarrow Z}g\circ f\colon X\rightarrow Z defined by
+
+{\displaystyle (g\circ f)(x)=g(f(x)).}(g\circ f)(x)=g(f(x)).
+That is, the value of {\displaystyle g\circ f}g\circ f is obtained by first applying f to x to obtain y =f(x) and then applying g to the result y to obtain g(y) = g(f(x)). In the notation the function that is applied first is always written on the right.
+
+The composition {\displaystyle g\circ f}g\circ f is an operation on functions that is defined only if the codomain of the first function is the domain of the second one. Even when both {\displaystyle g\circ f}g\circ f and {\displaystyle f\circ g}f\circ g satisfy these conditions, the composition is not necessarily commutative, that is, the functions {\displaystyle g\circ f}g\circ f and {\displaystyle f\circ g}{\displaystyle f\circ g} need not be equal, but may deliver different values for the same argument. For example, let f(x) = x2 and g(x) = x + 1, then {\displaystyle g(f(x))=x^{2}+1}{\displaystyle g(f(x))=x^{2}+1} and {\displaystyle f(g(x))=(x+1)^{2}}{\displaystyle f(g(x))=(x+1)^{2}} agree just for {\displaystyle x=0.}x=0.
+
+The function composition is associative in the sense that, if one of {\displaystyle (h\circ g)\circ f}{\displaystyle (h\circ g)\circ f} and {\displaystyle h\circ (g\circ f)}{\displaystyle h\circ (g\circ f)} is defined, then the other is also defined, and they are equal. Thus, one writes
+
+{\displaystyle h\circ g\circ f=(h\circ g)\circ f=h\circ (g\circ f).}{\displaystyle h\circ g\circ f=(h\circ g)\circ f=h\circ (g\circ f).}
+The identity functions {\displaystyle \operatorname {id} _{X}}{\displaystyle \operatorname {id} _{X}} and {\displaystyle \operatorname {id} _{Y}}{\displaystyle \operatorname {id} _{Y}} are respectively a right identity and a left identity for functions from X to Y. That is, if f is a function with domain X, and codomain Y, one has {\displaystyle f\circ \operatorname {id} _{X}=\operatorname {id} _{Y}\circ f=f.}{\displaystyle f\circ \operatorname {id} _{X}=\operatorname {id} _{Y}\circ f=f.}
+
+
+A composite function g(f(x)) can be visualized as the combination of two "machines".
+
+ 
+
+A simple example of a function composition
+
+ 
+
+Another composition. In this example, (g ∘ f )(c) = #.
+
+Image and preimage
+Main article: Image (mathematics)
+Let {\displaystyle f\colon X\to Y.}{\displaystyle f\colon X\to Y.} The image by f of an element x of the domain X is f(x). If A is any subset of X, then the image of A by f, denoted f(A) is the subset of the codomain Y consisting of all images of elements of A, that is,
+
+{\displaystyle f(A)=\{f(x)\mid x\in A\}.}{\displaystyle f(A)=\{f(x)\mid x\in A\}.}
+The image of f is the image of the whole domain, that is f(X). It is also called the range of f, although the term may also refer to the codomain.[18]
+
+On the other hand, the inverse image, or preimage by f of a subset B of the codomain Y is the subset of the domain X consisting of all elements of X whose images belong to B. It is denoted by {\displaystyle f^{-1}(B).}{\displaystyle f^{-1}(B).} That is
+
+{\displaystyle f^{-1}(B)=\{x\in X\mid f(x)\in B\}.}{\displaystyle f^{-1}(B)=\{x\in X\mid f(x)\in B\}.}
+For example, the preimage of {4, 9} under the square function is the set {−3,−2,2,3}.
+
+By definition of a function, the image of an element x of the domain is always a single element of the codomain. However, the preimage of a single element y, denoted {\displaystyle f^{-1}(x),}{\displaystyle f^{-1}(x),} may be empty or contain any number of elements. For example, if f is the function from the integers to themselves that maps every integer to 0, then {\displaystyle f^{-1}(0)=\mathbb {Z} }{\displaystyle f^{-1}(0)=\mathbb {Z} }.
+
+If {\displaystyle f\colon X\to Y}f\colon X\to Y is a function, A and B are subsets of X, and C and D are subsets of Y, then one has the following properties:
+
+{\displaystyle A\subseteq B\Longrightarrow f(A)\subseteq f(B)}{\displaystyle A\subseteq B\Longrightarrow f(A)\subseteq f(B)}
+{\displaystyle C\subseteq D\Longrightarrow f^{-1}(C)\subseteq f^{-1}(D)}{\displaystyle C\subseteq D\Longrightarrow f^{-1}(C)\subseteq f^{-1}(D)}
+{\displaystyle A\subseteq f^{-1}(f(A))}{\displaystyle A\subseteq f^{-1}(f(A))}
+{\displaystyle C\supseteq f(f^{-1}(C))}{\displaystyle C\supseteq f(f^{-1}(C))}
+{\displaystyle f(f^{-1}(f(A)))=f(A)}{\displaystyle f(f^{-1}(f(A)))=f(A)}
+{\displaystyle f^{-1}(f(f^{-1}(C)))=f^{-1}(C)}{\displaystyle f^{-1}(f(f^{-1}(C)))=f^{-1}(C)}
+The preimage by f of an element y of the codomain is sometimes called, in some contexts, the fiber of y under f.
+
+If a function f has an inverse (see below), this inverse is denoted {\displaystyle f^{-1}.}{\displaystyle f^{-1}.} In this case {\displaystyle f^{-1}(C)}{\displaystyle f^{-1}(C)} may denote either the image by {\displaystyle f^{-1}}f^{-1} or the preimage by f of C. This is not a problem, as these sets are equal. The notation {\displaystyle f(A)}f(A) and {\displaystyle f^{-1}(C)}{\displaystyle f^{-1}(C)} may be ambiguous in the case of sets that contain some subsets as elements, such as {\displaystyle \{x,\{x\}\}.}{\displaystyle \{x,\{x\}\}.} In this case, some care may be needed, for example, by using square brackets {\displaystyle f[A],f^{-1}[C]}{\displaystyle f[A],f^{-1}[C]} for images and preimages of subsets, and ordinary parentheses for images and preimages of elements.
+
+Injective, surjective and bijective functions
+
+This section does not cite any sources. Please help improve this section by adding citations to reliable sources. Unsourced material may be challenged and removed. (August 2019) (Learn how and when to remove this template message)
+Let {\displaystyle f\colon X\to Y}f\colon X\to Y be a function.
+
+The function f is injective (or one-to-one, or is an injection) if f(a) ≠ f(b) for any two different elements a and b of X. Equivalently, f is injective if, for any {\displaystyle y\in Y,}{\displaystyle y\in Y,} the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) contains at most one element. An empty function is always injective. If X is not the empty set, and if, as usual, Zermelo–Fraenkel set theory is assumed, then f is injective if and only if there exists a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle g\circ f=\operatorname {id} _{X},}{\displaystyle g\circ f=\operatorname {id} _{X},} that is, if f has a left inverse. If f is injective, for defining g, one chooses an element {\displaystyle x_{0}}x_{0} in X (which exists as X is supposed to be nonempty),[note 6] and one defines g by {\displaystyle g(y)=x}{\displaystyle g(y)=x} if {\displaystyle y=f(x),}{\displaystyle y=f(x),} and {\displaystyle g(y)=x_{0}}{\displaystyle g(y)=x_{0}}, if {\displaystyle y\not \in f(X).}{\displaystyle y\not \in f(X).}
+
+The function f is surjective (or onto, or is a surjection) if the range equals the codomain, that is, if f(X) = Y. In other words, the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) of every {\displaystyle y\in Y}y\in Y is nonempty. If, as usual, the axiom of choice is assumed, then f is surjective if and only if there exists a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle f\circ g=\operatorname {id} _{Y},}{\displaystyle f\circ g=\operatorname {id} _{Y},} that is, if f has a right inverse. The axiom of choice is needed, because, if f is surjective, one defines g by {\displaystyle g(y)=x,}{\displaystyle g(y)=x,} where {\displaystyle x}x is an arbitrarily chosen element of {\displaystyle f^{-1}(y).}{\displaystyle f^{-1}(y).}
+
+The function f is bijective (or is bijection or a one-to-one correspondence) if it is both injective and surjective. That is f is bijective if, for any {\displaystyle y\in Y,}{\displaystyle y\in Y,} the preimage {\displaystyle f^{-1}(y)}f^{-1}(y) contains exactly one element. The function f is bijective if and only if it admits an inverse function, that is a function {\displaystyle g\colon Y\to X}{\displaystyle g\colon Y\to X} such that {\displaystyle g\circ f=\operatorname {id} _{X},}{\displaystyle g\circ f=\operatorname {id} _{X},} and {\displaystyle f\circ g=\operatorname {id} _{Y}.}{\displaystyle f\circ g=\operatorname {id} _{Y}.} (Contrarily to the case of surjections, this does not require the axiom of choice.)
+
+Every function {\displaystyle f\colon X\to Y}f\colon X\to Y may be factorized as the composition i ∘ s of a surjection followed by an injection, where s is the canonical surjection of X onto f(X), and i is the canonical injection of f(X) into Y. This is the canonical factorization of f.
+
+"One-to-one" and "onto" are terms that were more common in the older English language literature; "injective", "surjective", and "bijective" were originally coined as French words in the second quarter of the 20th century by the Bourbaki group and imported into English. As a word of caution, "a one-to-one function" is one that is injective, while a "one-to-one correspondence" refers to a bijective function. Also, the statement "f maps X onto Y" differs from "f maps X into B" in that the former implies that f is surjective, while the latter makes no assertion about the nature of f the mapping. In a complicated reasoning, the one letter difference can easily be missed. Due to the confusing nature of this older terminology, these terms have declined in popularity relative to the Bourbakian terms, which have also the advantage to be more symmetrical.
+
+Restriction and extension
+Main article: Restriction (mathematics)
+If {\displaystyle f\colon X\to Y}f\colon X\to Y is a function and S is a subset of X, then the restriction of {\displaystyle f}f to S, denoted {\displaystyle f|_{S}}{\displaystyle f|_{S}}, is the function from S to Y defined by
+
+{\displaystyle f|_{S}(x)=f(x)}{\displaystyle f|_{S}(x)=f(x)}
+for all x in S. Restrictions can be used to define partial inverse functions: if there is a subset S of the domain of a function {\displaystyle f}f such that {\displaystyle f|_{S}}{\displaystyle f|_{S}} is injective, then the canonical surjection of {\displaystyle f|_{S}}{\displaystyle f|_{S}} onto its image {\displaystyle f|_{S}(S)=f(S)}{\displaystyle f|_{S}(S)=f(S)} is a bijection, and thus has an inverse function from {\displaystyle f(S)}f(S) to S. This is in this way that inverse trigonometric functions are defined. For example, the cosine function is injective when restricted to the interval (0, π). The image of this restriction is the interval (–1, 1), and thus the restriction has an inverse function from (–1, 1) to (0, π), which is called arccosine and is denoted arccos.
+
+Function restriction may also be used for "gluing" functions together. Let {\displaystyle \textstyle X=\bigcup _{i\in I}U_{i}}{\displaystyle \textstyle X=\bigcup _{i\in I}U_{i}} be the decomposition of X as a union of subsets, and suppose that a function {\displaystyle f_{i}\colon U_{i}\to Y}{\displaystyle f_{i}\colon U_{i}\to Y} is defined on each {\displaystyle U_{i}}U_{i} such that for each pair {\displaystyle i,j}i,j of indices, the restrictions of {\displaystyle f_{i}}f_{i} and {\displaystyle f_{j}}f_{j} to {\displaystyle U_{i}\cap U_{j}}{\displaystyle U_{i}\cap U_{j}} are equal. Then this defines a unique function {\displaystyle f\colon X\to Y}f\colon X\to Y such that {\displaystyle f|_{U_{i}}=f_{i}}{\displaystyle f|_{U_{i}}=f_{i}} for all i. This is the way that functions on manifolds are defined.
+
+An extension of a function f is a function g such that f is a restriction of g. A typical use of this concept is the process of analytic continuation, that allows extending functions whose domain is a small part of the complex plane to functions whose domain is almost the whole complex plane.
+
+Here is another classical example of a function extension that is encountered when studying homographies of the real line. A homography is a function {\displaystyle h(x)={\frac {ax+b}{cx+d}}}{\displaystyle h(x)={\frac {ax+b}{cx+d}}} such that ad – bc ≠ 0. Its domain is the set of all real numbers different from {\displaystyle -d/c,}{\displaystyle -d/c,} and its image is the set of all real numbers different from {\displaystyle a/c.}{\displaystyle a/c.} If one extends the real line to the projectively extended real line by including ∞, one may extend h to a bijection from the extended real line to itself by setting {\displaystyle h(\infty )=a/c}{\displaystyle h(\infty )=a/c} and {\displaystyle h(-d/c)=\infty }{\displaystyle h(-d/c)=\infty }.

@@ -1,0 +1,344 @@
+﻿
+{\displaystyle \mathbf {a} =(a_{x},a_{y},a_{z}).}{\displaystyle \mathbf {a} =(a_{x},a_{y},a_{z}).}
+This can be generalised to n-dimensional Euclidean space (or Rn).
+
+{\displaystyle \mathbf {a} =(a_{1},a_{2},a_{3},\cdots ,a_{n-1},a_{n}).}\mathbf {a} =(a_{1},a_{2},a_{3},\cdots ,a_{n-1},a_{n}).
+These numbers are often arranged into a column vector or row vector, particularly when dealing with matrices, as follows:
+
+{\displaystyle \mathbf {a} ={\begin{bmatrix}a_{1}\\a_{2}\\a_{3}\\\end{bmatrix}}=[a_{1}\ a_{2}\ a_{3}].}{\displaystyle \mathbf {a} ={\begin{bmatrix}a_{1}\\a_{2}\\a_{3}\\\end{bmatrix}}=[a_{1}\ a_{2}\ a_{3}].}
+Another way to represent a vector in n-dimensions is to introduce the standard basis vectors. For instance, in three dimensions, there are three of them:
+
+{\displaystyle {\mathbf {e} }_{1}=(1,0,0),\ {\mathbf {e} }_{2}=(0,1,0),\ {\mathbf {e} }_{3}=(0,0,1).}{\mathbf {e} }_{1}=(1,0,0),\ {\mathbf {e} }_{2}=(0,1,0),\ {\mathbf {e} }_{3}=(0,0,1).
+These have the intuitive interpretation as vectors of unit length pointing up the x-, y-, and z-axis of a Cartesian coordinate system, respectively. In terms of these, any vector a in R3 can be expressed in the form:
+
+{\displaystyle \mathbf {a} =(a_{1},a_{2},a_{3})=a_{1}(1,0,0)+a_{2}(0,1,0)+a_{3}(0,0,1),\ }\mathbf {a} =(a_{1},a_{2},a_{3})=a_{1}(1,0,0)+a_{2}(0,1,0)+a_{3}(0,0,1),\ 
+or
+
+{\displaystyle \mathbf {a} =\mathbf {a} _{1}+\mathbf {a} _{2}+\mathbf {a} _{3}=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3},}\mathbf {a} =\mathbf {a} _{1}+\mathbf {a} _{2}+\mathbf {a} _{3}=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3},
+where a1, a2, a3 are called the vector components (or vector projections) of a on the basis vectors or, equivalently, on the corresponding Cartesian axes x, y, and z (see figure), while a1, a2, a3 are the respective scalar components (or scalar projections).
+
+In introductory physics textbooks, the standard basis vectors are often instead denoted {\displaystyle \mathbf {i} ,\mathbf {j} ,\mathbf {k} }\mathbf {i} ,\mathbf {j} ,\mathbf {k}  (or {\displaystyle \mathbf {\hat {x}} ,\mathbf {\hat {y}} ,\mathbf {\hat {z}} }\mathbf {\hat {x}} ,\mathbf {\hat {y}} ,\mathbf {\hat {z}} , in which the hat symbol ^ typically denotes unit vectors). In this case, the scalar and vector components are denoted respectively ax, ay, az, and ax, ay, az (note the difference in boldface). Thus,
+
+{\displaystyle \mathbf {a} =\mathbf {a} _{x}+\mathbf {a} _{y}+\mathbf {a} _{z}=a_{x}{\mathbf {i} }+a_{y}{\mathbf {j} }+a_{z}{\mathbf {k} }.}{\displaystyle \mathbf {a} =\mathbf {a} _{x}+\mathbf {a} _{y}+\mathbf {a} _{z}=a_{x}{\mathbf {i} }+a_{y}{\mathbf {j} }+a_{z}{\mathbf {k} }.}
+The notation ei is compatible with the index notation and the summation convention commonly used in higher level mathematics, physics, and engineering.
+
+Decomposition or resolution
+Further information: Basis (linear algebra)
+As explained above a vector is often described by a set of vector components that add up to form the given vector. Typically, these components are the projections of the vector on a set of mutually perpendicular reference axes (basis vectors). The vector is said to be decomposed or resolved with respect to that set.
+
+
+Illustration of tangential and normal components of a vector to a surface.
+The decomposition or resolution[11] of a vector into components is not unique, because it depends on the choice of the axes on which the vector is projected.
+
+Moreover, the use of Cartesian unit vectors such as {\displaystyle \mathbf {\hat {x}} ,\mathbf {\hat {y}} ,\mathbf {\hat {z}} }\mathbf {\hat {x}} ,\mathbf {\hat {y}} ,\mathbf {\hat {z}}  as a basis in which to represent a vector is not mandated. Vectors can also be expressed in terms of an arbitrary basis, including the unit vectors of a cylindrical coordinate system ({\displaystyle {\boldsymbol {\hat {\rho }}},{\boldsymbol {\hat {\phi }}},\mathbf {\hat {z}} }{\boldsymbol {\hat {\rho }}},{\boldsymbol {\hat {\phi }}},\mathbf {\hat {z}} ) or spherical coordinate system ({\displaystyle \mathbf {\hat {r}} ,{\boldsymbol {\hat {\theta }}},{\boldsymbol {\hat {\phi }}}}\mathbf {\hat {r}} ,{\boldsymbol {\hat {\theta }}},{\boldsymbol {\hat {\phi }}}). The latter two choices are more convenient for solving problems which possess cylindrical or spherical symmetry respectively.
+
+The choice of a basis does not affect the properties of a vector or its behaviour under transformations.
+
+A vector can also be broken up with respect to "non-fixed" basis vectors that change their orientation as a function of time or space. For example, a vector in three-dimensional space can be decomposed with respect to two axes, respectively normal, and tangent to a surface (see figure). Moreover, the radial and tangential components of a vector relate to the radius of rotation of an object. The former is parallel to the radius and the latter is orthogonal to it.[12]
+
+In these cases, each of the components may be in turn decomposed with respect to a fixed coordinate system or basis set (e.g., a global coordinate system, or inertial reference frame).
+
+Basic properties
+The following section uses the Cartesian coordinate system with basis vectors
+
+{\displaystyle {\mathbf {e} }_{1}=(1,0,0),\ {\mathbf {e} }_{2}=(0,1,0),\ {\mathbf {e} }_{3}=(0,0,1)}{\mathbf {e} }_{1}=(1,0,0),\ {\mathbf {e} }_{2}=(0,1,0),\ {\mathbf {e} }_{3}=(0,0,1)
+and assumes that all vectors have the origin as a common base point. A vector a will be written as
+
+{\displaystyle {\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}.}{\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}.
+Equality
+Two vectors are said to be equal if they have the same magnitude and direction. Equivalently they will be equal if their coordinates are equal. So two vectors
+
+{\displaystyle {\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}}{\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}
+and
+
+{\displaystyle {\mathbf {b} }=b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}}{\mathbf {b} }=b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}
+are equal if
+
+{\displaystyle a_{1}=b_{1},\quad a_{2}=b_{2},\quad a_{3}=b_{3}.\,}a_{1}=b_{1},\quad a_{2}=b_{2},\quad a_{3}=b_{3}.\,
+Opposite, parallel, and antiparallel vectors
+Two vectors are opposite if they have the same magnitude but opposite direction. So two vectors
+
+{\displaystyle {\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}}{\mathbf {a} }=a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}
+and
+
+{\displaystyle {\mathbf {b} }=b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}}{\mathbf {b} }=b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}
+are opposite if
+
+{\displaystyle a_{1}=-b_{1},\quad a_{2}=-b_{2},\quad a_{3}=-b_{3}.\,}a_{1}=-b_{1},\quad a_{2}=-b_{2},\quad a_{3}=-b_{3}.\,
+Two vectors are parallel if they have the same direction but not necessarily the same magnitude, or antiparallel if they have opposite direction but not necessarily the same magnitude.
+
+Addition and subtraction
+Further information: Vector space
+Assume now that a and b are not necessarily equal vectors, but that they may have different magnitudes and directions. The sum of a and b is
+
+{\displaystyle \mathbf {a} +\mathbf {b} =(a_{1}+b_{1})\mathbf {e} _{1}+(a_{2}+b_{2})\mathbf {e} _{2}+(a_{3}+b_{3})\mathbf {e} _{3}.}\mathbf {a} +\mathbf {b} =(a_{1}+b_{1})\mathbf {e} _{1}+(a_{2}+b_{2})\mathbf {e} _{2}+(a_{3}+b_{3})\mathbf {e} _{3}.
+The addition may be represented graphically by placing the tail of the arrow b at the head of the arrow a, and then drawing an arrow from the tail of a to the head of b. The new arrow drawn represents the vector a + b, as illustrated below:
+
+The addition of two vectors a and b
+This addition method is sometimes called the parallelogram rule because a and b form the sides of a parallelogram and a + b is one of the diagonals. If a and b are bound vectors that have the same base point, this point will also be the base point of a + b. One can check geometrically that a + b = b + a and (a + b) + c = a + (b + c).
+
+The difference of a and b is
+
+{\displaystyle \mathbf {a} -\mathbf {b} =(a_{1}-b_{1})\mathbf {e} _{1}+(a_{2}-b_{2})\mathbf {e} _{2}+(a_{3}-b_{3})\mathbf {e} _{3}.}\mathbf {a} -\mathbf {b} =(a_{1}-b_{1})\mathbf {e} _{1}+(a_{2}-b_{2})\mathbf {e} _{2}+(a_{3}-b_{3})\mathbf {e} _{3}.
+Subtraction of two vectors can be geometrically illustrated as follows: to subtract b from a, place the tails of a and b at the same point, and then draw an arrow from the head of b to the head of a. This new arrow represents the vector (-b) + a, with (-b) being the opposite of b, see drawing. And (-b) + a = a − b.
+
+The subtraction of two vectors a and b
+Scalar multiplication
+Main article: Scalar multiplication
+
+Scalar multiplication of a vector by a factor of 3 stretches the vector out.
+A vector may also be multiplied, or re-scaled, by a real number r. In the context of conventional vector algebra, these real numbers are often called scalars (from scale) to distinguish them from vectors. The operation of multiplying a vector by a scalar is called scalar multiplication. The resulting vector is
+
+{\displaystyle r\mathbf {a} =(ra_{1})\mathbf {e} _{1}+(ra_{2})\mathbf {e} _{2}+(ra_{3})\mathbf {e} _{3}.}r\mathbf {a} =(ra_{1})\mathbf {e} _{1}+(ra_{2})\mathbf {e} _{2}+(ra_{3})\mathbf {e} _{3}.
+Intuitively, multiplying by a scalar r stretches a vector out by a factor of r. Geometrically, this can be visualized (at least in the case when r is an integer) as placing r copies of the vector in a line where the endpoint of one vector is the initial point of the next vector.
+
+If r is negative, then the vector changes direction: it flips around by an angle of 180°. Two examples (r = −1 and r = 2) are given below:
+
+
+The scalar multiplications −a and 2a of a vector a
+Scalar multiplication is distributive over vector addition in the following sense: r(a + b) = ra + rb for all vectors a and b and all scalars r. One can also show that a − b = a + (−1)b.
+
+Length
+The length or magnitude or norm of the vector a is denoted by ‖a‖ or, less commonly, |a|, which is not to be confused with the absolute value (a scalar "norm").
+
+The length of the vector a can be computed with the Euclidean norm
+
+{\displaystyle \left\|\mathbf {a} \right\|={\sqrt {a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}}}{\displaystyle \left\|\mathbf {a} \right\|={\sqrt {a_{1}^{2}+a_{2}^{2}+a_{3}^{2}}}}
+which is a consequence of the Pythagorean theorem since the basis vectors e1, e2, e3 are orthogonal unit vectors.
+
+This happens to be equal to the square root of the dot product, discussed below, of the vector with itself:
+
+{\displaystyle \left\|\mathbf {a} \right\|={\sqrt {\mathbf {a} \cdot \mathbf {a} }}.}\left\|\mathbf {a} \right\|={\sqrt {\mathbf {a} \cdot \mathbf {a} }}.
+Unit vector
+
+The normalization of a vector a into a unit vector â
+Main article: Unit vector
+A unit vector is any vector with a length of one; normally unit vectors are used simply to indicate direction. A vector of arbitrary length can be divided by its length to create a unit vector. This is known as normalizing a vector. A unit vector is often indicated with a hat as in â.
+
+To normalize a vector a = (a1, a2, a3), scale the vector by the reciprocal of its length ‖a‖. That is:
+
+{\displaystyle \mathbf {\hat {a}} ={\frac {\mathbf {a} }{\left\|\mathbf {a} \right\|}}={\frac {a_{1}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{1}+{\frac {a_{2}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{2}+{\frac {a_{3}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{3}}\mathbf {\hat {a}} ={\frac {\mathbf {a} }{\left\|\mathbf {a} \right\|}}={\frac {a_{1}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{1}+{\frac {a_{2}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{2}+{\frac {a_{3}}{\left\|\mathbf {a} \right\|}}\mathbf {e} _{3}
+Zero vector
+Main article: Zero vector
+The zero vector is the vector with length zero. Written out in coordinates, the vector is (0, 0, 0), and it is commonly denoted {\displaystyle {\vec {0}}}{\vec {0}}, 0, or simply 0. Unlike any other vector, it has an arbitrary or indeterminate direction, and cannot be normalized (that is, there is no unit vector that is a multiple of the zero vector). The sum of the zero vector with any vector a is a (that is, 0 + a = a).
+
+Dot product
+Main article: Dot product
+The dot product of two vectors a and b (sometimes called the inner product, or, since its result is a scalar, the scalar product) is denoted by a ∙ b and is defined as:
+
+{\displaystyle \mathbf {a} \cdot \mathbf {b} =\left\|\mathbf {a} \right\|\left\|\mathbf {b} \right\|\cos \theta }\mathbf {a} \cdot \mathbf {b} =\left\|\mathbf {a} \right\|\left\|\mathbf {b} \right\|\cos \theta 
+where θ is the measure of the angle between a and b (see trigonometric function for an explanation of cosine). Geometrically, this means that a and b are drawn with a common start point and then the length of a is multiplied with the length of the component of b that points in the same direction as a.
+
+The dot product can also be defined as the sum of the products of the components of each vector as
+
+{\displaystyle \mathbf {a} \cdot \mathbf {b} =a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}.}\mathbf {a} \cdot \mathbf {b} =a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}.
+Cross product
+Main article: Cross product
+The cross product (also called the vector product or outer product) is only meaningful in three or seven dimensions. The cross product differs from the dot product primarily in that the result of the cross product of two vectors is a vector. The cross product, denoted a × b, is a vector perpendicular to both a and b and is defined as
+
+{\displaystyle \mathbf {a} \times \mathbf {b} =\left\|\mathbf {a} \right\|\left\|\mathbf {b} \right\|\sin(\theta )\,\mathbf {n} }\mathbf {a} \times \mathbf {b} =\left\|\mathbf {a} \right\|\left\|\mathbf {b} \right\|\sin(\theta )\,\mathbf {n} 
+where θ is the measure of the angle between a and b, and n is a unit vector perpendicular to both a and b which completes a right-handed system. The right-handedness constraint is necessary because there exist two unit vectors that are perpendicular to both a and b, namely, n and (–n).
+
+
+An illustration of the cross product
+The cross product a × b is defined so that a, b, and a × b also becomes a right-handed system (a and b are not necessarily orthogonal). This is the right-hand rule.
+
+The length of a × b can be interpreted as the area of the parallelogram having a and b as sides.
+
+The cross product can be written as
+
+{\displaystyle {\mathbf {a} }\times {\mathbf {b} }=(a_{2}b_{3}-a_{3}b_{2}){\mathbf {e} }_{1}+(a_{3}b_{1}-a_{1}b_{3}){\mathbf {e} }_{2}+(a_{1}b_{2}-a_{2}b_{1}){\mathbf {e} }_{3}.}{\mathbf {a} }\times {\mathbf {b} }=(a_{2}b_{3}-a_{3}b_{2}){\mathbf {e} }_{1}+(a_{3}b_{1}-a_{1}b_{3}){\mathbf {e} }_{2}+(a_{1}b_{2}-a_{2}b_{1}){\mathbf {e} }_{3}.
+For arbitrary choices of spatial orientation (that is, allowing for left-handed as well as right-handed coordinate systems) the cross product of two vectors is a pseudovector instead of a vector (see below).
+
+Scalar triple product
+Main article: Scalar triple product
+The scalar triple product (also called the box product or mixed triple product) is not really a new operator, but a way of applying the other two multiplication operators to three vectors. The scalar triple product is sometimes denoted by (a b c) and defined as:
+
+{\displaystyle (\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=\mathbf {a} \cdot (\mathbf {b} \times \mathbf {c} ).}(\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=\mathbf {a} \cdot (\mathbf {b} \times \mathbf {c} ).
+It has three primary uses. First, the absolute value of the box product is the volume of the parallelepiped which has edges that are defined by the three vectors. Second, the scalar triple product is zero if and only if the three vectors are linearly dependent, which can be easily proved by considering that in order for the three vectors to not make a volume, they must all lie in the same plane. Third, the box product is positive if and only if the three vectors a, b and c are right-handed.
+
+In components (with respect to a right-handed orthonormal basis), if the three vectors are thought of as rows (or columns, but in the same order), the scalar triple product is simply the determinant of the 3-by-3 matrix having the three vectors as rows
+
+{\displaystyle (\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=\left|{\begin{pmatrix}a_{1}&a_{2}&a_{3}\\b_{1}&b_{2}&b_{3}\\c_{1}&c_{2}&c_{3}\\\end{pmatrix}}\right|}(\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=\left|{\begin{pmatrix}a_{1}&a_{2}&a_{3}\\b_{1}&b_{2}&b_{3}\\c_{1}&c_{2}&c_{3}\\\end{pmatrix}}\right|
+The scalar triple product is linear in all three entries and anti-symmetric in the following sense:
+
+{\displaystyle (\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=(\mathbf {c} \ \mathbf {a} \ \mathbf {b} )=(\mathbf {b} \ \mathbf {c} \ \mathbf {a} )=-(\mathbf {a} \ \mathbf {c} \ \mathbf {b} )=-(\mathbf {b} \ \mathbf {a} \ \mathbf {c} )=-(\mathbf {c} \ \mathbf {b} \ \mathbf {a} ).}(\mathbf {a} \ \mathbf {b} \ \mathbf {c} )=(\mathbf {c} \ \mathbf {a} \ \mathbf {b} )=(\mathbf {b} \ \mathbf {c} \ \mathbf {a} )=-(\mathbf {a} \ \mathbf {c} \ \mathbf {b} )=-(\mathbf {b} \ \mathbf {a} \ \mathbf {c} )=-(\mathbf {c} \ \mathbf {b} \ \mathbf {a} ).
+Conversion between multiple Cartesian bases
+All examples thus far have dealt with vectors expressed in terms of the same basis, namely, the e basis {e1, e2, e3}. However, a vector can be expressed in terms of any number of different bases that are not necessarily aligned with each other, and still remain the same vector. In the e basis, a vector a is expressed, by definition, as
+
+{\displaystyle \mathbf {a} =p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3}}{\displaystyle \mathbf {a} =p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3}}.
+The scalar components in the e basis are, by definition,
+
+{\displaystyle p=\mathbf {a} \cdot \mathbf {e} _{1}}{\displaystyle p=\mathbf {a} \cdot \mathbf {e} _{1}},
+{\displaystyle q=\mathbf {a} \cdot \mathbf {e} _{2}}{\displaystyle q=\mathbf {a} \cdot \mathbf {e} _{2}},
+{\displaystyle r=\mathbf {a} \cdot \mathbf {e} _{3}}{\displaystyle r=\mathbf {a} \cdot \mathbf {e} _{3}}.
+In another orthonormal basis n = {n1, n2, n3} that is not necessarily aligned with e, the vector a is expressed as
+
+{\displaystyle \mathbf {a} =u\mathbf {n} _{1}+v\mathbf {n} _{2}+w\mathbf {n} _{3}}{\displaystyle \mathbf {a} =u\mathbf {n} _{1}+v\mathbf {n} _{2}+w\mathbf {n} _{3}}
+and the scalar components in the n basis are, by definition,
+
+{\displaystyle u=\mathbf {a} \cdot \mathbf {n} _{1}}{\displaystyle u=\mathbf {a} \cdot \mathbf {n} _{1}},
+{\displaystyle v=\mathbf {a} \cdot \mathbf {n} _{2}}{\displaystyle v=\mathbf {a} \cdot \mathbf {n} _{2}},
+{\displaystyle w=\mathbf {a} \cdot \mathbf {n} _{3}}{\displaystyle w=\mathbf {a} \cdot \mathbf {n} _{3}}.
+The values of p, q, r, and u, v, w relate to the unit vectors in such a way that the resulting vector sum is exactly the same physical vector a in both cases. It is common to encounter vectors known in terms of different bases (for example, one basis fixed to the Earth and a second basis fixed to a moving vehicle). In such a case it is necessary to develop a method to convert between bases so the basic vector operations such as addition and subtraction can be performed. One way to express u, v, w in terms of p, q, r is to use column matrices along with a direction cosine matrix containing the information that relates the two bases. Such an expression can be formed by substitution of the above equations to form
+
+{\displaystyle u=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{1}}{\displaystyle u=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{1}},
+{\displaystyle v=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{2}}{\displaystyle v=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{2}},
+{\displaystyle w=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{3}}{\displaystyle w=(p\mathbf {e} _{1}+q\mathbf {e} _{2}+r\mathbf {e} _{3})\cdot \mathbf {n} _{3}}.
+Distributing the dot-multiplication gives
+
+{\displaystyle u=p\mathbf {e} _{1}\cdot \mathbf {n} _{1}+q\mathbf {e} _{2}\cdot \mathbf {n} _{1}+r\mathbf {e} _{3}\cdot \mathbf {n} _{1}}{\displaystyle u=p\mathbf {e} _{1}\cdot \mathbf {n} _{1}+q\mathbf {e} _{2}\cdot \mathbf {n} _{1}+r\mathbf {e} _{3}\cdot \mathbf {n} _{1}},
+{\displaystyle v=p\mathbf {e} _{1}\cdot \mathbf {n} _{2}+q\mathbf {e} _{2}\cdot \mathbf {n} _{2}+r\mathbf {e} _{3}\cdot \mathbf {n} _{2}}{\displaystyle v=p\mathbf {e} _{1}\cdot \mathbf {n} _{2}+q\mathbf {e} _{2}\cdot \mathbf {n} _{2}+r\mathbf {e} _{3}\cdot \mathbf {n} _{2}},
+{\displaystyle w=p\mathbf {e} _{1}\cdot \mathbf {n} _{3}+q\mathbf {e} _{2}\cdot \mathbf {n} _{3}+r\mathbf {e} _{3}\cdot \mathbf {n} _{3}}{\displaystyle w=p\mathbf {e} _{1}\cdot \mathbf {n} _{3}+q\mathbf {e} _{2}\cdot \mathbf {n} _{3}+r\mathbf {e} _{3}\cdot \mathbf {n} _{3}}.
+Replacing each dot product with a unique scalar gives
+
+{\displaystyle u=c_{11}p+c_{12}q+c_{13}r}{\displaystyle u=c_{11}p+c_{12}q+c_{13}r},
+{\displaystyle v=c_{21}p+c_{22}q+c_{23}r}{\displaystyle v=c_{21}p+c_{22}q+c_{23}r},
+{\displaystyle w=c_{31}p+c_{32}q+c_{33}r}{\displaystyle w=c_{31}p+c_{32}q+c_{33}r},
+and these equations can be expressed as the single matrix equation
+
+{\displaystyle {\begin{bmatrix}u\\v\\w\\\end{bmatrix}}={\begin{bmatrix}c_{11}&c_{12}&c_{13}\\c_{21}&c_{22}&c_{23}\\c_{31}&c_{32}&c_{33}\end{bmatrix}}{\begin{bmatrix}p\\q\\r\end{bmatrix}}}{\displaystyle {\begin{bmatrix}u\\v\\w\\\end{bmatrix}}={\begin{bmatrix}c_{11}&c_{12}&c_{13}\\c_{21}&c_{22}&c_{23}\\c_{31}&c_{32}&c_{33}\end{bmatrix}}{\begin{bmatrix}p\\q\\r\end{bmatrix}}}.
+This matrix equation relates the scalar components of a in the n basis (u,v, and w) with those in the e basis (p, q, and r). Each matrix element cjk is the direction cosine relating nj to ek.[13] The term direction cosine refers to the cosine of the angle between two unit vectors, which is also equal to their dot product.[13] Therefore,
+
+{\displaystyle c_{11}=\mathbf {n} _{1}\cdot \mathbf {e} _{1}}{\displaystyle c_{11}=\mathbf {n} _{1}\cdot \mathbf {e} _{1}}
+{\displaystyle c_{12}=\mathbf {n} _{1}\cdot \mathbf {e} _{2}}{\displaystyle c_{12}=\mathbf {n} _{1}\cdot \mathbf {e} _{2}}
+{\displaystyle c_{13}=\mathbf {n} _{1}\cdot \mathbf {e} _{3}}{\displaystyle c_{13}=\mathbf {n} _{1}\cdot \mathbf {e} _{3}}
+{\displaystyle c_{21}=\mathbf {n} _{2}\cdot \mathbf {e} _{1}}{\displaystyle c_{21}=\mathbf {n} _{2}\cdot \mathbf {e} _{1}}
+{\displaystyle c_{22}=\mathbf {n} _{2}\cdot \mathbf {e} _{2}}{\displaystyle c_{22}=\mathbf {n} _{2}\cdot \mathbf {e} _{2}}
+{\displaystyle c_{23}=\mathbf {n} _{2}\cdot \mathbf {e} _{3}}{\displaystyle c_{23}=\mathbf {n} _{2}\cdot \mathbf {e} _{3}}
+{\displaystyle c_{31}=\mathbf {n} _{3}\cdot \mathbf {e} _{1}}{\displaystyle c_{31}=\mathbf {n} _{3}\cdot \mathbf {e} _{1}}
+{\displaystyle c_{32}=\mathbf {n} _{3}\cdot \mathbf {e} _{2}}{\displaystyle c_{32}=\mathbf {n} _{3}\cdot \mathbf {e} _{2}}
+{\displaystyle c_{33}=\mathbf {n} _{3}\cdot \mathbf {e} _{3}}{\displaystyle c_{33}=\mathbf {n} _{3}\cdot \mathbf {e} _{3}}
+By referring collectively to e1, e2, e3 as the e basis and to n1, n2, n3 as the n basis, the matrix containing all the cjk is known as the "transformation matrix from e to n", or the "rotation matrix from e to n" (because it can be imagined as the "rotation" of a vector from one basis to another), or the "direction cosine matrix from e to n"[13] (because it contains direction cosines). The properties of a rotation matrix are such that its inverse is equal to its transpose. This means that the "rotation matrix from e to n" is the transpose of "rotation matrix from n to e".
+
+The properties of a direction cosine matrix, C are[14]:
+
+the determinant is unity, |C| = 1
+the inverse is equal to the transpose,
+the rows and columns are orthogonal unit vectors, therefore their dot products are zero.
+The advantage of this method is that a direction cosine matrix can usually be obtained independently by using Euler angles or a quaternion to relate the two vector bases, so the basis conversions can be performed directly, without having to work out all the dot products described above.
+
+By applying several matrix multiplications in succession, any vector can be expressed in any basis so long as the set of direction cosines is known relating the successive bases.[13]
+
+Other dimensions
+With the exception of the cross and triple products, the above formulae generalise to two dimensions and higher dimensions. For example, addition generalises to two dimensions as
+
+{\displaystyle (a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2})+(b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2})=(a_{1}+b_{1}){\mathbf {e} }_{1}+(a_{2}+b_{2}){\mathbf {e} }_{2}}(a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2})+(b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2})=(a_{1}+b_{1}){\mathbf {e} }_{1}+(a_{2}+b_{2}){\mathbf {e} }_{2}
+and in four dimensions as
+
+{\displaystyle {\begin{aligned}(a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}+a_{4}{\mathbf {e} }_{4})&+(b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}+b_{4}{\mathbf {e} }_{4})=\\(a_{1}+b_{1}){\mathbf {e} }_{1}+(a_{2}+b_{2}){\mathbf {e} }_{2}&+(a_{3}+b_{3}){\mathbf {e} }_{3}+(a_{4}+b_{4}){\mathbf {e} }_{4}.\end{aligned}}}{\begin{aligned}(a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2}+a_{3}{\mathbf {e} }_{3}+a_{4}{\mathbf {e} }_{4})&+(b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2}+b_{3}{\mathbf {e} }_{3}+b_{4}{\mathbf {e} }_{4})=\\(a_{1}+b_{1}){\mathbf {e} }_{1}+(a_{2}+b_{2}){\mathbf {e} }_{2}&+(a_{3}+b_{3}){\mathbf {e} }_{3}+(a_{4}+b_{4}){\mathbf {e} }_{4}.\end{aligned}}
+The cross product does not readily generalise to other dimensions, though the closely related exterior product does, whose result is a bivector. In two dimensions this is simply a pseudoscalar
+
+{\displaystyle (a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2})\wedge (b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2})=(a_{1}b_{2}-a_{2}b_{1})\mathbf {e} _{1}\mathbf {e} _{2}.}(a_{1}{\mathbf {e} }_{1}+a_{2}{\mathbf {e} }_{2})\wedge (b_{1}{\mathbf {e} }_{1}+b_{2}{\mathbf {e} }_{2})=(a_{1}b_{2}-a_{2}b_{1})\mathbf {e} _{1}\mathbf {e} _{2}.
+A seven-dimensional cross product is similar to the cross product in that its result is a vector orthogonal to the two arguments; there is however no natural way of selecting one of the possible such products.
+
+Physics
+Vectors have many uses in physics and other sciences.
+
+Length and units
+In abstract vector spaces, the length of the arrow depends on a dimensionless scale. If it represents, for example, a force, the "scale" is of physical dimension length/force. Thus there is typically consistency in scale among quantities of the same dimension, but otherwise scale ratios may vary; for example, if "1 newton" and "5 m" are both represented with an arrow of 2 cm, the scales are 1 m:50 N and 1:250 respectively. Equal length of vectors of different dimension has no particular significance unless there is some proportionality constant inherent in the system that the diagram represents. Also length of a unit vector (of dimension length, not length/force, etc.) has no coordinate-system-invariant significance.
+
+Vector-valued functions
+Main article: Vector-valued function
+Often in areas of physics and mathematics, a vector evolves in time, meaning that it depends on a time parameter t. For instance, if r represents the position vector of a particle, then r(t) gives a parametric representation of the trajectory of the particle. Vector-valued functions can be differentiated and integrated by differentiating or integrating the components of the vector, and many of the familiar rules from calculus continue to hold for the derivative and integral of vector-valued functions.
+
+Position, velocity and acceleration
+The position of a point x = (x1, x2, x3) in three-dimensional space can be represented as a position vector whose base point is the origin
+
+{\displaystyle {\mathbf {x} }=x_{1}{\mathbf {e} }_{1}+x_{2}{\mathbf {e} }_{2}+x_{3}{\mathbf {e} }_{3}.}{\mathbf {x} }=x_{1}{\mathbf {e} }_{1}+x_{2}{\mathbf {e} }_{2}+x_{3}{\mathbf {e} }_{3}.
+The position vector has dimensions of length.
+
+Given two points x = (x1, x2, x3), y = (y1, y2, y3) their displacement is a vector
+
+{\displaystyle {\mathbf {y} }-{\mathbf {x} }=(y_{1}-x_{1}){\mathbf {e} }_{1}+(y_{2}-x_{2}){\mathbf {e} }_{2}+(y_{3}-x_{3}){\mathbf {e} }_{3}.}{\mathbf {y} }-{\mathbf {x} }=(y_{1}-x_{1}){\mathbf {e} }_{1}+(y_{2}-x_{2}){\mathbf {e} }_{2}+(y_{3}-x_{3}){\mathbf {e} }_{3}.
+which specifies the position of y relative to x. The length of this vector gives the straight-line distance from x to y. Displacement has the dimensions of length.
+
+The velocity v of a point or particle is a vector, its length gives the speed. For constant velocity the position at time t will be
+
+{\displaystyle {\mathbf {x} }_{t}=t{\mathbf {v} }+{\mathbf {x} }_{0},}{\mathbf {x} }_{t}=t{\mathbf {v} }+{\mathbf {x} }_{0},
+where x0 is the position at time t = 0. Velocity is the time derivative of position. Its dimensions are length/time.
+
+Acceleration a of a point is vector which is the time derivative of velocity. Its dimensions are length/time2.
+
+Force, energy, work
+Force is a vector with dimensions of mass×length/time2 and Newton's second law is the scalar multiplication
+
+{\displaystyle {\mathbf {F} }=m{\mathbf {a} }}{\mathbf {F} }=m{\mathbf {a} }
+Work is the dot product of force and displacement
+
+{\displaystyle E={\mathbf {F} }\cdot ({\mathbf {x} }_{2}-{\mathbf {x} }_{1}).}E={\mathbf {F} }\cdot ({\mathbf {x} }_{2}-{\mathbf {x} }_{1}).
+Vectors as directional derivatives
+A vector may also be defined as a directional derivative: consider a function {\displaystyle f(x^{\alpha })}f(x^{\alpha }) and a curve {\displaystyle x^{\alpha }(\tau )}x^{\alpha }(\tau ). Then the directional derivative of {\displaystyle f}f is a scalar defined as
+
+{\displaystyle {\frac {df}{d\tau }}=\sum _{\alpha =1}^{n}{\frac {dx^{\alpha }}{d\tau }}{\frac {\partial f}{\partial x^{\alpha }}}.}{\frac {df}{d\tau }}=\sum _{\alpha =1}^{n}{\frac {dx^{\alpha }}{d\tau }}{\frac {\partial f}{\partial x^{\alpha }}}.
+where the index {\displaystyle \alpha }\alpha  is summed over the appropriate number of dimensions (for example, from 1 to 3 in 3-dimensional Euclidean space, from 0 to 3 in 4-dimensional spacetime, etc.). Then consider a vector tangent to {\displaystyle x^{\alpha }(\tau )}x^{\alpha }(\tau ):
+
+{\displaystyle t^{\alpha }={\frac {dx^{\alpha }}{d\tau }}.}t^{\alpha }={\frac {dx^{\alpha }}{d\tau }}.
+The directional derivative can be rewritten in differential form (without a given function {\displaystyle f}f) as
+
+{\displaystyle {\frac {d}{d\tau }}=\sum _{\alpha }t^{\alpha }{\frac {\partial }{\partial x^{\alpha }}}.}{\frac {d}{d\tau }}=\sum _{\alpha }t^{\alpha }{\frac {\partial }{\partial x^{\alpha }}}.
+Therefore, any directional derivative can be identified with a corresponding vector, and any vector can be identified with a corresponding directional derivative. A vector can therefore be defined precisely as
+
+{\displaystyle \mathbf {a} \equiv a^{\alpha }{\frac {\partial }{\partial x^{\alpha }}}.}\mathbf {a} \equiv a^{\alpha }{\frac {\partial }{\partial x^{\alpha }}}.
+Vectors, pseudovectors, and transformations
+An alternative characterization of Euclidean vectors, especially in physics, describes them as lists of quantities which behave in a certain way under a coordinate transformation. A contravariant vector is required to have components that "transform opposite to the basis" under changes of basis. The vector itself does not change when the basis is transformed; instead, the components of the vector make a change that cancels the change in the basis. In other words, if the reference axes (and the basis derived from it) were rotated in one direction, the component representation of the vector would rotate in the opposite way to generate the same final vector. Similarly, if the reference axes were stretched in one direction, the components of the vector would reduce in an exactly compensating way. Mathematically, if the basis undergoes a transformation described by an invertible matrix M, so that a coordinate vector x is transformed to x′ = Mx, then a contravariant vector v must be similarly transformed via v′ = M{\displaystyle ^{-1}}^{-1}v. This important requirement is what distinguishes a contravariant vector from any other triple of physically meaningful quantities. For example, if v consists of the x, y, and z-components of velocity, then v is a contravariant vector: if the coordinates of space are stretched, rotated, or twisted, then the components of the velocity transform in the same way. On the other hand, for instance, a triple consisting of the length, width, and height of a rectangular box could make up the three components of an abstract vector, but this vector would not be contravariant, since rotating the box does not change the box's length, width, and height. Examples of contravariant vectors include displacement, velocity, electric field, momentum, force, and acceleration.
+
+In the language of differential geometry, the requirement that the components of a vector transform according to the same matrix of the coordinate transition is equivalent to defining a contravariant vector to be a tensor of contravariant rank one. Alternatively, a contravariant vector is defined to be a tangent vector, and the rules for transforming a contravariant vector follow from the chain rule.
+
+Some vectors transform like contravariant vectors, except that when they are reflected through a mirror, they flip and gain a minus sign. A transformation that switches right-handedness to left-handedness and vice versa like a mirror does is said to change the orientation of space. A vector which gains a minus sign when the orientation of space changes is called a pseudovector or an axial vector. Ordinary vectors are sometimes called true vectors or polar vectors to distinguish them from pseudovectors. Pseudovectors occur most frequently as the cross product of two ordinary vectors.
+
+One example of a pseudovector is angular velocity. Driving in a car, and looking forward, each of the wheels has an angular velocity vector pointing to the left. If the world is reflected in a mirror which switches the left and right side of the car, the reflection of this angular velocity vector points to the right, but the actual angular velocity vector of the wheel still points to the left, corresponding to the minus sign. Other examples of pseudovectors include magnetic field, torque, or more generally any cross product of two (true) vectors.
+
+This distinction between vectors and pseudovectors is often ignored, but it becomes important in studying symmetry properties. See parity (physics).
+
+See also
+Affine space, which distinguishes between vectors and points
+Array data structure or Vector (Computer Science)
+Banach space
+Clifford algebra
+Complex number
+Coordinate system
+Covariance and contravariance of vectors
+Four-vector, a non-Euclidean vector in Minkowski space (i.e. four-dimensional spacetime), important in relativity
+Function space
+Grassmann's Ausdehnungslehre
+Hilbert space
+Normal vector
+Null vector
+Pseudovector
+Quaternion
+Tangential and normal components (of a vector)
+Tensor
+Unit vector
+Vector bundle
+Vector calculus
+Vector notation
+Vector-valued function
+Notes
+ Ivanov 2001
+ Heinbockel 2001
+ Itô 1993, p. 1678; Pedoe 1988
+ Latin: vectus, perfect participle of vehere, "to carry"/ veho = "I carry". For historical development of the word vector, see "vector n.". Oxford English Dictionary (3rd ed.). Oxford University Press. September 2005. (Subscription or UK public library membership required.) and Jeff Miller. "Earliest Known Uses of Some of the Words of Mathematics". Retrieved 2007-05-25.
+ The Oxford english dictionary (2nd. ed.). London: Claredon Press. 2001. ISBN 9780195219425.
+ Michael J. Crowe, A History of Vector Analysis; see also his "lecture notes" (PDF). Archived from the original (PDF) on January 26, 2004. Retrieved 2010-09-04. on the subject.
+ W. R. Hamilton (1846) London, Edinburgh & Dublin Philosophical Magazine 3rd series 29 27
+ Itô 1993, p. 1678
+ Formerly known as located vector. See Lang 1986, p. 9.
+ Thermodynamics and Differential Forms
+ Gibbs, J.W. (1901). Vector Analysis: A Text-book for the Use of Students of Mathematics and Physics, Founded upon the Lectures of J. Willard Gibbs, by E.B. Wilson, Chares Scribner's Sons, New York, p. 15: "Any vector r coplanar with two non-collinear vectors a and b may be resolved into two components parallel to a and b respectively. This resolution may be accomplished by constructing the parallelogram ..."
+ U. Guelph Physics Dept., "Torque and Angular Acceleration"
+ Kane & Levinson 1996, pp. 20–22
+ M., Rogers, Robert (2007). Applied mathematics in integrated navigation systems (3rd ed.). Reston, Va.: American Institute of Aeronautics and Astronautics. ISBN 9781563479274. OCLC 652389481.
+References
+Mathematical treatments
+Apostol, Tom (1967). Calculus. Vol. 1: One-Variable Calculus with an Introduction to Linear Algebra. Wiley. ISBN 978-0-471-00005-1.
+Apostol, Tom (1969). Calculus. Vol. 2: Multi-Variable Calculus and Linear Algebra with Applications. Wiley. ISBN 978-0-471-00007-5.
+Heinbockel, J. H. (2001), Introduction to Tensor Calculus and Continuum Mechanics, Trafford Publishing, ISBN 1-55369-133-4.
+Itô, Kiyosi (1993), Encyclopedic Dictionary of Mathematics (2nd ed.), MIT Press, ISBN 978-0-262-59020-4.
+Ivanov, A.B. (2001) [1994], "Vector, geometric", in Hazewinkel, Michiel (ed.), Encyclopedia of Mathematics, Springer Science+Business Media B.V. / Kluwer Academic Publishers, ISBN 978-1-55608-010-4.
+Kane, Thomas R.; Levinson, David A. (1996), Dynamics Online, Sunnyvale, California: OnLine Dynamics.
+Lang, Serge (1986). Introduction to Linear Algebra (2nd ed.). Springer. ISBN 0-387-96205-0.
+Pedoe, Daniel (1988). Geometry: A comprehensive course. Dover. ISBN 0-486-65812-0.
+Physical treatments
+Aris, R. (1990). Vectors, Tensors and the Basic Equations of Fluid Mechanics. Dover. ISBN 978-0-486-66110-0.
+Feynman, Richard; Leighton, R.; Sands, M. (2005). "Chapter 11". The Feynman Lectures on Physics. Vol. I (2nd ed.). Addison Wesley. ISBN 978-0-8053-9046-9

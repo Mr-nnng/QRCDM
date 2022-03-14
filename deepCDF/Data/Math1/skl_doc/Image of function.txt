@@ -1,0 +1,154 @@
+﻿Image (mathematics)
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+
+f is a function from domain X to codomain Y. The yellow oval inside Y is the image of f.
+Algebraic structure → Group theory
+Group theory
+Cyclic group.svg
+Basic notions[hide]
+SubgroupNormal subgroup
+Quotient group(Semi-)direct product
+Group homomorphisms
+kernelimagedirect sum
+wreath productsimplefinite
+infinitecontinuousmultiplicative
+additivecyclicabeliandihedral
+nilpotentsolvable
+List of group theory topics
+Finite groups[show]
+Discrete groupsLattices
+[show]
+Topological and Lie groups[show]
+Algebraic groups[show]
+vte
+In mathematics, the image of a function is the set of all output values it may take.
+
+More generally, evaluating a given function f at each element of a given subset A of its domain produces a set called the "image of A under (or through) f ". The inverse image or preimage of a given subset B of the codomain of f is the set of all elements of the domain that map to the members of B.
+
+Image and inverse image may also be defined for general binary relations, not just functions.
+
+
+Contents
+1	Definition
+1.1	Image of an element
+1.2	Image of a subset
+1.3	Image of a function
+1.4	Generalization to binary relations
+2	Inverse image
+3	Notation for image and inverse image
+3.1	Arrow notation
+3.2	Star notation
+3.3	Other terminology
+4	Examples
+5	Properties
+6	See also
+7	Notes
+8	References
+Definition
+The word "image" is used in three related ways. In these definitions, f : X → Y is a function from the set X to the set Y.
+
+Image of an element
+If x is a member of X, then f(x) = y (the value of f when applied to x) is the image of x under f. y is alternatively known as the output of f for argument x.
+
+Image of a subset
+The image of a subset A ⊆ X under f is the subset f[A] ⊆ Y defined by (using set-builder notation):
+
+{\displaystyle f[A]=\{f(x)\mid x\in A\}}{\displaystyle f[A]=\{f(x)\mid x\in A\}}
+When there is no risk of confusion, f[A] is simply written as f(A). This convention is a common one; the intended meaning must be inferred from the context. This makes f[.] a function whose domain is the power set of X (the set of all subsets of X), and whose codomain is the power set of Y. See Notation below.
+
+Image of a function
+The image of a function is the image of its entire domain.
+
+Generalization to binary relations
+If R is an arbitrary binary relation on X×Y, the set { y∈Y | xRy for some x∈X } is called the image, or the range, of R. Dually, the set { x∈X | xRy for some y∈Y } is called the domain of R.
+
+Inverse image
+"Preimage" redirects here. For the cryptographic attack on hash functions, see preimage attack.
+Let f be a function from X to Y. The preimage or inverse image of a set B ⊆ Y under f is the subset of X defined by
+
+{\displaystyle f^{-1}[B]=\{x\in X\,|\,f(x)\in B\}}{\displaystyle f^{-1}[B]=\{x\in X\,|\,f(x)\in B\}}
+The inverse image of a singleton, denoted by f −1[{y}] or by f −1[y], is also called the fiber over y or the level set of y. The set of all the fibers over the elements of Y is a family of sets indexed by Y.
+
+For example, for the function f(x) = x2, the inverse image of {4} would be {−2, 2}. Again, if there is no risk of confusion, denote f −1[B] by f −1(B), and think of f −1 as a function from the power set of Y to the power set of X. The notation f −1 should not be confused with that for inverse function. The notation coincides with the usual one, though, for bijections, in the sense that the inverse image of B under f is the image of B under f −1.
+
+Notation for image and inverse image
+The traditional notations used in the previous section can be confusing. An alternative[1] is to give explicit names for the image and preimage as functions between powersets:
+
+Arrow notation
+{\displaystyle f^{\rightarrow }:{\mathcal {P}}(X)\rightarrow {\mathcal {P}}(Y)}f^{\rightarrow }:{\mathcal {P}}(X)\rightarrow {\mathcal {P}}(Y) with {\displaystyle f^{\rightarrow }(A)=\{f(a)\;|\;a\in A\}}f^{\rightarrow }(A)=\{f(a)\;|\;a\in A\}
+{\displaystyle f^{\leftarrow }:{\mathcal {P}}(Y)\rightarrow {\mathcal {P}}(X)}f^{\leftarrow }:{\mathcal {P}}(Y)\rightarrow {\mathcal {P}}(X) with {\displaystyle f^{\leftarrow }(B)=\{a\in X\;|\;f(a)\in B\}}f^{\leftarrow }(B)=\{a\in X\;|\;f(a)\in B\}
+Star notation
+{\displaystyle f_{\star }:{\mathcal {P}}(X)\rightarrow {\mathcal {P}}(Y)}f_{\star }:{\mathcal {P}}(X)\rightarrow {\mathcal {P}}(Y) instead of {\displaystyle f^{\rightarrow }}f^{\rightarrow }
+{\displaystyle f^{\star }:{\mathcal {P}}(Y)\rightarrow {\mathcal {P}}(X)}f^{\star }:{\mathcal {P}}(Y)\rightarrow {\mathcal {P}}(X) instead of {\displaystyle f^{\leftarrow }}f^{\leftarrow }
+Other terminology
+An alternative notation for f[A] used in mathematical logic and set theory is f "A.[2][3]
+Some texts refer to the image of f as the range of f, but this usage should be avoided because the word "range" is also commonly used to mean the codomain of f.
+Examples
+f: {1, 2, 3} → {a, b, c, d} defined by {\displaystyle f(x)=\left\{{\begin{matrix}a,&{\mbox{if }}x=1\\a,&{\mbox{if }}x=2\\c,&{\mbox{if }}x=3.\end{matrix}}\right.}{\displaystyle f(x)=\left\{{\begin{matrix}a,&{\mbox{if }}x=1\\a,&{\mbox{if }}x=2\\c,&{\mbox{if }}x=3.\end{matrix}}\right.}
+The image of the set {2, 3} under f is f({2, 3}) = {a, c}. The image of the function f is {a, c}. The preimage of a is f −1({a}) = {1, 2}. The preimage of {a, b} is also {1, 2}. The preimage of {b, d} is the empty set {}.
+f: R → R defined by f(x) = x2.
+The image of {−2, 3} under f is f({−2, 3}) = {4, 9}, and the image of f is R+. The preimage of {4, 9} under f is f −1({4, 9}) = {−3, −2, 2, 3}. The preimage of set N = {n ∈ R | n < 0} under f is the empty set, because the negative numbers do not have square roots in the set of reals.
+f: R2 → R defined by f(x, y) = x2 + y2.
+The fibres f −1({a}) are concentric circles about the origin, the origin itself, and the empty set, depending on whether a > 0, a = 0, or a < 0, respectively.
+If M is a manifold and π: TM → M is the canonical projection from the tangent bundle TM to M, then the fibres of π are the tangent spaces Tx(M) for x∈M. This is also an example of a fiber bundle.
+A quotient group is a homomorphic image.
+Properties
+Counter-examples based on
+f:ℝ→ℝ, x↦x2, showing
+that equality generally need
+not hold for some laws:
+
+f(A1∩A2) ⊊ f(A1) ∩ f(A2)
+
+f(f−1(B3)) ⊊ B3
+
+f−1(f(A4)) ⊋ A4
+For every function f : X → Y, all subsets A, A1, and A2 of X and all subsets B, B1, and B2 of Y, the following properties hold:
+
+f(A1 ∪ A2) = f(A1) ∪ f(A2)[4]
+f(A1 ∩ A2) ⊆ f(A1) ∩ f(A2)[4]
+f(A ∩ f −1(B)) = f(A) ∩ B
+f −1(B1 ∪ B2) = f −1(B1) ∪ f −1(B2)
+f −1(B1 ∩ B2) = f −1(B1) ∩ f −1(B2)
+f(A) = ∅ ⇔ A = ∅
+f −1(B) = ∅ ⇔ B ⊆ (f(X))C
+f(A) ∩ B = ∅ ⇔ A ∩ f −1(B) = ∅
+f(A) ⊆ B ⇔ A ⊆  f −1(B)
+B ⊆ f(A) ⇔ {\displaystyle \exists }\exists C ⊆ A (f(C) = B)
+f(f −1(B)) ⊆ B[5]
+f −1(f(A)) ⊇ A[6]
+f(f −1(B)) = B ∩ f(X)
+f −1(f(X)) = X
+A1 ⊆ A2 ⇒ f(A1) ⊆ f(A2)
+B1 ⊆ B2 ⇒ f −1(B1) ⊆ f −1(B2)
+f −1(BC) = (f −1(B))C
+(f |A)−1(B) = A ∩ f −1(B).
+The results relating images and preimages to the (Boolean) algebra of intersection and union work for any collection of subsets, not just for pairs of subsets:
+
+{\displaystyle f\left(\bigcup _{s\in S}A_{s}\right)=\bigcup _{s\in S}f(A_{s})}f\left(\bigcup _{s\in S}A_{s}\right)=\bigcup _{s\in S}f(A_{s})
+{\displaystyle f\left(\bigcap _{s\in S}A_{s}\right)\subseteq \bigcap _{s\in S}f(A_{s})}f\left(\bigcap _{s\in S}A_{s}\right)\subseteq \bigcap _{s\in S}f(A_{s})
+{\displaystyle f^{-1}\left(\bigcup _{s\in S}B_{s}\right)=\bigcup _{s\in S}f^{-1}(B_{s})}f^{-1}\left(\bigcup _{s\in S}B_{s}\right)=\bigcup _{s\in S}f^{-1}(B_{s})
+{\displaystyle f^{-1}\left(\bigcap _{s\in S}B_{s}\right)=\bigcap _{s\in S}f^{-1}(B_{s})}f^{-1}\left(\bigcap _{s\in S}B_{s}\right)=\bigcap _{s\in S}f^{-1}(B_{s})
+(Here, S can be infinite, even uncountably infinite.)
+
+With respect to the algebra of subsets, by the above the inverse image function is a lattice homomorphism while the image function is only a semilattice homomorphism (it does not always preserve intersections).
+
+See also
+Range (mathematics)
+Bijection, injection and surjection
+Kernel of a function
+Image (category theory)
+Set inversion
+Notes
+ Blyth 2005, p. 5
+ Jean E. Rubin (1967). Set Theory for the Mathematician. Holden-Day. p. xix. ASIN B0006BQH7S.
+ M. Randall Holmes: Inhomogeneity of the urelements in the usual models of NFU, December 29, 2005, on: Semantic Scholar, p. 2
+ Kelley (1985), p. 85
+ Equality holds if B is a subset of f(X) or, in particular, if f is surjective. See Munkres, J.. Topology (2000), p. 19.
+ Equality holds if f is injective. See Munkres, J.. Topology (2000), p. 19.
+References
+Artin, Michael (1991). Algebra. Prentice Hall. ISBN 81-203-0871-9
+T.S. Blyth, Lattices and Ordered Algebraic Structures, Springer, 2005, ISBN 1-85233-905-5.
+Munkres, James R. (2000). Topology (2 ed.). Prentice Hall. ISBN 978-0-13-181629-9.
+Kelley, John L. (1985). General Topology. Graduate Texts in Mathematics. 27 (2 ed.). Birkhäuser. ISBN 978-0-387-90125-1.

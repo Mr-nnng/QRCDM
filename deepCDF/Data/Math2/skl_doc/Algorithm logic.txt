@@ -1,0 +1,20 @@
+
+Algorithmic logic
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+
+Algorithmic logic is a calculus of programs which allows the expression of semantic properties of programs by appropriate logical formulas. It provides a framework that enables proving the formulas from the axioms of program constructs such as assignment, iteration and composition instructions and from the axioms of the data structures in question see Mirkowska & Salwicki (1987), Banachowski et al. (1977).
+
+The following diagram helps to locate algorithmic logic among other logics. {\displaystyle \qquad \left[{\begin{array}{l}\mathrm {Propositional\ logic} \\or\\\mathrm {Sentential\ calculus} \end{array}}\right]\subset \left[{\begin{array}{l}\mathrm {Predicate\ calculus} \\or\\\mathrm {First\ order\ logic} \end{array}}\right]\subset \left[{\begin{array}{l}\mathrm {Calculus\ of\ programs} \\or\\{\mbox{Algorithmic logic}}\end{array}}\right]}{\displaystyle \qquad \left[{\begin{array}{l}\mathrm {Propositional\ logic} \\or\\\mathrm {Sentential\ calculus} \end{array}}\right]\subset \left[{\begin{array}{l}\mathrm {Predicate\ calculus} \\or\\\mathrm {First\ order\ logic} \end{array}}\right]\subset \left[{\begin{array}{l}\mathrm {Calculus\ of\ programs} \\or\\{\mbox{Algorithmic logic}}\end{array}}\right]}
+The formalized language of algorithmic logic (and of algorithmic theories of various data structures) contains three types of well formed expressions: Terms - i.e. expressions denoting operations on elements of data structures, formulas - i.e. expressions denoting the relations among elements of data structures, programs - i.e. algorithms - these expressions describe the computations. For semantics of terms and formulas consult pages on first order logic and Tarski's semantic. The meaning of a program {\displaystyle K}K is the set of possible computations of the program.
+
+Algorithmic logic is one of many logics of programs. Another logic of programs is dynamic logic, see dynamic logic, Harel, Kozen & Tiuryn (2000).
+
+Bibliography
+[Mirkowska & Salwicki] |Mirkowska, Grażyna; Salwicki, Andrzej (1987). Algorithmic Logic. Warszawa & Boston: PWN & D. Reidel Publ. p. 372. ISBN 8301068590.
+[Banachowski et al.] |Banachowski, Lech; Kreczmar, Antoni; Mirkowska, Grażyna; Rasiowa, Helena; Salwicki, Andrzej (1977). An introduction to Algorithmic Logic - Metamathematical Investigations of Theory of Programs. Banach Center Publications. 2. Warszawa: PWN. pp. 7–99.
+Harel, David; Kozen, Dexter; Tiuryn, Jerzy (2000). Dynamic Logic. Cambridge Massachusetts: MIT Press. pp. 459.
+
+Stub icon	This mathematical logic-related article is a stub. You can help Wikipedia by expanding it.
+Categories: AlgorithmsTheoretical computer scienceMathematical logic stubs
+

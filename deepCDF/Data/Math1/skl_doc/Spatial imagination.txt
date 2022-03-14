@@ -1,0 +1,60 @@
+﻿Spatial visualization ability
+From Wikipedia, the free encyclopedia
+  (Redirected from Visual-spatial ability)
+Jump to navigationJump to search
+Not to be confused with Visual thinking.
+Spatial visualization ability or visual-spatial ability is the ability to mentally manipulate 2-dimensional and 3-dimensional figures. It is typically measured with simple cognitive tests and is predictive of user performance with some kinds of user interfaces.
+
+
+Contents
+1	Measurement
+2	History
+3	Age differences
+4	Gender differences
+5	See also
+6	References
+6.1	Inline citations
+6.2	General references
+Measurement
+The cognitive tests used to measure spatial visualization ability including mental rotation tasks like the Mental Rotations Test or mental cutting tasks like the Mental Cutting Test; and cognitive tests like the VZ-1 (Form Board), VZ-2 (Paper Folding), and VZ-3 (Surface Development) tests from the Kit of Factor-Reference cognitive tests produced by Educational Testing Service. Though the descriptions of spatial visualization and mental rotation sound similar, mental rotation is a particular task that can be accomplished using spatial visualization.[1]
+
+The Minnesota Paper Form Board Test involves giving participants a shape and a set of smaller shapes which they are then instructed to determine which combination of small shapes will fill the larger shape completely without overlapping. The Paper Folding test involves showing participants a sequence of folds in a piece of paper, through which a set of holes is then punched. The participants must choose which of a set of unfolded papers with holes corresponds to the one they have just seen.
+
+The Surface Development test involves giving participants a flat shape with numbered sides and a three-dimensional shape with lettered sides and asking the participants to indicate which numbered side corresponds to which lettered side.
+
+History
+The construct of spatial visualization ability was first identified as separate from general intelligence in the 20th Century, and its implications for computer system design were identified in the 1980s.
+
+In 1987, Kim Vicente and colleagues ran a battery of cognitive tests on a set of participants and then determined which cognitive abilities correlated with performance on a computerized information search task. They found that the only significant predictors of performance were vocabulary and spatial visualization ability, and that those with high spatial visualization ability were twice as fast to perform the task as those with lower levels of spatial visualization ability.[2]
+
+Age differences
+Older adults tend to perform worse on measures of spatial visualization ability than younger adults, and this effect seems to occur even among people who use spatial visualization frequently on the job, such as architects and surveyors (though they still perform better on the measures than others of the same age). It is, however, possible that the types of spatial visualization used by architects are not measured accurately by the tests.[which?]
+
+Gender differences
+See also: Sex differences in intelligence § Spatial ability
+According to certain studies, men on average have one standard deviation higher spatial intelligence quotient than women.[3] This domain is one of the few where clear sex differences in cognition appear. Researchers at the University of Toronto say that differences between men and women on some tasks that require spatial skills are largely eliminated after both groups play a video game for only a few hours.[4] Although Herman Witkin had claimed women are more "visually dependent" than men,[5] this has recently been disputed.[6]
+
+Other studies suggest gender differences in spatial thinking may be explained by a stereotype threat effect. The fear of fulfilling stereotypes negatively affects the performance which results in a self-fulfilling prophecy.[7] The adaptive significance, if any, of male superiority in spatial navigation has been questioned. A 2012 study suggests that male superiority in spatial navigation is more likely derived from hormonal differences.[8]
+
+See also
+Baddeley's model of working memory
+Nonverbal learning disorder
+Proof without words
+Visual thinking
+References
+Inline citations
+ Mitchell, J.; Kent, L. (2003). "Apparency of contingencies in single panel and pull-down menus". International Journal of Human-Computer Studies. 49 (1): 59–78. doi:10.1006/ijhc.1998.0200.
+ Vicente, K. J.; Hayes, B. C.; Williges, R. C. (June 1987). "Assaying and isolating individual differences in searching a hierarchical file system". Human Factors. 29 (3): 349–359. doi:10.1177/001872088702900308. ISSN 0018-7208. PMID 3623569.
+ Robert, Michèle; Chevrier, Eliane (October 2003). "Does men's advantage in mental rotation persist when real three-dimensional objects are either felt or seen?". Memory & Cognition. 31 (7): 1136–1145. doi:10.3758/BF03196134. ISSN 0090-502X. PMID 14704028.
+ Feng, Jing; Spence, Ian; Pratt, Jay (2016-05-06). "Playing an Action Video Game Reduces Gender Differences in Spatial Cognition". Psychological Science. 18 (10): 850–855. CiteSeerX 10.1.1.392.9474. doi:10.1111/j.1467-9280.2007.01990.x. PMID 17894600.
+ Witkin, H. A.; Lewis, H. B.; Hertzman, M.; Machover, K.; Meissner, P. B.; Wapner, S. (1954). Personality through perception: An experimental and clinical study. New York: Harper. OCLC 2660853.
+ Barnett-Cowan, M.; Dyde, R. T.; Thompson, C.; Harris, L. R. (2010). "Multisensory determinants of orientation perception: task-specific sex differences". European Journal of Neuroscience. 31 (10): 1899–1907. doi:10.1111/j.1460-9568.2010.07199.x. ISSN 1460-9568. PMID 20584195.
+ McGlone, Matthew S.; Aronson, Joshua (2006). "Stereotype threat, identity salience, and spatial reasoning". Journal of Applied Developmental Psychology. 27 (5): 486–493. doi:10.1016/j.appdev.2006.06.003.
+ Clint, Edward K.; Sober, Elliott; Garland, Theodore; Rhodes, Justin S. (2013). "Male Superiority in Spatial Navigation: Adaptation or Side Effect?". The Quarterly Review of Biology. 87 (4): 289–313. doi:10.1086/668168. ISSN 0033-5770.
+General references
+Alonso, D. L. (1998). "The effects of individual differences in spatial visualization ability on dual-task performance". Retrieved 2006-05-14.
+Downing, R. E.; Moore, J. L.; Brown, S. W. (2005). "The effects and interaction of spatial visualization and domain expertise on information seeking". Computers in Human Behavior. 21 (2): 195–209. doi:10.1016/j.chb.2004.03.040.
+Ozer, D. J. (1987). "Personality, intelligence, and spatial visualization: Correlates of mental rotations test performance". Journal of Personality and Social Psychology. 53 (1): 129–134. doi:10.1037/0022-3514.53.1.129. PMID 3612485.
+Salthouse, T. A.; Babcock, R. L.; Skovronek, E.; Mitchell, D. R. D.; Palmon, R. (1990). "Age and experience effects in spatial visualization". Developmental Psychology. 26 (1): 128–136. doi:10.1037/0012-1649.26.1.128.
+Salthouse, T. A.; Mitchell, D. R. D (1990). "Effects of age and naturally occurring experience on spatial visualization performance". Developmental Psychology. 26 (5): 845–854. doi:10.1037/0012-1649.26.5.845.
+Zhang, H.; Salvendy, G. (2001). "The implications of visualization ability and structure preview design for web information search tasks". International Journal of Human-Computer Interaction. 13 (1): 75–95. CiteSeerX 10.1.1.150.8722. doi:10.1207/S15327590IJHC1301_5

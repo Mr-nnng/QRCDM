@@ -1,0 +1,17 @@
+No.	Skill Names
+1	Property of inequality,  不等式性质 
+2	Methods of data sampling, 数据采样方法 
+3	Geometric progression, 等比数列
+4	Function versus equation, 函数与方程
+5	Solving triangle, 解三角形 
+6	Principles of data analysis, Principles of data analysis, 数据分析原理 
+7	Classical probability theory, 经典概率论 
+8	Linear programming, 线性规划
+9	Definitions of algorithm, 算法的定义
+10	Algorithm logic, 算法逻辑
+11	Arithmetic progression, 等差数列
+12	Spatial imagination, 空间想象 
+13	Abstract summarization, 抽象概括
+14	Reasoning and demonstration, 推理论证
+15	Calculation, 计算
+16	Data handling. 数据处理

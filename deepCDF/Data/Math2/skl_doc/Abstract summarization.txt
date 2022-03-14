@@ -1,0 +1,42 @@
+﻿Abstract nonsense
+From Wikipedia, the free encyclopedia
+Jump to navigationJump to search
+In mathematics, abstract nonsense, general abstract nonsense, generalized abstract nonsense, and general nonsense are terms used by mathematicians to describe abstract methods related to category theory and homological algebra. More generally, “abstract nonsense” may refer to a proof that relies on category-theoretic methods, or even to the study of category theory itself.
+
+
+Contents
+1	Background
+2	History
+3	Examples
+4	Notes and references
+5	External links
+Background
+Roughly speaking, category theory is the study of the general form, that is, categories of mathematical theories, without regard to their content. As a result, mathematical proofs that rely on category-theoretic ideas often seem out of context, somewhat akin to a non sequitur. Authors sometimes dub these proofs “abstract nonsense” as a light-hearted way of alerting readers to their abstract nature. Labeling an argument "abstract nonsense" is usually not intended to be derogatory,[1][2] and is instead used jokingly,[3] in a self-deprecating way,[4] affectionately,[5] or even as a compliment to the generality of the argument.
+
+Certain ideas and constructions in mathematics share a uniformity throughout many domains, unified by category theory. Typical methods include the use of classifying spaces and universal properties, use of the Yoneda lemma, natural transformations between functors, and diagram chasing.
+
+When an audience can be assumed to be familiar with the general form of such arguments, mathematicians will use the expression Such and such is true by abstract nonsense rather than provide an elaborate explanation of particulars.[2] For example, one might say By abstract nonsense, products are unique up to isomorphism when they exist, instead of arguing about how these isomorphisms can be derived from the universal property that defines the product. This allows one to skip proof details that can be considered trivial or not providing much insight, focusing instead on genuinely innovative parts of a larger proof.
+
+History
+The term predates the foundation of category theory as a subject itself. Referring to a joint paper with Samuel Eilenberg that introduced the notion of a "category" in 1942, Saunders Mac Lane wrote the subject was 'then called "general abstract nonsense"'.[3] The term is often used to describe the application of category theory and its techniques to less abstract domains.[6][7]
+
+The term is believed to have been coined by the mathematician Norman Steenrod,[8][4][5] himself one of the developers of the categorical point of view.
+
+Examples
+Consider the example of showing that a 3-manifold M admits a map to the 2-sphere that is non-trivial (i.e. non-homotopic to a constant map), when the 2nd Betti number of M is positive. This means the 2nd cohomology group has positive rank (by the universal coefficient theorem for cohomology), so it has a non-zero element. The properties of Eilenberg–MacLane spaces then give a corresponding non-trivial map f from M to the infinite-dimensional complex projective space CP∞, since it is a K(Z,2) Eilenberg–MacLane space. The space CP∞ can be realized as a CW complex with exactly one cell in each even dimension and no cells in odd dimension, while M can be realized with no cells in dimensions above 3, so by the cellular approximation theorem there is a map homotopic to f that maps M into the 3-skeleton of CP∞, which is the 2-sphere.
+
+Though this proof establishes the truth of the statement in question, the proof technique has little to do with the topology or geometry of the 2-sphere, let alone 3-manifolds, as it relies on more general categorical principles. Because of the reliance on these abstract principles, the result is independent of subtler geometric details, so offers little geometric insight into the nature of such a map. On the other hand, the proof is surprisingly short and clean, and a “hands-on” approach involving the explicit construction of such a map would be potentially laborious.
+
+Notes and references
+ Michael Monastyrsky, Some Trends in Modern Mathematics and the Fields Medal. Can. Math. Soc. Notes, March and April 2001, Volume 33, nos. 2 and 3. Online version available at http://www.fields.utoronto.ca/aboutus/FieldsMedal_Monastyrsky.pdf.
+"In algebra, the term “abstract nonsense” has a definite meaning without any pejorative connotation."
+ Macura, Wiktor K. "Abstract Nonsense". MathWorld.
+ Saunders Mac Lane. "The PNAS way back then". Proc. Natl. Acad. Sci. USA Vol. 94, pp. 5983–5985, June 1997.
+"The first of these papers is a more striking case; it introduced the very abstract idea of a "category"—a subject then called "general abstract nonsense"!"
+ Joseph Rotman, "An Introduction to Homological Algebra, by Charles A. Weibel" (book review), Bull. Am. Math. Soc., 33:4 (Oct. 1996) 473–476.
+"The self-deprecating phrase general abstract nonsense (due to Steenrod) was promulgated by Eilenberg and Mac Lane, two of the major innovators of homological algebra, to highlight this aspect of the subject."
+ Serge Lang, "Algebra" Second Edition, Addison Wesley, 1984, p 175
+ An Application of Abstract Nonsense to Surface Area, Harriet Lord
+ Abstract Nonsense for Functional Programmers, Edsko de Vries
+ Colin McLarty, The Uses and Abuses of the History of Topos Theory, Br. J. Philos. Sci., 41 (1990) p 355.
+"Steenrod jokingly tagged category theory 'abstract nonsense' and made it central to his axiomatics for homology"
